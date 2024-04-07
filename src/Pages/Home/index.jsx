@@ -10,9 +10,9 @@ import HV_VIVAdere_CHROME from '../../img/new/HV_VIVAdere_CHROME.png'
 import HVbsideslogointro from '../../img/new/HV-bsides-logo-intro.png'
 import SAEPiologo_stickercut from '../../img/new/SAEPiologo_stickercut.png'
 import BLUMIRAwordonlyChrome from '../../img/new/BLUMIRAwordonlyChrome.png'
-import BLUMIRApocscreen from '../../img/new/BLUMIRApocscreen (1).jpg'
+import BLUMIRApocscreen from '../../img/new/SENTEONpocscreen.jpg'
 import demos from '../../img/demos-icon.svg'
-import HV_NEW_AI_Machine from '../../img/new/HV_NEW_AI_Machine.png'
+import HV_NEW_AI_Machine from '../../img/new/HV_NEW_AI_Machine_blues.png'
 import CRAIG from '../../img/new/CRAIG.jpg'
 import MARIANA from '../../img/new/MARIANA.jpg'
 import SPYDERswooshbat from '../../img/new/SPYDERswooshbat_PurpleBlue_onBlackChrome.png'
@@ -232,7 +232,7 @@ const index = () => {
                     src={BLUMIRApocscreen}
                     height="100px"
                     width="auto"
-                    className="demo-image rounded-lg"
+                    className="demo-image rounded-3xl"
                   />
                 </div>
               </div>
@@ -241,9 +241,7 @@ const index = () => {
             {/*  */}
             <div className="col-md-12 py-10">
               <div className="content-are">
-                <hr
-                  style={{ color: "rgb(222, 219, 219)", fontSize: 20, padding: 2 }}
-                />
+              
                 <article>
                   <div className="primary-heading pt-24">
                     <div className="title-lg mt-3 hover-underline">
@@ -268,11 +266,11 @@ const index = () => {
               <Paragraph />
               <Testimonials />
               <Index />
-              <div className="col-md-12  "> <hr style={{ color: "rgb(222, 219, 219)", fontSize: 20, padding: 2 }} />
+              <div className="col-md-12  ">
                 <Blogs />
                 <Spotify/>
                 <PodcastVideo/>
-                <hr style={{ color: "rgb(222, 219, 219)", fontSize: 20, padding: 2 }} />
+               
                 <Newsletter />
 
                 <Footer />

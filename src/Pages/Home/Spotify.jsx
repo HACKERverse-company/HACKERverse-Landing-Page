@@ -45,7 +45,7 @@ const Index = () => {
 
     return (
         <>
-            <hr style={{ color: "rgb(222, 219, 219)", fontSize: 20, padding: 2 }} />
+           
 
             <section className="">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">

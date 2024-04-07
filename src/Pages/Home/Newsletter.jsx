@@ -32,8 +32,7 @@ const Newsletter = () => {
             Subscribe to our Newslettter
           </h2>
           <p className="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
-            Try hackerverse Platform for 30 days. No credit card
-            required.
+         Join the Uprising. Get Access to the the Rebel Dispatch.
           </p>
         </div>
         <form className="flex items-center max-w-sm mx-auto">

@@ -16,7 +16,6 @@ const Popup = ({ onClose, fetchReviews, setLoading, isLoading }) => {
     const [selectedImage, setSelectedImage] = useState(null);
     const [selectedImage1, setSelectedImage1] = useState(null);
     const [name, setname] = useState('');
-    const [company, setcompany] = useState('');
     const [designation, setDesignation] = useState('')
     const [category, setCategory] = useState('');
     const [review, setreview] = useState('')
@@ -37,7 +36,7 @@ const Popup = ({ onClose, fetchReviews, setLoading, isLoading }) => {
     };
 
     const handleAddReview = () => {
-        if (name == '' || !selectedImage || company == '' || review == '' || designation == '') {
+        if (name == '' || !selectedImage ||  review == '' || designation == '') {
             toast.error('Please fill all fields');
             return;
         }
@@ -52,7 +51,6 @@ const Popup = ({ onClose, fetchReviews, setLoading, isLoading }) => {
                 name,
                 selectedImage: base64String,
                 fileName,
-                company,
                 designation,
                 review
             })
@@ -111,9 +109,7 @@ const Popup = ({ onClose, fetchReviews, setLoading, isLoading }) => {
                 <div className="mb-6">
                     <input disabled={isLoading} type="text" placeholder="Name" className="w-full border-gray-300 rounded-md p-2" value={name} onChange={(e) => setname(e.target.value)} />
                 </div>
-                <div className="mb-6">
-                    <input disabled={isLoading} type="text" placeholder="Company" className="w-full border-gray-300 rounded-md p-2" value={company} onChange={(e) => setcompany(e.target.value)} />
-                </div>
+          
                 <div className="mb-6">
                     <input disabled={isLoading} type="text" placeholder="Designation" className="w-full border-gray-300 rounded-md p-2" value={designation} onChange={(e) => setDesignation(e.target.value)} />
                 </div>
@@ -131,7 +127,6 @@ const Popup1 = ({ onClose, fetchReviews, ReviewId, setLoadingu, isLoadingu }) =>
     const [selectedImage, setSelectedImage] = useState(null);
     const [selectedImage1, setSelectedImage1] = useState(null);
     const [name, setname] = useState('');
-    const [company, setcompany] = useState('');
     const [designation, setDesignation] = useState('')
     const [category, setCategory] = useState('');
     const [review, setreview] = useState('')
@@ -154,13 +149,11 @@ const Popup1 = ({ onClose, fetchReviews, ReviewId, setLoadingu, isLoadingu }) =>
         try {
             const response = await axios.get(`${Api}/hv-comapny/Reviews/getsingle/${ReviewId}`);
             const { name } = response.data.review;
-            const { company } = response.data.review;
             const { designation } = response.data.review;
             const { review } = response.data.review;
             const { pic } = response.data.review;
 
             setname(name)
-            setcompany(company)
             setDesignation(designation)
             setreview(review)
             setSelectedImage1(pic)
@@ -176,7 +169,7 @@ const Popup1 = ({ onClose, fetchReviews, ReviewId, setLoadingu, isLoadingu }) =>
 
     const handleUpdateReview = async () => {
         setLoadingu(true);
-        if (name == '' || company == '' || review == '' || designation == '') {
+        if (name == ''   || review == '' || designation == '') {
             return
         }
         if (selectedImage != null) {
@@ -190,7 +183,6 @@ const Popup1 = ({ onClose, fetchReviews, ReviewId, setLoadingu, isLoadingu }) =>
                     name,
                     selectedImage: base64String,
                     fileName,
-                    company,
                     designation,
                     review
                 })
@@ -213,7 +205,6 @@ const Popup1 = ({ onClose, fetchReviews, ReviewId, setLoadingu, isLoadingu }) =>
         else {
             axios.put(`${Api}/hv-comapny/Reviews/update/${ReviewId}`, {
                 name,
-                company,
                 designation,
                 review
             })
@@ -263,9 +254,7 @@ const Popup1 = ({ onClose, fetchReviews, ReviewId, setLoadingu, isLoadingu }) =>
                 <div className="mb-6">
                     <input disabled={isLoadingu} type="text" placeholder="Name" className="w-full border-gray-300 rounded-md p-2" value={name} onChange={(e) => setname(e.target.value)} />
                 </div>
-                <div className="mb-6">
-                    <input disabled={isLoadingu} type="text" placeholder="Company" className="w-full border-gray-300 rounded-md p-2" value={company} onChange={(e) => setcompany(e.target.value)} />
-                </div>
+           
                 <div className="mb-6">
                     <input disabled={isLoadingu} type="text" placeholder="Designation" className="w-full border-gray-300 rounded-md p-2" value={designation} onChange={(e) => setDesignation(e.target.value)} />
                 </div>
@@ -388,7 +377,7 @@ function Dashboard() {
                                                     <img src={testimonial.pic} className="w-28 h-28 rounded-full shadow-[0_2px_22px_-4px_rgba(93,96,127,0.6)] border-2 border-white" />
                                                     <div className="mt-4">
                                                         <h4 className="text-sm font-extrabold text-white">{testimonial.name}</h4>
-                                                        <p className="text-xs text-[#a0ff00] font-bold mt-1">{testimonial.designation}, {testimonial.company}</p>
+                                                        <p className="text-xs text-[#a0ff00] font-bold mt-1">{testimonial.designation}</p>
                                                     </div>
                                                 </div>
                                                 <div className="mt-4 text-center">

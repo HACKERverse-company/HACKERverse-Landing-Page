@@ -4,9 +4,8 @@ import gif1 from '../../img/gif1.gif'
 const TwoButtons = () => {
   return (
     <>    <div className="col-md-12 py-24" style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
-    <hr
-      style={{ color: "rgb(222, 219, 219)", fontSize: 20, padding: 2 }}
-    />
+   
+   
     <div className="content-area mt-5">
       <article>
         <div className="primary-heading text-center">

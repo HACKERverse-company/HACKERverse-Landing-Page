@@ -49,9 +49,7 @@ const Allblogs = () => {
                 </div>
             </section>
 
-            <hr
-                style={{ color: "rgb(222, 219, 219)", fontSize: 20, padding: 2 }}
-            />
+         
 
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto container ">
                 <div className="grid lg:grid-cols-2 gap-6">
