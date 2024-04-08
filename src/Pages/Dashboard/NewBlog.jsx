@@ -454,6 +454,7 @@ function Dashboard() {
                                     {/* <textarea disabled={isLoading} type="text" placeholder="Content...." className="w-full border-gray-300 rounded-md p-2" value={content} onChange={(e) => setcontent(e.target.value)} /> */}
                                 </div>
                             </div>
+                            {content }
                             </div>
                         </section>
                     </section>

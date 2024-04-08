@@ -29,7 +29,7 @@ import Hero from './Hero'
 import PodcastVideo from './PodcastVideo'
 import Spotify from './Spotify'
 import SideChat from '../../img/support.svg'
-import orb from '../../img/orb/orb.webm'
+import orb from '../../img/orb/orb.gif'
 import orbmp4 from '../../img/orb/orb.webm'
 import orbtwitter from '../../img/twitter.png'
 import redorbyoutube from '../../img/redorb-youtube.png'
@@ -167,44 +167,44 @@ const index = () => {
               </div>
             </div>
           </section>
-          <div className='' style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
-        
-          <section
-            className="text-gray-600 body-font container mx-auto "
-            style={{ marginTop: "-70px" }}
-          >
-            <div className="container   mx-auto to   ">
-              <div className="flex justify-center  flex-wrap -m-4">
-                <div className="lg:w-1/4 md:w-1/2 p-4 w-full ">
-                  <a className="blo ck relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full mx-auto ck"
-                      src={HVbsideslogointro}
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 p-4 w-full ccc">
-                  <a className="blo ck relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full mx-auto ck"
-                      src={SAEPiologo_stickercut}
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 p-4 w-full ccc">
-                  <a className="b lock relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full mx-auto mt-20 k"
-                      src={BLUMIRAwordonlyChrome}
-                    />
-                  </a>
+          <div className='' style={{ background: `url(${gif1}) center center / cover no-repeat`, }}>
+
+            <section
+              className="text-gray-600 body-font container mx-auto "
+              style={{ marginTop: "-70px" }}
+            >
+              <div className="container   mx-auto to   ">
+                <div className="flex justify-center  flex-wrap -m-4">
+                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full ">
+                    <a className="blo ck relative h-48 rounded overflow-hidden">
+                      <img
+                        alt="ecommerce"
+                        className="object-cover cursor-pointer object-center w-full mx-auto ck"
+                        src={HVbsideslogointro}
+                      />
+                    </a>
+                  </div>
+                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full ccc">
+                    <a className="blo ck relative h-48 rounded overflow-hidden">
+                      <img
+                        alt="ecommerce"
+                        className="object-cover cursor-pointer object-center w-full mx-auto ck"
+                        src={SAEPiologo_stickercut}
+                      />
+                    </a>
+                  </div>
+                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full ccc">
+                    <a className="b lock relative h-48 rounded overflow-hidden">
+                      <img
+                        alt="ecommerce"
+                        className="object-cover cursor-pointer object-center w-full mx-auto mt-20 k"
+                        src={BLUMIRAwordonlyChrome}
+                      />
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section>
           </div>
           <Quote />
 
@@ -241,7 +241,7 @@ const index = () => {
             {/*  */}
             <div className="col-md-12 py-10">
               <div className="content-are">
-              
+
                 <article>
                   <div className="primary-heading pt-24">
                     <div className="title-lg mt-3 hover-underline">
@@ -311,7 +311,7 @@ const index = () => {
           </a>
           <a href="https://twitter.com/_HACKERverse_" target="_blank">
             <div className="sup-icon">
-              <img src={orbtwitter}/>
+              <img src={orbtwitter} />
             </div>
           </a>
           {/* <a href="https://www.pinterest.com/thehackerverse/" target="_blank">
@@ -324,11 +324,7 @@ const index = () => {
           <img src={SideChat} />
         </div>
         <div className="video-cutter">
-
-          <video playsInline="" autoPlay="" muted="" loop="" data-setup="{}">
-            {/* <source src={orb} type="video/webm" /> */}
-            <source src={orbmp4}   />
-          </video>
+          <img src={orb} alt="Your SVG Image" style={{height:"90px", width:"90px",marginTop:"-10px"}}  />
         </div>
       </div>
 

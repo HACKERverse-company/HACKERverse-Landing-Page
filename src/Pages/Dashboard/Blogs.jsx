@@ -117,6 +117,7 @@ const Popup = ({ onClose, fetchBlogs, setLoading, isLoading }) => {
                     />
                     {/* <textarea disabled={isLoading} type="text" placeholder="Content...." className="w-full border-gray-300 rounded-md p-2" value={content} onChange={(e) => setcontent(e.target.value)} /> */}
                 </div>
+                {content}
                 <button disabled={isLoading} className="bg-black text-white rounded-md p-2 font-medium hover:bg-slate-600 w-full" onClick={handleAddBlog}>Add Blog</button>
             </div>
         </div>
@@ -129,11 +130,11 @@ const Popup1 = ({ onClose, fetchBlogs, BlogId, setLoadingu, isLoadingu }) => {
     const [selectedImage1, setSelectedImage1] = useState(null);
     const [title, settitle] = useState('');
     const [content, setcontent] = useState('')
-    const navigate=useNavigate()
-useEffect(() => {
-    navigate(`/UpdateBlog/${BlogId}`);
+    const navigate = useNavigate()
+    useEffect(() => {
+        navigate(`/UpdateBlog/${BlogId}`);
 
-}, [])
+    }, [])
 
     const handleImageDrop = (event) => {
         setSelectedImage(event.target.files[0])
@@ -378,41 +379,41 @@ function Dashboard() {
                                 ) : (
                                     <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto container " >
                                         <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
-                                        {Blogs.map((member, index) => (
-    <Link key={index} to='' className="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 picbox" href="#" >
-        <div onClick={() => handleUpdate(member._id)} className="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[300px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
-            <img
-                className="size-full absolute top-0 start-0 object-cover opacity-60"
-                src={member.pic}
-                alt="Image Description"
-            />
-        </div>
-        <div className="absolute top-0 inset-x-0 z-10">
-            <div className="p-4 flex flex-col h-full sm:p-6">
-                <div className="flex items-center">
-                    <div className="flex-shrink-0">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="absolute bottom-0 inset-x-0 z-10">
-            <div className="flex flex-col h-full p-4 sm:p-6">
-                <h6 className="text-lg sm:text-2xl font-semibold text-white group-hover:text-white/[.8]">
-                    {member.title.split(' ').slice(0, 8).join(' ')}
-                    {member.title.split(' ').length > 8 ? "..." : ""}
-                </h6>
-            </div>
-            <div className="flex justify-between mt-4">
-                <button className="bg-gray-600 text-white rounded-3xl p-2 font-medium hover:bg-gray-800" onClick={() => handleUpdate(member._id)}>
-                    <FontAwesomeIcon icon={faEdit} className="mr-1" />
-                </button>
-                <button className="bg-red-600 text-white rounded-3xl  p-2 font-medium hover:bg-red-800" onClick={() => handleDelete(member._id)}>
-                    <FontAwesomeIcon icon={faTrash} className="mr-1" />
-                </button>
-            </div>
-        </div>
-    </Link>
-))}
+                                            {Blogs.map((member, index) => (
+                                                <Link key={index} to='' className="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 picbox" href="#" >
+                                                    <div onClick={() => handleUpdate(member._id)} className="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[300px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+                                                        <img
+                                                            className="size-full absolute top-0 start-0 object-cover opacity-60"
+                                                            src={member.pic}
+                                                            alt="Image Description"
+                                                        />
+                                                    </div>
+                                                    <div className="absolute top-0 inset-x-0 z-10">
+                                                        <div className="p-4 flex flex-col h-full sm:p-6">
+                                                            <div className="flex items-center">
+                                                                <div className="flex-shrink-0">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="absolute bottom-0 inset-x-0 z-10">
+                                                        <div className="flex flex-col h-full p-4 sm:p-6">
+                                                            <h6 className="text-lg sm:text-2xl font-semibold text-white group-hover:text-white/[.8]">
+                                                                {member.title.split(' ').slice(0, 8).join(' ')}
+                                                                {member.title.split(' ').length > 8 ? "..." : ""}
+                                                            </h6>
+                                                        </div>
+                                                        <div className="flex justify-between mt-4">
+                                                            <button className="bg-gray-600 text-white rounded-3xl p-2 font-medium hover:bg-gray-800" onClick={() => handleUpdate(member._id)}>
+                                                                <FontAwesomeIcon icon={faEdit} className="mr-1" />
+                                                            </button>
+                                                            <button className="bg-red-600 text-white rounded-3xl  p-2 font-medium hover:bg-red-800" onClick={() => handleDelete(member._id)}>
+                                                                <FontAwesomeIcon icon={faTrash} className="mr-1" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </Link>
+                                            ))}
 
                                         </div>
                                     </div>
