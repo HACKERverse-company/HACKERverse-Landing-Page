@@ -69,7 +69,7 @@ const Index = () => {
 
                             <div class="mt-4">
                                 <h4 class="text-sm font-extrabold text-white">{testimonial.name} </h4>
-                                <p class="text-xs text-[#a0ff00] font-bold mt-1">{testimonial.designation}, {testimonial.company}</p>
+                                <p class="text-xs text-[#a0ff00] font-bold mt-1">{testimonial.designation}</p>
                             </div>
                         </div>
                         <div class="mt-4 text-center">
