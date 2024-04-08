@@ -43,7 +43,7 @@ const index = () => {
   return (
     <>
       <meta charSet="utf-8" />
-      <meta name="description" content="Hackerverse™ is the 'hands-on demo tool' of choice for non-cybersecurity and cybersecurity professionals. Rent-a-Demo today." />
+      <meta name="description" content="HACKERverse® is the 'hands-on demo tool' of choice for non-cybersecurity and cybersecurity professionals. Rent-a-Demo today." />
       <meta name="title" content="HACKERverse®" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link href="css/bootstrap.css" rel="stylesheet" />

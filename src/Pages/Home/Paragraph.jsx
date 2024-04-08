@@ -12,7 +12,7 @@ const Paragraph = () => {
             Integrate
           </h2>
           <p className="leading-relaxed text-base font-medium px-16">
-            Integrate like a boss! The HACKERverse syncs with your
+            Integrate like a boss! The HACKERverse® syncs with your
             tools, tech-stack, and CRM.
           </p>
         </div>
@@ -47,7 +47,7 @@ const Paragraph = () => {
             Community
           </h2>
           <p className="leading-relaxed text-base font-medium px-16">
-            Our thriving HACKERverse community gives you access to 5,000
+            Our thriving HACKERverse® community gives you access to 5,000
             practitioners and security team leaders. .
           </p>
         </div>
