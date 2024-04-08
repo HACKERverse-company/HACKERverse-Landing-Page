@@ -6,19 +6,20 @@ import { Api } from '../../Api/Api';
 
 const Index = () => {
     const [Reviews, setReviews] = useState([]);
-    // Dummy data representing testimonials
+    const [isLoading, setIsLoading] = useState(true); // State variable to track loading
 
 
     const fetchReviews = async () => {
         try {
             const response = await axios.get(`${Api}/hv-comapny/Reviews/getall`);
             setReviews(response.data);
+            setIsLoading(false); // Set loading to false when data is fetched
 
         } catch (error) {
             console.error('Error fetching Reviews:', error);
+            setIsLoading(false); // Also set loading to false in case of error
         }
     };
-
     useEffect(() => {
         fetchReviews();
     }, []);
@@ -55,6 +56,11 @@ const Index = () => {
                 </div>
             </section>
 
+            {isLoading ? ( 
+                <div className="loader">Loading...</div>
+            ) : (
+                <>
+
             <Carousel responsive={responsive} focusOnSelect={true}>
                 {Reviews.map((testimonial) => (
                     <div class="max-w-xl mt-12 mx-auto p-4 mb-40 cursor-pointer picbox1 rounded-2xl ">
@@ -73,6 +79,8 @@ const Index = () => {
 
                 ))}
             </Carousel>
+                </>
+            )}
            
         </>
     );

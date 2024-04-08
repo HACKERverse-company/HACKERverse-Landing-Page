@@ -30,7 +30,7 @@ import PodcastVideo from './PodcastVideo'
 import Spotify from './Spotify'
 import SideChat from '../../img/support.svg'
 import orb from '../../img/orb/orb.webm'
-import orbmp4 from '../../img/orb/orb.mp4'
+import orbmp4 from '../../img/orb/orb.webm'
 import orbtwitter from '../../img/twitter.png'
 import redorbyoutube from '../../img/redorb-youtube.png'
 import redorbinsta from '../../img/redorb-insta.png'
@@ -324,9 +324,10 @@ const index = () => {
           <img src={SideChat} />
         </div>
         <div className="video-cutter">
+
           <video playsInline="" autoPlay="" muted="" loop="" data-setup="{}">
-            <source src={orb} type="video/webm" />
-            <source src={orbmp4} type="video/mp4" />
+            {/* <source src={orb} type="video/webm" /> */}
+            <source src={orbmp4}   />
           </video>
         </div>
       </div>

@@ -14,6 +14,7 @@ import UpdateBlog from './Pages/Dashboard/UpdateBlog'
 import Forget1 from './Forget1'
 import Forget2 from "./Forget2";
 import Contact from "./Pages/Contact";
+import PrivacyAndPolicy from "./Pages/PrivacyAndPolicy";
 import Test from "./Test";
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
           <Route path="/ResetPasswordemail" element={<Forget1 />} />
           <Route path="/reset-new-password/:id/:token" element={<Forget2 />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/PrivacyAndPolicy" element={<PrivacyAndPolicy />} />
+
         </Routes>
       </BrowserRouter>
 
