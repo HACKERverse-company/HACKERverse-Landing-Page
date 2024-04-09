@@ -1,5 +1,6 @@
 import React from 'react'
 import gif1 from '../../img/gif1.gif'
+import { Link } from 'react-router-dom'
 
 const TwoButtons = () => {
   return (
@@ -17,14 +18,14 @@ const TwoButtons = () => {
       <div className="container py-10 mx-auto">
         <div className="flex flex-wrap -mx-4 -mb-10 text-center">
           <div className="sm:w-full md:w-1/2 mb-10 px-4">
-            <button className="let-joinus-button1">
+            <Link to='/contact' className="let-joinus-button1">
               Vendors, Join the PoC Revolution Now! &gt;&gt;&gt;
-            </button>
+            </Link>
           </div>
           <div className="sm:w-full md:w-1/2 mb-10 px-4">
-            <button className="let-joinus-button2">
+            <Link to='/contact' className="let-joinus-button2">
               Buyers, shop the PoC platform! &gt;&gt;&gt;
-            </button>
+            </Link>
           </div>
         </div>
       </div>

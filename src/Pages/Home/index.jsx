@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import CATEN8logo_onTrans from '../../img/new/CATEN8logo_onTrans.png'
 import DenteonENDingLogo_stacked_outlines_blackChrome from '../../img/new/DenteonENDingLogo_stacked_outlines_blackChrome.png'
 import HV_HEIMDALLdata_vikingfire_chromeOutline from '../../img/new/HV_HEIMDALLdata_vikingfire_chromeOutline.png'
+import Anonybit from '../../img/new/Anonybit.png'
+import DC719jack from '../../img/new/DC719jack.png'
 import HV_PLEXtrac_LogoWithBlackOutline from '../../img/new/HV_PLEXtrac_LogoWithBlackOutline.png'
 import HV_PROCYON_BLUEoriginal from '../../img/new/HV_PROCYON_BLUEoriginal.png'
 import HV_NATsec_unicorn_stickercut_blackChrome from '../../img/new/HV_NATsec_unicorn_stickercut_blackChrome.png'
@@ -79,133 +81,75 @@ const index = () => {
             </div>
           </div>
           {/*  */}
-          <section className="text-gray-600 body-font container mx-auto ">
-            <div className="container py-4 mx-auto   ">
-              <div className="flex flex-wrap -m-4">
-                <div className="lg:w-1/5 md:w-1/2 p-4 w-full">
-                  <a className="blo ck relative h-48 rounded over -hidden">
-                    <img
-                      alt="CATEN8logo_onTrans"
-                      className="object-cover cursor-pointer object-center w-full h   "
-                      src={CATEN8logo_onTrans}
-                    // src="/img/"
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/5 md:w-1/2 p-4 w-full">
-                  <a className="bloc k relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full h- "
-                      src={DenteonENDingLogo_stacked_outlines_blackChrome}
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/5 md:w-1/2 p-4 w-full">
-                  <a className="b lock relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="objec t-cover object-ce nter w-full  "
-                      src={HV_HEIMDALLdata_vikingfire_chromeOutline}
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/5 md:w-1/2 p-4 w-full">
-                  <a className="blo ck relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full k"
-                      src={HV_PLEXtrac_LogoWithBlackOutline}
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/5 md:w-1/2 p-4 w-full">
-                  <a className="b lock relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full k"
-                      src={HV_PROCYON_BLUEoriginal}
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            className="text-gray-600 body-font container mx-auto  "
-            style={{ marginTop: "-65px" }}
-          >
-            <div className="container   mx-auto to   ">
-              <div className="flex justify-center  flex-wrap -m-4">
-                <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                  <a className="blo ck relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full mx-auto ck"
-                      src={HV_NATsec_unicorn_stickercut_blackChrome}
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                  <a className="blo ck relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full mx-auto ck"
-                      src={SPYDERswooshbat_PurpleBlue_onBlackChrome}
-                    />
-                  </a>
-                </div>
-                <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
-                  <a className="b lock relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="ecommerce"
-                      className="object-cover cursor-pointer object-center w-full mx-auto  k"
-                      src={HV_VIVAdere_CHROME}
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
+
+
           <div className='' style={{ background: `url(${gif1}) center center / cover no-repeat`, }}>
 
-            <section
-              className="text-gray-600 body-font container mx-auto "
-              style={{ marginTop: "-70px" }}
-            >
-              <div className="container   mx-auto to   ">
-                <div className="flex justify-center  flex-wrap -m-4">
-                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full ">
-                    <a className="blo ck relative h-48 rounded overflow-hidden">
-                      <img
-                        alt="ecommerce"
-                        className="object-cover cursor-pointer object-center w-full mx-auto ck"
-                        src={HVbsideslogointro}
-                      />
-                    </a>
-                  </div>
-                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full ccc">
-                    <a className="blo ck relative h-48 rounded overflow-hidden">
-                      <img
-                        alt="ecommerce"
-                        className="object-cover cursor-pointer object-center w-full mx-auto ck"
-                        src={SAEPiologo_stickercut}
-                      />
-                    </a>
-                  </div>
-                  <div className="lg:w-1/4 md:w-1/2 p-4 w-full ccc">
-                    <a className="b lock relative h-48 rounded overflow-hidden">
-                      <img
-                        alt="ecommerce"
-                        className="object-cover cursor-pointer object-center w-full mx-auto mt-20 k"
-                        src={BLUMIRAwordonlyChrome}
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </section>
+
           </div>
+
+
+
+
+          {/*  */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap- justify-center">
+
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={CATEN8logo_onTrans} alt="" />
+            </div>
+
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={DenteonENDingLogo_stacked_outlines_blackChrome} alt="" />
+            </div>
+
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={HV_VIVAdere_CHROME} alt="" />
+            </div>
+
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={HV_PROCYON_BLUEoriginal} alt="" />
+            </div>
+
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={HV_PLEXtrac_LogoWithBlackOutline} alt="" />
+            </div>
+          </div>
+          {/*    */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center -mt-6">
+            <div className="flex justify-center ">
+              <img className="h-auto max-w-full rounded-lg" src={Anonybit} alt="" />
+            </div>
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={SPYDERswooshbat_PurpleBlue_onBlackChrome} alt="" />
+            </div>
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={HV_HEIMDALLdata_vikingfire_chromeOutline} alt="" />
+            </div>
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={HV_NATsec_unicorn_stickercut_blackChrome} alt="" />
+            </div>
+            {/* Add more <div> elements for each image */}
+          </div>
+
+          {/*    */}
+          <div className="flex justify-center ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-ter -mt-24 p-16">
+
+            <div className="  justify-center ">
+              <img className="h-auto max-w-full rounded-lg" src={SAEPiologo_stickercut} alt="" />
+            </div>
+
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={DC719jack} alt="" />
+            </div>
+
+            <div className="flex justify-center">
+              <img className="h-auto max-w-full rounded-lg" src={SAEPiologo_stickercut} alt="" />
+            </div>
+
+          </div>
+          </div>
+
           <Quote />
 
           {/* two pics */}
@@ -268,9 +212,9 @@ const index = () => {
               <Index />
               <div className="col-md-12  ">
                 <Blogs />
-                <Spotify/>
-                <PodcastVideo/>
-               
+                <Spotify />
+                <PodcastVideo />
+
                 <Newsletter />
 
                 <Footer />
@@ -324,7 +268,7 @@ const index = () => {
           <img src={SideChat} />
         </div>
         <div className="video-cutter">
-          <img src={orb} alt="Your SVG Image" style={{height:"90px", width:"90px",marginTop:"-10px"}}  />
+          <img src={orb} alt="Your SVG Image" style={{ height: "90px", width: "90px", marginTop: "-10px" }} />
         </div>
       </div>
 
