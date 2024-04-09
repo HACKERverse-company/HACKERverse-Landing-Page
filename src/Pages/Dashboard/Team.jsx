@@ -10,7 +10,7 @@ import { Api } from '../../Api/Api';
 import toast, { Toaster } from 'react-hot-toast';
 import Loader from '../Loading'
 import Cookies from 'js-cookie';
-import { compress } from 'image-compressor.js'; // Import image compressor library
+import imageCompression from 'browser-image-compression';
 
 const Popup = ({ onClose, fetchTeams, setLoading, isLoading }) => {
 
@@ -41,10 +41,14 @@ const Popup = ({ onClose, fetchTeams, setLoading, isLoading }) => {
         }
         setLoading(true);
         try {
-            const compressedImage = await compress(selectedImage, {
-                quality: 0.6, // Adjust compression quality as needed
+            const options = {
                 maxSizeMB: 0.5,
-            });
+                maxWidthOrHeight: 800,
+                useWebWorker: true,
+            };
+
+            const compressedImage = await imageCompression(selectedImage, options);
+
 
 
         const reader = new FileReader();
