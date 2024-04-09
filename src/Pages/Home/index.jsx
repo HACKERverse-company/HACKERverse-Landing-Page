@@ -39,7 +39,7 @@ import redorbinsta from '../../img/redorb-insta.png'
 import redorbdiscord from '../../img/redorb-discord.png'
 import redorbreddit from '../../img/redorb-reddit.png'
 import redorbtwitch from '../../img/redorb-twitch.png'
-import gif1 from '../../img/gif.gif'
+import gif1 from '../../img/gif2.gif'
 const index = () => {
 
   return (
