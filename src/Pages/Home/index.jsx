@@ -136,7 +136,7 @@ const index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-ter -mt-24 p-16">
 
             <div className="  justify-center ">
-              <img className="h-auto max-w-full rounded-lg" src={SAEPiologo_stickercut} alt="" />
+              <img className="h-auto max-w-full rounded-lg" src={HVbsideslogointro} alt="" />
             </div>
 
             <div className="flex justify-center">
