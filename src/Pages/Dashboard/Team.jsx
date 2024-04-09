@@ -10,6 +10,7 @@ import { Api } from '../../Api/Api';
 import toast, { Toaster } from 'react-hot-toast';
 import Loader from '../Loading'
 import Cookies from 'js-cookie';
+import { compress } from 'image-compressor.js'; // Import image compressor library
 
 const Popup = ({ onClose, fetchTeams, setLoading, isLoading }) => {
 
@@ -33,12 +34,17 @@ const Popup = ({ onClose, fetchTeams, setLoading, isLoading }) => {
         }
     };
 
-    const handleAddTeam = () => {
+    const handleAddTeam =async () => {
         if (name == '' || !selectedImage || designation == '') {
             toast.error('Please fill all fields');
             return;
         }
         setLoading(true);
+        try {
+            const compressedImage = await compress(selectedImage, {
+                quality: 0.6, // Adjust compression quality as needed
+            });
+
 
         const reader = new FileReader();
         reader.onloadend = () => {
@@ -67,6 +73,11 @@ const Popup = ({ onClose, fetchTeams, setLoading, isLoading }) => {
                 });
         };
         reader.readAsDataURL(selectedImage); // Reading selected image as data URL
+    } catch (error) {
+        console.error('Error compressing image:', error);
+        setLoading(false);
+        toast.error('Failed to Add');
+    }
     };
 
 
