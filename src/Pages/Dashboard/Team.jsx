@@ -43,6 +43,7 @@ const Popup = ({ onClose, fetchTeams, setLoading, isLoading }) => {
         try {
             const compressedImage = await compress(selectedImage, {
                 quality: 0.6, // Adjust compression quality as needed
+                maxSizeMB: 0.5,
             });
 
 
