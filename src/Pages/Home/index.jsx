@@ -4,7 +4,7 @@ import DenteonENDingLogo_stacked_outlines_blackChrome from '../../img/new/Denteo
 import HV_HEIMDALLdata_vikingfire_chromeOutline from '../../img/new/HV_HEIMDALLdata_vikingfire_chromeOutline.png'
 import Anonybit from '../../img/new/Anonybit.png'
 import DC719jack from '../../img/new/DC719jack.png'
-import HV_PLEXtrac_LogoWithBlackOutline from '../../img/new/HV_PLEXtrac_LogoWithBlackOutline.png'
+import HV_PLEXtrac_LogoWithBlackOutline from '../../img/new/PlexTrac-Logo-Stacked-Purplex-White-Lettering-removebg-preview.png'
 import HV_PROCYON_BLUEoriginal from '../../img/new/HV_PROCYON_BLUEoriginal.png'
 import HV_NATsec_unicorn_stickercut_blackChrome from '../../img/new/HV_NATsec_unicorn_stickercut_blackChrome.png'
 import SPYDERswooshbat_PurpleBlue_onBlackChrome from '../../img/new/SPYDERswooshbat_PurpleBlue_onBlackChrome.png'
@@ -32,7 +32,7 @@ import PodcastVideo from './PodcastVideo'
 import Spotify from './Spotify'
 import SideChat from '../../img/support.svg'
 import orb from '../../img/orb/orb.gif'
-import orbmp4 from '../../img/orb/orb.webm'
+import orbmp4 from '../../img/orb/orb.gif'
 import orbtwitter from '../../img/twitter.png'
 import redorbyoutube from '../../img/redorb-youtube.png'
 import redorbinsta from '../../img/redorb-insta.png'
@@ -92,7 +92,7 @@ const index = () => {
 
 
           {/*  */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap- justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap- justify-center">
 
             <div className="flex justify-center">
               <img className="h-auto max-w-full rounded-lg" src={CATEN8logo_onTrans} alt="" />
@@ -115,7 +115,7 @@ const index = () => {
             </div>
           </div>
           {/*    */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center -mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 gap-10 justify-center -mt-6">
             <div className="flex justify-center ">
               <img className="h-auto max-w-full rounded-lg" src={Anonybit} alt="" />
             </div>
@@ -133,21 +133,21 @@ const index = () => {
 
           {/*    */}
           <div className="flex justify-center ">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-ter -mt-24 p-16">
+            <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-1 justify-ter -mt-24 p-16">
 
-            <div className="  justify-center ">
-              <img className="h-auto max-w-full rounded-lg" src={HVbsideslogointro} alt="" />
+              <div className="  justify-center ">
+                <img className="h-auto max-w-full rounded-lg" src={HVbsideslogointro} alt="" />
+              </div>
+
+              <div className="  justify-center">
+                <img className=" " src={DC719jack} alt="" />
+              </div>
+
+              <div className="flex justify-center">
+                <img className="h-auto max-w-full rounded-lg" src={SAEPiologo_stickercut} alt="" />
+              </div>
+
             </div>
-
-            <div className="flex justify-center">
-              <img className="h-auto max-w-full rounded-lg" src={DC719jack} alt="" />
-            </div>
-
-            <div className="flex justify-center">
-              <img className="h-auto max-w-full rounded-lg" src={SAEPiologo_stickercut} alt="" />
-            </div>
-
-          </div>
           </div>
 
           <Quote />
@@ -226,7 +226,7 @@ const index = () => {
         </div>
       </section>
 
-      <div className="speak">
+      <div className="speak"  >
         <div className="sup-icons-cont">
           <a href="https://discord.gg/hacer-rs-952244889192648775" target="_blank">
             <div className="sup-icon">
@@ -267,8 +267,9 @@ const index = () => {
         <div className="sup-rota">
           <img src={SideChat} />
         </div>
-        <div className="video-cutter">
-          <img src={orb} alt="Your SVG Image" style={{ height: "90px", width: "90px", marginTop: "-10px" }} />
+        <div className="video-cutter"  >
+          <img src={orbmp4} alt="Your GIF" />
+        
         </div>
       </div>
 

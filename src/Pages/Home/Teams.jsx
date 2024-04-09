@@ -63,6 +63,7 @@ useEffect(() => {
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src={member.pic}
+              loading="lazy" 
               alt={`${member.name}'s Avatar`}
             />
             <h3 className="mb-1 text-2xl font-medium tracking-tight  hover:text-black  ">

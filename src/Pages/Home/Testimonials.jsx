@@ -65,7 +65,7 @@ const Index = () => {
                 {Reviews.map((testimonial) => (
                     <div class="max-w-xl mt-12 mx-auto p-4 mb-40 cursor-pointer picbox1 rounded-2xl ">
                         <div class="flex flex-col items-center text-center ">
-                            <img src={testimonial.pic} class="w-28 h-28 rounded-full shadow-[0_2px_22px_-4px_rgba(93,96,127,0.6)] border-2 border-white" />
+                            <img src={testimonial.pic} loading="lazy"  class="w-28 h-28 rounded-full shadow-[0_2px_22px_-4px_rgba(93,96,127,0.6)] border-2 border-white" />
 
                             <div class="mt-4">
                                 <h4 class="text-sm font-extrabold text-white">{testimonial.name} </h4>
