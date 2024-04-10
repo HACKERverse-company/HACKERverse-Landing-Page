@@ -95,11 +95,11 @@ const index = () => {
           <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap- justify-center bg-black  ">
 
             <div className="flex justify-center">
-              <img className="h-auto max-w-full rounded-lg" src={CATEN8logo_onTrans} alt="" />
+              <img className="h-w-36 w-40 mt-3  rounded-lg" src={CATEN8logo_onTrans} alt="" />
             </div>
 
             <div className="flex justify-center">
-              <img className="h-auto max-w-full rounded-lg" src={DenteonENDingLogo_stacked_outlines_blackChrome} alt="" />
+              <img className="h-auto max-w-full rounded-lg " src={DenteonENDingLogo_stacked_outlines_blackChrome} alt="" />
             </div>
 
             <div className="flex justify-center">
@@ -140,7 +140,7 @@ const index = () => {
               </div>
 
               <div className="  justify-center">
-                <img className=" " src={DC719jack} alt="" />
+                <img className="h-64 w-64 ml-5 " src={DC719jack} alt="" />
               </div>
 
               <div className="flex justify-center">

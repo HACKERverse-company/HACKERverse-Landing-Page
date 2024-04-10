@@ -13,7 +13,7 @@ const TwoButtons = () => {
         <Link to='/contact' className="inline-flex border-0 py-2 px-4 rounded-full text-lg let-joinus-button1">Vendors, Join the PoC Revolution Now!</Link>
       </div>
       <div className="p-4 md:w-1/2 w-full">
-        <Link to='/contact' className="inline-flex border-0 py-2 px-4 rounded-full text-lg let-joinus-button2">Buyers, shop the PoC platform!</Link>
+        <Link to='/contact' className="inline-flex border-0 py-2 px-4 rounded-full text-white text-lg let-joinus-button2">Buyers, shop the PoC platform!</Link>
       </div>
     </div>
   </div>
