@@ -3,7 +3,7 @@ import gif1 from '../../img/gif2.gif'
 
 const Paragraph = () => {
   return (
-    <> <section className="text-gray-600 body-font" style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
+    <> <section className="text-gray-600 body-font bg-black  " style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
    
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap -mx-4 -mb-10 text-center">

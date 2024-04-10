@@ -46,7 +46,7 @@ const Index = () => {
     return (
         <>
            
-            <section className="">
+            <section className=" bg-black">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">
                     <div className="mx-auto   max-w-screen-sm ">
                         <h2 className="mb-2 text-4xl tracking-tight font-extrabold hover-underline text-white dark:text-white">
@@ -63,7 +63,7 @@ const Index = () => {
 
             <Carousel responsive={responsive} focusOnSelect={true}>
                 {Reviews.map((testimonial) => (
-                    <div class="max-w-xl mt-12 mx-auto p-4 mb-40 cursor-pointer picbox1 rounded-2xl ">
+                    <div class="max-w-xl mt-12 mx-auto p-4 mb-40 cursor-pointer picbox1 rounded-2xl bg-black">
                         <div class="flex flex-col items-center text-center ">
                             <img src={testimonial.pic} loading="lazy"  class="w-28 h-28 rounded-full shadow-[0_2px_22px_-4px_rgba(93,96,127,0.6)] border-2 border-white" />
 

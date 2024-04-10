@@ -62,7 +62,7 @@ const Index = () => {
             >
                 {Spotifys.map((member) => (
                     <>
-                            <section className="text-gray-600 body-font">
+                            <section className="text-gray-600 body-font bg-black">
                                 <div className="container px- py-[20px] mx-auto lg:p-32 md:p-32 p-2">
                                     {/* YouTube Video Embed */}
                                     <div className="relative overflow-hidden lg:pt-46 md:pt-46 pt-80">

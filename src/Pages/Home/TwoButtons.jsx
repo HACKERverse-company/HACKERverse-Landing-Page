@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const TwoButtons = () => {
   return (
-    <>    <div className="col-md-12 py-24" style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
+    <>    <div  className="col-md-12 py-24 bg-black rounded-full picbox1 mt-10 mb-10" style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
    
    
     <div className="content-area mt-5">

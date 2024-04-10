@@ -44,7 +44,7 @@ useEffect(() => {
 
   return (
     <>
-      <section className="">
+      <section className="bg-black">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">
           <div className="mx-auto   max-w-screen-sm ">
             <h2 className="mb-2 text-4xl tracking-tight font-extrabold hover-underline text-white dark:text-white">
@@ -59,7 +59,7 @@ useEffect(() => {
         focusOnSelect={true}
       >
         {Team.map((member) => (
-          <div key={member.id} className="text-center  hover:text-black text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl  hover:bg-[#a0ff00] picbox1 pt-[20px]">
+          <div key={member.id} className="text-center  bg-black hover:text-black text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl  hover:bg-[#a0ff00] picbox1 pt-[20px]">
             <img
               className="mx-auto mb-4 w-36 h-36 rounded-full"
               src={member.pic}

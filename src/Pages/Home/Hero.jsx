@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
   return (
     <>
-    <div className="banner-top">
+    <div className="banner-top bg-black  ">
       <div className="custom-container">
         <div className="logo">
           <a href="">

@@ -65,7 +65,7 @@ const Index = () => {
 
 
 
-            <section className="text-gray-600 body-font">
+            <section className="text-gray-600 body-font ">
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-wrap -m-4" id="blog-list">
                         {Blogs.length === 0 ? ( // Check if there are no Blogs
@@ -91,7 +91,7 @@ const Index = () => {
                                                 {member.title.split(' ').slice(0, 30).join(' ')}
                                                     {member.title.split(' ').length > 30 ? "..." : ""}
                                                 </h1>
-                                                <p className="leading-relaxed mb-3">
+                                                <p className="leading-relaxed mb-3 text-gray-600">
                                                     {htmlToPlainText(member.content.split(' ').slice(0, 10).join(' '))}
                                                     {htmlToPlainText(member.content.split(' ').length > 10 ? "..." : "")}
                                                 </p>

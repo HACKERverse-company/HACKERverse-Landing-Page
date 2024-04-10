@@ -65,7 +65,7 @@ const index = () => {
 
       <Hero />
 
-      <section className="white-theme" id="view-down">
+      <section className="white-th eme bg-black  " id="view-down">
         <div className="custom-container">
           <div className="row">
             <div className="col-md-12">
@@ -92,7 +92,7 @@ const index = () => {
 
 
           {/*  */}
-          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap- justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap- justify-center bg-black  ">
 
             <div className="flex justify-center">
               <img className="h-auto max-w-full rounded-lg" src={CATEN8logo_onTrans} alt="" />
@@ -115,7 +115,7 @@ const index = () => {
             </div>
           </div>
           {/*    */}
-          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 gap-10 justify-center -mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 gap-10 justify-center -mt-6 bg-black  ">
             <div className="flex justify-center ">
               <img className="h-auto max-w-full rounded-lg" src={Anonybit} alt="" />
             </div>
@@ -132,7 +132,7 @@ const index = () => {
           </div>
 
           {/*    */}
-          <div className="flex justify-center ">
+          <div className="flex justify-center bg-black   ">
             <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-1 justify-ter -mt-24 p-16">
 
               <div className="  justify-center ">
@@ -153,7 +153,7 @@ const index = () => {
           <Quote />
 
           {/* two pics */}
-          <div className="col-md-12 py-10">
+          <div className="col-md-12 py-10 bg-black  ">
             <div className="content-are">
               <article>
                 <div className="primary-heading">
@@ -226,7 +226,7 @@ const index = () => {
         </div>
       </section>
 
-      <div className="speak"  >
+      <div className="speak   "  >
         <div className="sup-icons-cont">
           <a href="https://discord.gg/hacer-rs-952244889192648775" target="_blank">
             <div className="sup-icon">
@@ -269,7 +269,7 @@ const index = () => {
         </div>
         <div className="video-cutter"  >
           <img src={orbmp4} alt="Your GIF" />
-        
+
         </div>
       </div>
 
