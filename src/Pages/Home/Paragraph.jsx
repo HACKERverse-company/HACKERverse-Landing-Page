@@ -1,5 +1,6 @@
 import React from 'react'
 import gif1 from '../../img/gif2.gif'
+import { Link } from 'react-router-dom'
 
 const Paragraph = () => {
   return (
@@ -51,6 +52,9 @@ const Paragraph = () => {
             practitioners and security team leaders.
           </p>
         </div>
+      </div>
+    <div className="caption-area text-center bg-transparent mt-24 mb-24 ">
+        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >  Bug Out in the HACKERverse®</Link>
       </div>
     </div>
   </section></>

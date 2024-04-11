@@ -61,7 +61,7 @@ const Contact = () => {
 
                             <h1 className="mt-2 text-2xl font-semibold  md:text-3xl text-white">We’d love to hear from you</h1>
 
-                            <p className="mt-3 text-gray-400">Chat to our friendly team.</p>
+                            <p className="mt-3 text-gray-400"></p>
                         </div>
 
                         <img className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96 picbox1" src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=100" alt="" />

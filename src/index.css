@@ -5187,6 +5187,17 @@ textarea.form-control-lg {
     border-width: 0.5rem 0 0.5rem 0.5rem;
     border-left-color: #fff; }
 
+body{
+cursor: pointer;
+outline: none;
+text-decoration: none;
+}
+body:focus,
+body:hover {
+  /* Remove the outline on focus and add hover styles */
+  outline: none;
+  /* Optionally, you can add hover styles here */
+}
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;

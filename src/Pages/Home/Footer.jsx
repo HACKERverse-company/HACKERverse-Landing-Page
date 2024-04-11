@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="mx-auto w-full max-w-screen-xl p-4 ">
       <div className="md:flex md:justify-between">
         <div className="mb-6 md:mb-0">
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img
               src={logo}
               className="h-8 me-3"
@@ -41,12 +41,12 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <a href="#" className="hover:underline ">
+                <a href="/" className="hover:underline ">
                   Github
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a href="/" className="hover:underline">
                   Discord
                 </a>
               </li>
@@ -77,7 +77,7 @@ const Footer = () => {
         </span>
         <div className="flex mt-4 sm:justify-center sm:mt-0">
           <a
-            href="#"
+            href="https://www.reddit.com/u/theHACKERverse/"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
@@ -94,7 +94,7 @@ const Footer = () => {
             <span className="sr-only">Reddit page</span>
           </a>
           <a
-            href="#"
+            href="https://www.twitch.tv/thehackerverse"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
           >
             <svg
@@ -111,7 +111,7 @@ const Footer = () => {
             <span className="sr-only">Twitch community</span>
           </a>
           <a
-            href="#"
+            href="https://twitter.com/_HACKERverse_"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
           >
             <svg
@@ -130,7 +130,7 @@ const Footer = () => {
             <span className="sr-only">Twitter page</span>
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@theHACKERverse"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
           >
             <svg
@@ -146,7 +146,7 @@ const Footer = () => {
             <span className="sr-only">YouTube account</span>
           </a>
           <a
-            href="#"
+            href="https://discord.gg/hacer-rs-952244889192648775"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
           >
             <svg

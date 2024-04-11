@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import axios from 'axios';
 import { Api } from '../../Api/Api';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
     const [reviews, setReviews] = useState([]);
@@ -68,9 +69,9 @@ const Index = () => {
             {isLoading ? (
                 <div className="loader">Loading...</div>
             ) : (
-                <Carousel ref={carouselRef} responsive={responsive} focusOnSelect={true} draggable={false} swipeable={false}>
+                <Carousel ref={carouselRef} responsive={responsive} focusOnSelect={true}    >
                     {reviews.map((testimonial, index) => (
-                        <div key={index} className="max-w-xl mt-12 mx-auto p-4 mb-40 cursor-pointer picbox1 rounded-2xl bg-transparent">
+                        <div key={index} className="max-w-xl mt-12 mx-auto p-4 mb-14 cursor-pointer picbox1 rounded-2xl bg-transparent">
                             <div className="flex flex-col items-center text-center">
                                 <img src={testimonial.pic} loading="lazy" className="w-28 h-28 rounded-full shadow-[0_2px_22px_-4px_rgba(93,96,127,0.6)] " alt={testimonial.name} />
                                 <div className="mt-4">
@@ -85,6 +86,9 @@ const Index = () => {
                     ))}
                 </Carousel>
             )}
+            <div className="caption-area text-center bg-transparent  - mb-24 ">
+        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >Surf the HACKERverse® </Link>
+      </div>
         </>
     );
 };

@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import axios from 'axios';
 import { Api } from '../../Api/Api';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [Team, setTeam] = useState([]);
@@ -58,7 +59,7 @@ const Index = () => {
       <section className="bg-black">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:px-6 ">
           <div className="mx-auto max-w-screen-sm ">
-            <h2 className="mb-2 text-4xl tracking-tight font-extrabold hover-underline text-white dark:text-white">
+            <h2 className="mb-2 text-4xl cursor-pointer tracking-tight font-extrabold hover-underline text-white dark:text-white">
               Our team
             </h2>
           </div>
@@ -69,6 +70,7 @@ const Index = () => {
         responsive={responsive}
         ref={carouselRef}
         focusOnSelect={true}
+        direction="rtl" // Change direction to "rtl" for right-to-left rotation
       >
         {Team.map((member) => (
           <div key={member.id} className="text-center bg-black hover:text-black text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl hover:bg-[#a0ff00] picbox1 pt-[20px]">
@@ -88,6 +90,9 @@ const Index = () => {
           </div>
         ))}
       </Carousel>;
+      <div className="caption-area text-center bg-transparent  mt-5 mb-24 ">
+        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >Prowl the HACKERverse® </Link>
+      </div>
     </>
   );
 };

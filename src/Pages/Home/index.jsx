@@ -40,6 +40,7 @@ import redorbdiscord from '../../img/redorb-discord.png'
 import redorbreddit from '../../img/redorb-reddit.png'
 import redorbtwitch from '../../img/redorb-twitch.png'
 import gif1 from '../../img/gif2.gif'
+import { Link } from 'react-router-dom'
 const index = () => {
 
   return (
@@ -132,7 +133,7 @@ const index = () => {
           </div>
 
           {/*    */}
-          <div className="flex justify-center  bg-transparent    ">
+          <div className="flex justify-center  bg-transparent   ">
             <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-1 justify-ter -mt-24 p-16">
 
               <div className="  justify-center ">
@@ -149,6 +150,10 @@ const index = () => {
 
             </div>
           </div>
+            <div className="caption-area text-center bg-transparent pb-24  ">
+        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' > Submerge into the HACKERverse®</Link>
+      </div>
+
 
           <Quote />
 
@@ -181,6 +186,9 @@ const index = () => {
                 </div>
               </div>
             </section>
+                <div className="caption-area text-center bg-transparent mt-20  ">
+        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' > Skull Jack the HACKERverse® </Link>
+      </div>
             {/*  */}
             {/*  */}
             <div className="col-md-12 py-10">
@@ -206,7 +214,11 @@ const index = () => {
                   </div>
                 </div>
               </section>
-              <TwoButtons />
+              <div className="caption-area text-center bg-transparent mt-24  ">
+        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >  Immerse yourself in the HACKERverse® </Link>
+      </div>
+      
+              {/* <TwoButtons /> */}
               <Paragraph />
               <Testimonials />
               <Index />

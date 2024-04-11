@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import BLUMIRApocscreen from '../../img/new/BLUMIRApocscreen (1).jpg'
 import axios from 'axios';
 import { Api } from '../../Api/Api';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
     // Dummy data representing team members
@@ -81,6 +82,9 @@ const Index = () => {
                     </>
                 ))}
             </Carousel>;
+            <div className="caption-area text-center bg-transparent  mt-3 mb-24 ">
+        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >Brain Melt in the HACKERverse® </Link>
+      </div>
         </>
     );
 };
