@@ -105,7 +105,7 @@ useEffect(() => {
     return (
         <>
             {loading ? <Loader text="please Wait" /> : null}
-            <section className={`flex h-screen flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ${theme == 'dark' ? 'bg-black' : theme == 'blueNasay' ? 'bg-blue-100' : "bg-white"}`}>
+            <section className={`flex h-screen flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0 ${theme == 'dark' ? ' bg-transparent ' : theme == 'blueNasay' ? 'bg-blue-100' : "bg-white"}`}>
                 <a href="#" className={`flex items-center mb-6 text-2xl font-semibold text-${theme === 'dark' ? 'gray-300' : 'gray-900'} dark:text-white`}>
                     <img className={`w-12 h-12 mr-2 bg-${theme === 'dark' ? 'slate-700' : 'slate-300'} rounded-full p-2`} src={bot} alt="logo" /> AI Banker
                 </a>

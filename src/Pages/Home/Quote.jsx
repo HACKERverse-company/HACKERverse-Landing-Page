@@ -3,7 +3,7 @@ import gif1 from '../../img/gif2.gif'
 const Quote = () => {
   return (
     <>     
-     <section className="text-gray-600 body-font bg-black" style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
+     <section className="text-gray-600 body-font  bg-transparent " style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
     <div className="container px- py-24 mx-auto">
       <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
         <svg

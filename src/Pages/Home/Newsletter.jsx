@@ -25,7 +25,7 @@ const Newsletter = () => {
     };
   }, []);
   return (
-    <>  <section className=" bg-black  " style={{ marginTop: 50, }}>
+    <>  <section className="  bg-transparent   " style={{ marginTop: 50, }}>
       <div className=" px-4 mx-auto max-w-screen-xl  lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold leading-tight text-gray-300  hover-underline">

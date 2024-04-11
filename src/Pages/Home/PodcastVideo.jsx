@@ -47,7 +47,7 @@ const Index = () => {
         <>
            
 
-            <section className=" bg-black  ">
+            <section className="  bg-transparent   ">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">
                     <div className="mx-auto   max-w-screen-sm ">
                         <h2 className="mb-2 text-4xl tracking-tight font-extrabold hover-underline text-white dark:text-white">
@@ -62,10 +62,10 @@ const Index = () => {
             >
                 {Vodcasts.map((member) => (
                     <>
-                        <section className="text-gray-600 body-font bg-black  ">
-                            <div className="container px- py-[20px] mx-auto lg:p-32 md:p-32 p-2 picbox1 bg-black rounded-3xl">
+                        <section className="text-gray-600 body-font  bg-transparent   ">
+                            <div className="container px- py-[20px] mx-auto lg:p-32 md:p-32 p-2 picbox1  bg-transparent  rounded-3xl">
                                 {/* YouTube Video Embed */}
-                                <div className="relative picbox1 bg-black rounded-3xl" style={{ paddingTop: "56.25%" }}>
+                                <div className="relative picbox1  bg-transparent  rounded-3xl" style={{ paddingTop: "56.25%" }}>
                                     {/* Replace 'VIDEO_ID' with your YouTube video ID */}
                                     <iframe
                                         className="absolute inset-0 w-full h-full rounded-3xl lg:p-32 md:p-32 p-2 picbox1"

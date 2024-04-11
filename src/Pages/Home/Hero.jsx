@@ -2,11 +2,12 @@ import React from 'react'
 import demos from '../../img/demos-icon.svg'
 import logo from '../../img/logo.svg'
 import { Link } from 'react-router-dom'
+import gif1 from '../../img/gif2.gif'
 
 const Hero = () => {
   return (
     <>
-    <div className="banner-top bg-black  ">
+    <div className="banner-top  bg-transparent  mb-10   " style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
       <div className="custom-container">
         <div className="logo">
           <a href="">
@@ -35,6 +36,7 @@ const Hero = () => {
             >
               Join the PoC Revolution Now!
             </Link>
+            
           </div>
         </div>
         <a href="#view-down" className="scroll-down" address="true" />

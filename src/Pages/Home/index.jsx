@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import CATEN8logo_onTrans from '../../img/new/CATEN8logo_onTrans.png'
 import DenteonENDingLogo_stacked_outlines_blackChrome from '../../img/new/DenteonENDingLogo_stacked_outlines_blackChrome.png'
-import HV_HEIMDALLdata_vikingfire_chromeOutline from '../../img/new/HV_HEIMDALLdata_vikingfire_chromeOutline.png'
+import HV_HEIMDALLdata_vikingfire_chromeOutline from '../../img/new/HEIMDALLdata_vikingfire_chromeOutline2.png'
 import Anonybit from '../../img/new/Anonybit.png'
 import DC719jack from '../../img/new/DC719jack.png'
 import HV_PLEXtrac_LogoWithBlackOutline from '../../img/new/PlexTrac-Logo-Stacked-Purplex-White-Lettering-removebg-preview.png'
@@ -14,7 +14,7 @@ import SAEPiologo_stickercut from '../../img/new/SAEPiologo_stickercut.png'
 import BLUMIRAwordonlyChrome from '../../img/new/BLUMIRAwordonlyChrome.png'
 import BLUMIRApocscreen from '../../img/new/SENTEONpocscreen.jpg'
 import demos from '../../img/demos-icon.svg'
-import HV_NEW_AI_Machine from '../../img/new/HV_NEW_AI_Machine_blues.png'
+import HV_NEW_AI_Machine from '../../img/new/HV_NEW_AI_Machine_blues (1).png'
 import CRAIG from '../../img/new/CRAIG.jpg'
 import MARIANA from '../../img/new/MARIANA.jpg'
 import SPYDERswooshbat from '../../img/new/SPYDERswooshbat_PurpleBlue_onBlackChrome.png'
@@ -65,7 +65,7 @@ const index = () => {
 
       <Hero />
 
-      <section className="white-th eme bg-black  " id="view-down">
+      <section className="white-th eme  bg-transparent   " id="view-down">
         <div className="custom-container">
           <div className="row">
             <div className="col-md-12">
@@ -92,10 +92,10 @@ const index = () => {
 
 
           {/*  */}
-          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap- justify-center bg-black  ">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 gap- justify-center  bg-transparent   ">
 
             <div className="flex justify-center">
-              <img className="h-w-36 w-40 mt-3  rounded-lg" src={CATEN8logo_onTrans} alt="" />
+              <img className="h-auto max-w-full   rounded-lg" src={CATEN8logo_onTrans} alt="" />
             </div>
 
             <div className="flex justify-center">
@@ -115,7 +115,7 @@ const index = () => {
             </div>
           </div>
           {/*    */}
-          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 gap-10 justify-center -mt-6 bg-black  ">
+          <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-4 gap-10 justify-center -mt-6  bg-transparent   ">
             <div className="flex justify-center ">
               <img className="h-auto max-w-full rounded-lg" src={Anonybit} alt="" />
             </div>
@@ -132,7 +132,7 @@ const index = () => {
           </div>
 
           {/*    */}
-          <div className="flex justify-center bg-black   ">
+          <div className="flex justify-center  bg-transparent    ">
             <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-1 justify-ter -mt-24 p-16">
 
               <div className="  justify-center ">
@@ -140,7 +140,7 @@ const index = () => {
               </div>
 
               <div className="  justify-center">
-                <img className="h-64 w-64 ml-5 " src={DC719jack} alt="" />
+                <img className="h-auto max-w-full  " src={DC719jack} alt="" />
               </div>
 
               <div className="flex justify-center">
@@ -153,7 +153,7 @@ const index = () => {
           <Quote />
 
           {/* two pics */}
-          <div className="col-md-12 py-10 bg-black  ">
+          <div className="col-md-12 py-10  bg-transparent   ">
             <div className="content-are">
               <article>
                 <div className="primary-heading">

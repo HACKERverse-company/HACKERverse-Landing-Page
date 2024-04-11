@@ -3,7 +3,7 @@ import gif1 from '../../img/gif2.gif'
 
 const Paragraph = () => {
   return (
-    <> <section className="text-gray-600 body-font bg-black  " style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
+    <> <section className="text-gray-600 body-font  bg-transparent   " style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
    
     <div className="container px-5 py-24 mx-auto">
       <div className="flex flex-wrap -mx-4 -mb-10 text-center">
@@ -48,7 +48,7 @@ const Paragraph = () => {
           </h2>
           <p className="leading-relaxed text-base font-medium px-16">
             Our thriving HACKERverse® community gives you access to 5,000
-            practitioners and security team leaders. .
+            practitioners and security team leaders.
           </p>
         </div>
       </div>

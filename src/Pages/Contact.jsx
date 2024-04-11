@@ -47,7 +47,7 @@ const Contact = () => {
     }, []);
     return (
         <>
-            <div className='container mx-auto relative bg-black'>
+            <div className='container mx-auto relative  bg-transparent '>
                 <Link to="/" class="flex items-center absolute top-16 left-4 z-50 bg-slate-700 p-1 rounded-full pr-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
