@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useState,useRef} from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import BLUMIRApocscreen from '../../img/new/BLUMIRApocscreen (1).jpg'
@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 const Index = () => {
     const [Vodcasts, setVodcasts] = useState([]);
 
+    const carouselRef = useRef(null);
   
     const responsive = {
         superLargeDesktop: {
@@ -44,6 +45,19 @@ const Index = () => {
         fetchVodcasts();
     }, []);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+          if (carouselRef.current) {
+            const nextSlide = carouselRef.current.state.currentSlide + 1;
+            const totalSlides = carouselRef.current.state.totalItems;
+            const resetIndex = nextSlide >= totalSlides ? 0 : nextSlide;
+            carouselRef.current.goToSlide(resetIndex);
+          }
+        }, 8000); // Adjust the interval time (in milliseconds) as needed
+    
+        return () => clearInterval(interval);
+      }, []);
+
     return (
         <>
            
@@ -60,6 +74,8 @@ const Index = () => {
 
             <Carousel responsive={responsive}
                 focusOnSelect={true}
+        ref={carouselRef}
+
             >
                 {Vodcasts.map((member) => (
                     <>

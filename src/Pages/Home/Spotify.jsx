@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react';
+import React,{useEffect,useState,useRef} from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import BLUMIRApocscreen from '../../img/new/BLUMIRApocscreen (1).jpg'
@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 const Index = () => {
     // Dummy data representing team members
     const [Spotifys, setSpotifys] = useState([]);
+    const carouselRef = useRef(null);
 
     const responsive = {
         superLargeDesktop: {
@@ -44,6 +45,18 @@ const Index = () => {
         fetchSpotifys();
     }, []);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+          if (carouselRef.current) {
+            const nextSlide = carouselRef.current.state.currentSlide + 1;
+            const totalSlides = carouselRef.current.state.totalItems;
+            const resetIndex = nextSlide >= totalSlides ? 0 : nextSlide;
+            carouselRef.current.goToSlide(resetIndex);
+          }
+        }, 10000); // Adjust the interval time (in milliseconds) as needed
+    
+        return () => clearInterval(interval);
+      }, []);
     return (
         <>
            
@@ -60,13 +73,15 @@ const Index = () => {
 
             <Carousel responsive={responsive}
                 focusOnSelect={true}
+        ref={carouselRef}
+
             >
                 {Spotifys.map((member) => (
                     <>
                             <section className="text-gray-600 body-font  bg-transparent ">
-                                <div className="container px- py-[20px] mx-auto lg:p-32 md:p-32 p-2">
+                                <div className="container px- py-[20px] mx-auto picbox1 rounded-3xl  lg:p-32 md:p-32 p-2">
                                     {/* YouTube Video Embed */}
-                                    <div className="relative overflow-hidden lg:pt-46 md:pt-46 pt-80">
+                                    <div className="relative  picbox1 rounded-3xl overflow-hidden lg:pt-46 md:pt-46 pt-80">
  
 
                                         {/* Replace 'VIDEO_ID' with your YouTube video ID */}

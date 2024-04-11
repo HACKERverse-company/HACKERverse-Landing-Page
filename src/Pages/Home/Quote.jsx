@@ -1,5 +1,5 @@
 import React from 'react'
-import gif1 from '../../img/gif2.gif'
+import gif1 from '../../img/new/gif1.gif'
 const Quote = () => {
   return (
     <>     

@@ -1,8 +1,8 @@
 import React from 'react'
 import demos from '../../img/demos-icon.svg'
-import logo from '../../img/logo.svg'
+import logo from '../../img/HV_horizatonal_website_logo.png'
 import { Link } from 'react-router-dom'
-import gif1 from '../../img/gif2.gif'
+import gif1 from '../../img/new/gif.gif'
 import CategoryCreator from '../../img/new/MOCKEDupgoldwhite2.png'
 
 const Hero = () => {
@@ -12,11 +12,11 @@ const Hero = () => {
         <div className="custom-container">
           <div className="logo">
             <a href="">
-              <img src={logo} alt="" />
+              <img src={logo} alt="" className='mb-5' />
               <img src={CategoryCreator} alt="" />
             </a>
           </div>
-          <div className="bnr-sec -mt-20 ">
+          <div className="bnr-sec -mt-[100px]">
             <div className="caption-area text-center">
               <div className="demos-btn">
                 <span className="ico">

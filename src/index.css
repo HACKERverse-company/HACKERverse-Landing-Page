@@ -5186,18 +5186,7 @@ textarea.form-control-lg {
     right: 1px;
     border-width: 0.5rem 0 0.5rem 0.5rem;
     border-left-color: #fff; }
-
-body{
-cursor: pointer;
-outline: none;
-text-decoration: none;
-}
-body:focus,
-body:hover {
-  /* Remove the outline on focus and add hover styles */
-  outline: none;
-  /* Optionally, you can add hover styles here */
-}
+ 
 .popover-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
@@ -9139,7 +9128,7 @@ footer{background-color:#0d0d0d;position:relative;padding-top:80px;margin-top:15
     width: 105px;
   }
   .speak {
-    right: 30px;
+    left: -20px;
     bottom: -50px;
   }
   .sup-rota {

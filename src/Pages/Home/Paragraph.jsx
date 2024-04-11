@@ -1,5 +1,5 @@
 import React from 'react'
-import gif1 from '../../img/gif2.gif'
+import gif1 from '../../img/new/gif.gif'
 import { Link } from 'react-router-dom'
 
 const Paragraph = () => {

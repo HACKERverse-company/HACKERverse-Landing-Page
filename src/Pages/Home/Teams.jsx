@@ -49,7 +49,7 @@ const Index = () => {
         const resetIndex = nextSlide >= totalSlides ? 0 : nextSlide;
         carouselRef.current.goToSlide(resetIndex);
       }
-    }, 5000); // Adjust the interval time (in milliseconds) as needed
+    }, 8000); // Adjust the interval time (in milliseconds) as needed
 
     return () => clearInterval(interval);
   }, []);

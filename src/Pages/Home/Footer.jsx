@@ -24,12 +24,12 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <Link to="/" className="hover:underline">
+                <Link to="/" className="hover:underline hover:text-white">
                 HACKERverse®
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:underline">
+                <Link to="/contact" className="hover:underline hover:text-white">
                 Contact us
                 </Link>
               </li>
@@ -41,12 +41,12 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <a href="/" className="hover:underline ">
+                <a href="/" className="hover:underline hover:text-white">
                   Github
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:underline">
+                <a href="/" className="hover:underline hover:text-white">
                   Discord
                 </a>
               </li>
@@ -58,12 +58,12 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-500 dark:text-gray-400 font-medium">
               <li className="mb-4">
-                <Link to="/privacyAndPolicy" className="hover:underline">
+                <Link to="/privacyAndPolicy" className="hover:underline hover:text-white">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/t&C" className="hover:underline">
+                <Link to="/t&C" className="hover:underline hover:text-white">
                   Terms &amp; Conditions
                 </Link>
               </li>
@@ -78,14 +78,14 @@ const Footer = () => {
         <div className="flex mt-4 sm:justify-center sm:mt-0">
           <a
             href="https://www.reddit.com/u/theHACKERverse/"
-            className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            className="text-gray-500 hover:text-red-100 dar k:hover:text-white"
           >
             <svg
               xmlns="https://www.reddit.com/u/theHACKERverse/"
               width={16}
               height={16}
               fill="currentColor"
-              className="bi bi-reddit"
+              className="bi bi-reddit "
               viewBox="0 0 16 16"
             >
               <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z" />

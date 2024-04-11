@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
-import CATEN8logo_onTrans from '../../img/new/CATEN8logo_onTrans.png'
+import CATEN8logo_onTrans from '../../img/new/CATEN8logo_onTrans2.png'
 import DenteonENDingLogo_stacked_outlines_blackChrome from '../../img/new/DenteonENDingLogo_stacked_outlines_blackChrome.png'
 import HV_HEIMDALLdata_vikingfire_chromeOutline from '../../img/new/HEIMDALLdata_vikingfire_chromeOutline2.png'
 import Anonybit from '../../img/new/Anonybit.png'
-import DC719jack from '../../img/new/DC719jack.png'
-import HV_PLEXtrac_LogoWithBlackOutline from '../../img/new/PlexTrac-Logo-Stacked-Purplex-White-Lettering-removebg-preview.png'
-import HV_PROCYON_BLUEoriginal from '../../img/new/HV_PROCYON_BLUEoriginal.png'
+import DC719jack from '../../img/new/DC719jack2.png'
+import HV_PLEXtrac_LogoWithBlackOutline from '../../img/new/PlexTrac-Logo-Stacked-Purplex-White-Lettering2.png'
+import HV_PROCYON_BLUEoriginal from '../../img/new/PROCYON_BLUEoriginal2.png'
 import HV_NATsec_unicorn_stickercut_blackChrome from '../../img/new/HV_NATsec_unicorn_stickercut_blackChrome.png'
 import SPYDERswooshbat_PurpleBlue_onBlackChrome from '../../img/new/SPYDERswooshbat_PurpleBlue_onBlackChrome.png'
 import HV_VIVAdere_CHROME from '../../img/new/HV_VIVAdere_CHROME.png'
@@ -39,8 +39,9 @@ import redorbinsta from '../../img/redorb-insta.png'
 import redorbdiscord from '../../img/redorb-discord.png'
 import redorbreddit from '../../img/redorb-reddit.png'
 import redorbtwitch from '../../img/redorb-twitch.png'
-import gif1 from '../../img/gif2.gif'
+import gif1 from '../../img/new/gif1.gif'
 import { Link } from 'react-router-dom'
+import DialogflowMessenger from '../DialogFlow'
 const index = () => {
 
   return (
@@ -133,7 +134,7 @@ const index = () => {
           </div>
 
           {/*    */}
-          <div className="flex justify-center  bg-transparent   ">
+          <div className="flex  bg-transparent   ">
             <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-1 justify-ter -mt-24 p-16">
 
               <div className="  justify-center ">
@@ -144,9 +145,10 @@ const index = () => {
                 <img className="h-auto max-w-full  " src={DC719jack} alt="" />
               </div>
 
-              <div className="flex justify-center">
-                <img className="h-auto max-w-full rounded-lg" src={SAEPiologo_stickercut} alt="" />
-              </div>
+              <div className="flex justify-center items-start">
+    <img className="h-auto max-w-full rounded-lg" src={SAEPiologo_stickercut} alt="" />
+</div>
+
 
             </div>
           </div>
@@ -230,6 +232,7 @@ const index = () => {
                 <Newsletter />
 
                 <Footer />
+                <DialogflowMessenger/>
                 <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/966f7b93-5e51-4195-86e2-96bd13ed377e"></iframe>
 
               </div>

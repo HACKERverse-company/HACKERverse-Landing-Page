@@ -2,7 +2,7 @@ import React from 'react'
 import demos from '../../img/demos-icon.svg'
 import logo from '../../img/logo.svg'
 import { Link } from 'react-router-dom'
-import gif1 from '../../img/gif2.gif'
+import gif1 from '../../img/new/gif.gif'
 
 const Hero = () => {
   return (
