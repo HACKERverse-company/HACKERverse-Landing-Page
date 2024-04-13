@@ -240,7 +240,7 @@ const index = () => {
           </div>
         </div>
       </section>
-
+{/* 
       <div className="speak   "  >
         <div className="sup-icons-cont">
           <a href="https://discord.gg/hacer-rs-952244889192648775" target="_blank">
@@ -273,11 +273,7 @@ const index = () => {
               <img src={orbtwitter} />
             </div>
           </a>
-          {/* <a href="https://www.pinterest.com/thehackerverse/" target="_blank">
-    <div class="sup-icon">
-      <img src="img/pinterest.svg">
-    </div>
-  </a>         */}
+    
         </div>
         <div className="sup-rota">
           <img src={SideChat} />
@@ -286,7 +282,7 @@ const index = () => {
           <img src={orbmp4} alt="Your GIF" />
 
         </div>
-      </div>
+      </div> */}
 
     </>
   )
