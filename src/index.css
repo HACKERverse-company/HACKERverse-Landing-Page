@@ -8973,7 +8973,7 @@ footer{background-color:#0d0d0d;position:relative;padding-top:80px;margin-top:15
   width: 100px;
   height: 100px;
   position: fixed;
-  right: 60px;
+  left: 20px;
   bottom: 0px;
   transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
