@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import React, { Suspense, lazy } from 'react';
 import CATEN8logo_onTrans from '../../img/new/CATEN8logo_onTrans3.png'
 import DenteonENDingLogo_stacked_outlines_blackChrome from '../../img/new/DenteonENDingLogo_stacked_outlines_blackChrome.png'
 import HV_HEIMDALLdata_vikingfire_chromeOutline from '../../img/new/HEIMDALLdata_vikingfire_chromeOutline2.png'
@@ -13,16 +14,6 @@ import HVbsideslogointro from '../../img/new/HV-bsides-logo-intro.png'
 import SAEPiologo_stickercut from '../../img/new/SAEPiologo_stickercut.png'
 import BLUMIRApocscreen from '../../img/new/SENTEONpocscreen.jpg'
 import gif1 from '../../img/new/gif1.gif'
-import Index from './Teams'
-import Blogs from './Blogs'
-import Testimonials from './Testimonials'
-import Newsletter from './Newsletter'
-import Paragraph from './Paragraph'
-import Footer from './Footer'
-import Quote from './Quote'
-import Hero from './Hero'
-import PodcastVideo from './PodcastVideo'
-import Spotify from './Spotify'
 import SideChat from '../../img/support.svg'
 import orbmp4 from '../../img/orb/orb.gif'
 import orbtwitter from '../../img/twitter.png'
@@ -32,6 +23,16 @@ import redorbdiscord from '../../img/redorb-discord.png'
 import redorbreddit from '../../img/redorb-reddit.png'
 import redorbtwitch from '../../img/redorb-twitch.png'
 import HV_NEW_AI_Machine from '../../img/new/HV_NEW_AI_Machine_blues (1).png'
+const Hero = lazy(() => import('./Hero'));
+const Paragraph = lazy(() => import('./Paragraph'));
+const Testimonials = lazy(() => import('./Testimonials'));
+const Blogs = lazy(() => import('./Blogs'));
+const Spotify = lazy(() => import('./Spotify'));
+const PodcastVideo = lazy(() => import('./PodcastVideo'));
+const Newsletter = lazy(() => import('./Newsletter'));
+const Footer = lazy(() => import('./Footer'));
+const Index = lazy(() => import('./Teams'));
+const Quote = lazy(() => import('./Quote'));
 
 const index = () => {
 
@@ -151,17 +152,22 @@ const index = () => {
               <div className="caption-area text-center bg-transparent mt-24">
                 <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]" target='_blank'>Immerse yourself in the HACKERverse®</Link>
               </div>
+              <Suspense fallback={<div>Loading...</div>}>
 
               <Paragraph />
               <Testimonials />
               <Index />
+              </Suspense>
 
               <div className="col-md-12">
+              <Suspense fallback={<div>Loading...</div>}>
+
                 <Blogs />
                 <Spotify />
                 <PodcastVideo />
                 <Newsletter />
                 <Footer />
+              </Suspense>
               </div>
             </div>
           </div>
