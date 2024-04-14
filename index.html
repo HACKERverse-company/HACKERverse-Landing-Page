@@ -14,15 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/logogreen.png" type="image/x-icon" />
 
-  <link rel="stylesheet"
-    href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-  <!-- APP CSS -->
-  <df-messenger class="" location="us-central1" project-id="tidal-triumph-412112"
-    agent-id="a2e73aa4-fdd7-4bc6-897f-9fa17585b146" language-code="en" max-query-length="-1">
-    <df-messenger-chat-bubble chat-title="POCBOT">
-    </df-messenger-chat-bubble>
-  </df-messenger>
-
+  <!-- Critical CSS inline -->
   <style>
     :root {
       --df-messenger-font-family: "Roboto", sans-serif;
@@ -67,7 +59,32 @@
       right: 16px;
     }
   </style>
-  <title>HACKERverse®</title>
+
+  <!-- Defer non-critical CSS -->
+  <script>
+    var loadDeferredStyles = function () {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement);
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+  <noscript>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  </noscript>
+
+  <!-- APP CSS -->
+  <df-messenger class="" location="us-central1" project-id="tidal-triumph-412112"
+    agent-id="a2e73aa4-fdd7-4bc6-897f-9fa17585b146" language-code="en" max-query-length="-1">
+    <df-messenger-chat-bubble chat-title="POCBOT">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+
 </head>
 
 <body>
