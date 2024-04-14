@@ -30,7 +30,9 @@ const Index = () => {
             items: 1
         }
     };
-
+    const handleClick = () => {
+        window.open("https://hackerverse.quest/", "_blank");
+      };
     const fetchSpotifys = async () => {
         try {
             const response = await axios.get(`${Api}/hv-comapny/Spotify/getall`);
@@ -98,7 +100,9 @@ const Index = () => {
                 ))}
             </Carousel>;
             <div className="caption-area text-center bg-transparent  mt-3 mb-24 ">
-        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >Brain Melt in the HACKERverse® </Link>
+         <button onClick={handleClick} class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+        Brain Melt in the HACKERverse® 
+            </button>
       </div>
         </>
     );

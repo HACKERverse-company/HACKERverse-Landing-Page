@@ -3,6 +3,9 @@ import gif1 from '../../img/new/gif.gif'
 import { Link } from 'react-router-dom'
 
 const Paragraph = () => {
+  const handleClick = () => {
+    window.open("https://hackerverse.quest/", "_blank");
+  };
   return (
     <> <section className="text-gray-600 body-font  bg-transparent   " style={{ background: `url(${gif1}) center center / cover no-repeat`,}}>
    
@@ -54,7 +57,9 @@ const Paragraph = () => {
         </div>
       </div>
     <div className="caption-area text-center bg-transparent mt-24 mb-24 ">
-        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >  Bug Out in the HACKERverse®</Link>
+        <button  onClick={handleClick} className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+        Bug Out in the HACKERverse®
+</button>
       </div>
     </div>
   </section></>

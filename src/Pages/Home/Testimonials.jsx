@@ -24,6 +24,9 @@ const Index = () => {
     useEffect(() => {
         fetchReviews();
     }, []);
+    const handleClick = () => {
+        window.open("https://hackerverse.quest/", "_blank");
+      };
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -87,7 +90,9 @@ const Index = () => {
                 </Carousel>
             )}
             <div className="caption-area text-center bg-transparent  - mb-24 ">
-        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >Surf the HACKERverse® </Link>
+         <button onClick={handleClick} class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+        Surf the HACKERverse® 
+            </button>
       </div>
         </>
     );

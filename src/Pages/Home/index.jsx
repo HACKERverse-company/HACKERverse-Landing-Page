@@ -54,22 +54,24 @@ const Index = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+  const handleClick = () => {
+    window.open("https://hackerverse.quest/", "_blank");
+  };
   return (
     <>
       <Hero />
 
       <section className="white-th eme bg-transparent" id="view-down">
-      {shouldLoadSection&&(
-        <div className="custom-container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="content-are">
-                <article>
-                  <div className="primary-heading">
-                    <div className="lg:text-4xl md:text-4xl text-3xl hover-underline">
-                      Meet our Rockstar Customers!
-                    </div>
+        {shouldLoadSection && (
+          <div className="custom-container">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="content-are">
+                  <article>
+                    <div className="primary-heading">
+                      <div className="lg:text-4xl md:text-4xl text-3xl hover-underline">
+                        Meet our Rockstar Customers!
+                      </div>
                     </div>
                   </article>
                 </div>
@@ -122,8 +124,12 @@ const Index = () => {
               </div>
             </div>
             <div className="caption-area text-center bg-transparent pb-24">
-              <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]" target='_blank'>Submerge into the HACKERverse®</Link>
             </div>
+            <div className="caption-area text-center bg-transparent mt-24 mb-24 ">
+        <button  onClick={handleClick} className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+        Bug Out in the HACKERverse®
+</button>
+      </div>
 
             <Quote />
 
@@ -149,7 +155,9 @@ const Index = () => {
                 </div>
               </section>
               <div className="caption-area text-center bg-transparent mt-20">
-                <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]" target='_blank'>Skull Jack the HACKERverse®</Link>
+              <button onClick={handleClick} class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+              Skull Jack the HACKERverse®
+            </button>
               </div>
 
               <div className="col-md-12 py-10">
@@ -170,7 +178,9 @@ const Index = () => {
                   </div>
                 </section>
                 <div className="caption-area text-center bg-transparent mt-24">
-                  <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]" target='_blank'>Immerse yourself in the HACKERverse®</Link>
+                   <button onClick={handleClick} class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+                  Immerse yourself in the HACKERverse®
+            </button>
                 </div>
 
                 <Paragraph />

@@ -43,7 +43,9 @@ const Index = () => {
     useEffect(() => {
         fetchVodcasts();
     }, []);
-
+    const handleClick = () => {
+        window.open("https://hackerverse.quest/", "_blank");
+      };
     useEffect(() => {
         const interval = setInterval(() => {
           if (carouselRef.current) {
@@ -97,7 +99,9 @@ const Index = () => {
                 ))}
             </Carousel>;
             <div className="caption-area text-center bg-transparent  mt-3 mb-24 ">
-        <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] " target='_blank' >Knoggin Jack the HACKERverse® </Link>
+        <button  onClick={handleClick} className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+        Knoggin Jack the HACKERverse® 
+</button>
       </div>
         </>
     );
