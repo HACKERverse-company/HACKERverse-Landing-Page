@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml+png" href="/logogreen.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HACKERverse®</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description"
+    content="Hackerverse™ is the 'hands-on demo tool' of choice for non-cybersecurity and cybersecurity professionals. Rent-a-Demo today.">
+  <meta name="title" content="HACKERverse®">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/logogreen.png" type="image/x-icon" />
+
+  <!-- Critical CSS inline -->
+  <style>
+    :root {
+      --df-messenger-font-family: "Roboto", sans-serif;
+      --df-messenger-font-size: 14px;
+      --df-messenger-chat-border-radius: 30px;
+    }
+
+    df-messenger {
+      --df-messenger-chat-bubble-background: #a0ff00;
+      --df-messenger-chat-bubble-icon-color: black;
+      --df-messenger-chat-bubble-border-radius: 32px;
+      --df-messenger-chat-bubble-size: 64px;
+      --df-messenger-chat-window-height: 70vh;
+      --df-messenger-chat-window-box-shadow: 0px 2px 5px rgba(254, 0, 0, 0.2);
+      --df-messenger-titlebar-title-font-size: 22px;
+      --df-messenger-titlebar-background: #a0ff00;
+      --df-messenger-titlebar-title-align: start;
+      --df-messenger-titlebar-font-color: black;
+      --df-messenger-titlebar-title-font-weight: 900px;
+      --df-messenger-chat-background: black;
+      --df-messenger-message-bot-background: #a2ff00;
+      --df-messenger-message-user-background: #a0ff00;
+      --df-messenger-message-font-size: 17px;
+      --df-messenger-titlebar-border-bottom: 2px solid black;
+      --df-messenger-message-user-actor-background: #a0ff00;
+      --df-messenger-chat-messagelist-scroll-shadow-background: none;
+      --df-messenger-chat-scroll-button-background: #a0ff00;
+      --df-messenger-message-bot-writing-font-size: 20px;
+      --df-messenger-message-bot-writing-background: #a0ff00;
+      --df-messenger-message-bot-actor-background: #a0ff00;
+      --df-messenger-message-user-actor-background: #a0ff00;
+      --df-messenger-input-background: #a0ff00;
+      --df-messenger-input-border-top: 2px solid black;
+      --df-messenger-send-icon-color-active: #000000;
+      --df-messenger-send-icon-color-hover: #a2ff00;
+      --df-messenger-send-icon-color: green;
+      --df-messenger-input-border: #000000;
+      --df-messenger-primary-color: black;
+      z-index: 999;
+      position: fixed;
+      bottom: 25px;
+      right: 16px;
+    }
+  </style>
+
+  <!-- Defer non-critical CSS -->
+  <script>
+    var loadDeferredStyles = function () {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement);
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function () { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+  <noscript>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  </noscript>
+
+  <!-- APP CSS -->
+  <df-messenger class="" location="us-central1" project-id="tidal-triumph-412112"
+    agent-id="a2e73aa4-fdd7-4bc6-897f-9fa17585b146" language-code="en" max-query-length="-1">
+    <df-messenger-chat-bubble chat-title="POCBOT">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+  <script type="module" src="/src/main.jsx"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-87FQXL0732"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-87FQXL0732');
+  </script>
+
+  <!-- Hotjar Tracking Code for HACKERverse.ai -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 4941275, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+</body>
+
+</html>
