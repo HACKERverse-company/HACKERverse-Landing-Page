@@ -23,7 +23,7 @@ import redorbdiscord from '../../img/redorb-discord.png';
 import redorbreddit from '../../img/redorb-reddit.png';
 import redorbtwitch from '../../img/redorb-twitch.png';
 import HV_NEW_AI_Machine from '../../img/new/HV_NEW_AI_Machine_blues (1).png';
-
+import Loader from '../Loading2';
 const Hero = lazy(() => import('./Hero'));
 const Paragraph = lazy(() => import('./Paragraph'));
 const Testimonials = lazy(() => import('./Testimonials'));
@@ -35,34 +35,34 @@ const Footer = lazy(() => import('./Footer'));
 const Index1 = lazy(() => import('./Teams'));
 const Quote = lazy(() => import('./Quote'));
 
+ 
+
 const Index = () => {
-  const [shouldLoadSection, setShouldLoadSection] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = document.getElementById('view-down');
-      if (section) {
-        const { top } = section.getBoundingClientRect();
-        const isVisible = top >= 0 && top <= window.innerHeight;
-        if (isVisible) {
-          setShouldLoadSection(true);
-          window.removeEventListener('scroll', handleScroll);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   const handleClick = () => {
     window.open("https://hackerverse.quest/", "_blank");
   };
+
+  useEffect(() => {
+    // Simulating loading for 2 seconds
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    // Clear the timer when the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
+    <>
+    {isLoading && <Loader text={('Lets Hack the World!!!')} />}
+    {!isLoading && (
     <>
       <Hero />
 
       <section className="white-th eme bg-transparent" id="view-down">
-        {shouldLoadSection && (
           <div className="custom-container">
             <div className="row">
               <div className="col-md-12">
@@ -197,7 +197,6 @@ const Index = () => {
               </div>
             </div>
           </div>
-        )}
       </section>
 
       <div className="speak">
@@ -240,6 +239,8 @@ const Index = () => {
           <img loading="lazy" src={orbmp4} alt="Orb GIF" />
         </div>
       </div>
+    </>
+    )};
     </>
   );
 };
