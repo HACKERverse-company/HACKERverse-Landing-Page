@@ -10,7 +10,7 @@ const Hero = () => {
     <>
       <div className="banner-top  bg-transparent  mb-10   "  >
         <div className="custom-container">
-          <div className="logo">
+          <div className="logo lg:mb-0 mb-24">
             <a href="">
               <img src={logo} alt="" className='mb-5' />
               <img src={CategoryCreator} alt="" />

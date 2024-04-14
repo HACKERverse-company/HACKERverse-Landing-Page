@@ -1,35 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import SPYDERswooshbat from '../../img/new/SPYDERswooshbat_PurpleBlue_onBlackChrome.png'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Api } from '../../Api/Api';
 
 const Index = () => {
     const [Blogs, setBlogs] = useState([]);
-
-
-    const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
-    };
-
 
     const fetchBlogs = async () => {
         try {
@@ -50,6 +25,7 @@ const Index = () => {
     useEffect(() => {
         fetchBlogs();
     }, []);
+
     return (
         <>
             <section className="">
@@ -62,9 +38,6 @@ const Index = () => {
                 </div>
             </section>
 
-
-
-
             <section className="text-gray-600 body-font ">
                 <div className="container px-5 py-10 mx-auto">
                     <div className="flex flex-wrap -m-4" id="blog-list">
@@ -75,18 +48,14 @@ const Index = () => {
                         ) : (
                             <>
                                 {Blogs.map((member) => (
-
                                     <Link to={`/blog/${member._id}`} className="p-4 md:w-1/3 cursor-pointer">
                                         <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden picbox">
-                                            <img
+                                        <img loading="lazy"
                                                 className="lg:h-48 md:h-36 w-full object-cover object-center"
                                                 src={member.pic}
                                                 alt="blog"
                                             />
                                             <div className="p-6">
-                                                {/* <h2 className="tracking-widest text-xs title-font font-medium  text-[#a0ff00] mb-1">
-                                            CATEGORY
-                                        </h2> */}
                                                 <h1 className="title-font text-lg font-medium text-gray-300 mb-3">
                                                 {member.title.split(' ').slice(0, 30).join(' ')}
                                                     {member.title.split(' ').length > 30 ? "..." : ""}

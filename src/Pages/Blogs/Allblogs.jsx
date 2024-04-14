@@ -6,7 +6,6 @@ import { Api } from '../../Api/Api';
 const Allblogs = () => {
     const [Blogs, setBlogs] = useState([]);
 
-
     const fetchBlogs = async () => {
         try {
             const response = await axios.get(`${Api}/hv-comapny/Blog/getall`);
@@ -19,8 +18,6 @@ const Allblogs = () => {
 
     useEffect(() => {
         fetchBlogs();
-    }, []);
-    useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top left corner of the page on component mount
     }, []);
 
@@ -49,7 +46,7 @@ const Allblogs = () => {
                 </div>
             </section>
 
-         
+
 
             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto container ">
                 <div className="grid lg:grid-cols-2 gap-6">
@@ -57,7 +54,7 @@ const Allblogs = () => {
 
                         <Link to={`/blog/${member._id}`} className="group relative block rounded-2xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 picbox" href="#" >
                             <div className="flex-shrink-0 relative rounded-2xl overflow-hidden w-full h-[300px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
-                                <img
+                                <img loading="lazy"
                                     className="size-full absolute top-0 start-0 object-cover opacity-50"
                                     src={member.pic}
                                     alt="Image Description"
@@ -79,9 +76,7 @@ const Allblogs = () => {
                                         {member.title.split(' ').slice(0, 30).join(' ')}
                                         {member.title.split(' ').length > 30 ? "..." : ""}
                                     </h3>
-
                                     <p className="mt-2 text-white/[.8]" dangerouslySetInnerHTML={{ __html: htmlToPlainText(member.content.split(' ').slice(0, 10).join(' ')) + (member.content.split(' ').length > 10 ? "..." : "") }} />
-
                                 </div>
                             </div>
                         </Link>
