@@ -38,7 +38,9 @@ const index = () => {
 
   return (
     <>
-      <Hero />
+   <Suspense fallback={<div>Loading...</div>}>
+        <Hero />
+      </Suspense>
 
       <section className="white-th eme bg-transparent" id="view-down">
         <div className="custom-container">
