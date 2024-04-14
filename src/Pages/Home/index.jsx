@@ -152,22 +152,18 @@ const index = () => {
               <div className="caption-area text-center bg-transparent mt-24">
                 <Link to="https://hackerverse.quest/" className="lr-more mx-auto px-3 py-[12px] rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]" target='_blank'>Immerse yourself in the HACKERverse®</Link>
               </div>
-              <Suspense fallback={<div>Loading...</div>}>
 
               <Paragraph />
               <Testimonials />
               <Index />
-              </Suspense>
 
               <div className="col-md-12">
-              <Suspense fallback={<div>Loading...</div>}>
 
                 <Blogs />
                 <Spotify />
                 <PodcastVideo />
                 <Newsletter />
                 <Footer />
-              </Suspense>
               </div>
             </div>
           </div>

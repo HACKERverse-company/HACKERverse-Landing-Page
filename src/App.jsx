@@ -24,7 +24,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Suspense fallback={<div>Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -44,7 +43,6 @@ function App() {
             <Route path="/PrivacyAndPolicy" element={<PrivacyAndPolicy />} />
             <Route path="/T&C" element={<TC />} />
           </Routes>
-        </Suspense>
       </BrowserRouter>
     </>
   );
