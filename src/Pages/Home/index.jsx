@@ -59,14 +59,14 @@ const Index = () => {
     <>
       <Hero />
 
-      <section className="white-theme bg-transparent" id="view-down">
-        {shouldLoadSection && (
-          <div className="custom-container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="content-area">
-                  <article>
-                    <div className="primary-heading">
+      <section className="white-th eme bg-transparent" id="view-down">
+      {shouldLoadSection&&(
+        <div className="custom-container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="content-are">
+                <article>
+                  <div className="primary-heading">
                     <div className="lg:text-4xl md:text-4xl text-3xl hover-underline">
                       Meet our Rockstar Customers!
                     </div>
