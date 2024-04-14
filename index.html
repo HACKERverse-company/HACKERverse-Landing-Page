@@ -17,32 +17,57 @@
   <link rel="stylesheet"
     href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
   <!-- APP CSS -->
-  <df-messenger class="" location="us-central1" project-id="tidal-triumph-412112" agent-id="a2e73aa4-fdd7-4bc6-897f-9fa17585b146"
-    language-code="en" max-query-length="-1">
-    <df-messenger-chat-bubble chat-title="">
+  <df-messenger class="" location="us-central1" project-id="tidal-triumph-412112"
+    agent-id="a2e73aa4-fdd7-4bc6-897f-9fa17585b146" language-code="en" max-query-length="-1">
+    <df-messenger-chat-bubble chat-title="POCBOT">
     </df-messenger-chat-bubble>
   </df-messenger>
- 
- <style>
+
+  <style>
+    :root {
+      --df-messenger-font-family: "Roboto", sans-serif;
+      --df-messenger-font-size: 14px;
+      --df-messenger-chat-border-radius: 30px;
+    }
+
     df-messenger {
-   
+      --df-messenger-chat-bubble-background: #a0ff00;
+      --df-messenger-chat-bubble-icon-color: black;
+      --df-messenger-chat-bubble-border-radius: 32px;
+      --df-messenger-chat-bubble-size: 64px;
+      --df-messenger-chat-window-height: 70vh;
+      --df-messenger-chat-window-box-shadow: 0px 2px 5px rgba(254, 0, 0, 0.2);
+      --df-messenger-titlebar-title-font-size: 22px;
+      --df-messenger-titlebar-background: #a0ff00;
+      --df-messenger-titlebar-title-align: start;
+      --df-messenger-titlebar-font-color: black;
+      --df-messenger-titlebar-title-font-weight: 900px;
+      --df-messenger-chat-background: black;
+      --df-messenger-message-bot-background: #a2ff00;
+      --df-messenger-message-user-background: #a0ff00;
+      --df-messenger-message-font-size: 17px;
+      --df-messenger-titlebar-border-bottom: 2px solid black;
+      --df-messenger-message-user-actor-background: #a0ff00;
+      --df-messenger-chat-messagelist-scroll-shadow-background: none;
+      --df-messenger-chat-scroll-button-background: #a0ff00;
+      --df-messenger-message-bot-writing-font-size: 20px;
+      --df-messenger-message-bot-writing-background: #a0ff00;
+      --df-messenger-message-bot-actor-background: #a0ff00;
+      --df-messenger-message-user-actor-background: #a0ff00;
+      --df-messenger-input-background: #a0ff00;
+      --df-messenger-input-border-top: 2px solid black;
+      --df-messenger-send-icon-color-active: #000000;
+      --df-messenger-send-icon-color-hover: #a2ff00;
+      --df-messenger-send-icon-color: green;
+      --df-messenger-input-border: #000000;
+      --df-messenger-primary-color: black;
       z-index: 999;
       position: fixed;
-      --df-messenger-font-color: #000;
-      --df-messenger-font-family: Google Sans;
-      --df-messenger-chat-background: #022c04;
-      --df-messenger-message-user-background: #d3e3fd;
-      --df-messenger-message-bot-background: #a0ff00;
-      bottom: 16px;
+      bottom: 25px;
       right: 16px;
-      height: 4vw;
     }
-    
-    
   </style>
   <title>HACKERverse®</title>
-
-
 </head>
 
 <body>
