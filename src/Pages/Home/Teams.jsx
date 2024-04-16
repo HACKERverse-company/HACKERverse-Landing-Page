@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import axios from 'axios';
 import { Api } from '../../Api/Api';
 import { Link } from 'react-router-dom';
+import CustomDot from '../../components/CustomDot/CustomDot';
 
 const Index = () => {
   const [Team, setTeam] = useState([]);
@@ -11,11 +12,11 @@ const Index = () => {
 
   const responsive = {
     superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5
+      breakpoint: { max: 4000, min: 1500 },
+      items: 4
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1500, min: 1024 },
       items: 3
     },
     tablet: {
@@ -61,7 +62,7 @@ const Index = () => {
       <section className="bg-black">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:px-6 ">
           <div className="mx-auto max-w-screen-sm ">
-            <h2 className="mb-2 text-4xl cursor-pointer tracking-tight font-extrabold hover-underline text-white dark:text-white">
+            <h2 className=" text-3xl cursor-pointer tracking-tight font-extrabold uppercase mb-14 font-rubik hover-underline text-white dark:text-white">
               Our team
             </h2>
           </div>
@@ -71,19 +72,22 @@ const Index = () => {
       <Carousel
         responsive={responsive}
         ref={carouselRef}
+        infinite={true}
+        className="w-[80%] mx-auto"
+        showDots customDot={<CustomDot />}
         focusOnSelect={true}
         direction="rtl" // Change direction to "rtl" for right-to-left rotation
       >
         {Team.map((member) => (
-          <div key={member.id} className="text-center bg-black hover:text-black text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl hover:bg-[#a0ff00] picbox1 pt-[20px]">
+          <div key={member.id} className="text-center bg-black  text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl">
 
             <img
-              className="mx-auto mb-4 w-28 h-28 rounded-full"
+              className="mx-auto mb-4 w-[270px]  "
               src={member.pic}
               loading="lazy"
               alt={`${member.name}'s Avatar`}
             />
-            <h3 className="mb-1 text-2xl font-medium tracking-tight hover:text-black  ">
+            <h3 className="mb-1 text-2xl font-medium tracking-tight   ">
               <p href="#">{member.name}</p>
             </h3>
             <p className='text-gray-500'>{member.designation}</p>
