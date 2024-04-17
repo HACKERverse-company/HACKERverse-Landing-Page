@@ -20,11 +20,11 @@ const Index = () => {
       items: 3
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 760 },
       items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 760, min: 0 },
       items: 1
     }
   };
@@ -62,7 +62,7 @@ const Index = () => {
       <section className="bg-black">
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:px-6 ">
           <div className="mx-auto max-w-screen-sm ">
-            <h2 className=" text-3xl cursor-pointer tracking-tight font-extrabold uppercase mb-14 font-rubik hover-underline text-white dark:text-white">
+            <h2 className=" text-2xl  lg:text-3xl cursor-pointer tracking-tight font-extrabold uppercase sm:mb-8 font-rubik hover-underline text-white dark:text-white">
               Our team
             </h2>
           </div>
@@ -73,7 +73,7 @@ const Index = () => {
         responsive={responsive}
         ref={carouselRef}
         infinite={true}
-        className="w-[80%] mx-auto"
+        className="w-[80%] mx-auto pb-10"
         showDots customDot={<CustomDot />}
         focusOnSelect={true}
         direction="rtl" // Change direction to "rtl" for right-to-left rotation
@@ -96,8 +96,8 @@ const Index = () => {
           </div>
         ))}
       </Carousel>;
-      <div className="caption-area text-center bg-transparent  mt-5 mb-24 ">
-         <button onClick={handleClick} class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+      <div className="caption-area text-center bg-transparent  sm:mt-5 mb-24 ">
+         <button onClick={handleClick} class=" rounded-md font-semibold text-black bg-[#a0ff00] w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
         Prowl the HACKERverse®
             </button>
       </div>

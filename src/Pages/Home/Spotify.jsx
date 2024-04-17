@@ -5,6 +5,7 @@ import BLUMIRApocscreen from '../../img/new/BLUMIRApocscreen (1).jpg'
 import axios from 'axios';
 import { Api } from '../../Api/Api';
 import { Link } from 'react-router-dom';
+import CustomDot from '../../components/CustomDot/CustomDot';
 
 const Index = () => {
     // Dummy data representing team members
@@ -14,11 +15,11 @@ const Index = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 1
+            breakpoint: { max: 4000, min: 1500 },
+            items: 2
         },
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
+            breakpoint: { max: 1500, min: 1024 },
             items: 1
         },
         tablet: {
@@ -66,7 +67,7 @@ const Index = () => {
             <section className="">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">
                     <div className="mx-auto   max-w-screen-sm ">
-                        <h2 className="mb-2 text-4xl tracking-tight font-extrabold hover-underline text-white dark:text-white">
+                        <h2 className="mb-2 text-2xl  lg:text-3xl tracking-tight font-extrabold hover-underline text-white dark:text-white">
                             PODCASTS LOVE US!
                         </h2>
                     </div>
@@ -75,20 +76,23 @@ const Index = () => {
 
             <Carousel responsive={responsive}
                 focusOnSelect={true}
+                infinite={true}
+                className='sm:w-[90%] w-full mx-auto'
+                showDots customDot={<CustomDot/>}
         ref={carouselRef}
 
             >
                 {Spotifys.map((member) => (
                     <>
                             <section className="text-gray-600 body-font  bg-transparent ">
-                                <div className="container px- py-[20px] mx-auto picbox1 rounded-3xl  lg:p-32 md:p-32 p-2">
+                                <div className="container  py-[20px] mx-auto  rounded-3xl   ">
                                     {/* YouTube Video Embed */}
-                                    <div className="relative  picbox1 rounded-3xl overflow-hidden lg:pt-46 md:pt-46 pt-80">
+                                    <div className="relative   sm:rounded-3xl rounded-2xl overflow-hidden lg:pt-46 md:pt-46 pt-80">
  
 
                                         {/* Replace 'VIDEO_ID' with your YouTube video ID */}
                                         <iframe
-                                            className=" overflow-hidden absolute inset-0 w-full h-full rounded-lg lg:p-32 md:p-32 p-2"
+                                            className=" overflow-hidden absolute inset-0 w-full h-full rounded-lg "
                                             src={member.link}
                                             title="YouTube Video"
                                             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
@@ -98,9 +102,9 @@ const Index = () => {
                             </section>
                     </>
                 ))}
-            </Carousel>;
-            <div className="caption-area text-center bg-transparent  mt-3 mb-24 ">
-         <button onClick={handleClick} class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+            </Carousel>
+            <div className="caption-area text-center bg-transparent  sm:mt-3  sm:mb-24 mb-5">
+         <button onClick={handleClick} class=" rounded-md font-semibold bg-[#a0ff00] w-[300px]text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
         Brain Melt in the HACKERverse® 
             </button>
       </div>

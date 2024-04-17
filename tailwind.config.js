@@ -9,6 +9,10 @@ export default {
       },
       color: {
         green: '#A0FF00'
+      },
+      backgroundImage: {
+        "pattern": "url('img/pattern.png')",
+        "arrow": "url('img/arrow.svg')"
       }
     },
   },

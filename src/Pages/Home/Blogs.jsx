@@ -30,16 +30,19 @@ const Index = () => {
       <section className="">
         <div className="mx-auto max-w-screen-xl text-center   ">
           <div className="mx-auto   max-w-screen-sm ">
-            <h2 className="mb-14 text-3xl uppercase font-rubik tracking-tight font-extrabold hover-underline text-white dark:text-white">
+            <h2 className="mb-14 text-2xl  lg:text-3xl uppercase font-rubik tracking-tight font-extrabold hover-underline text-white dark:text-white">
               Our Blogs
             </h2>
           </div>
         </div>
       </section>
-    
+
       <section className="text-gray-600 body-font ">
-        <div className="container px-5 py-10 mx-auto">
-          <div className="flex flex-wrap -m-4" id="blog-list">
+        <div className="container sm:px-5 py-10 mx-auto">
+          <div
+            className="flex-col lg:flex-row flex  gap-6 w-full"
+            id="blog-list"
+          >
             {Blogs.length === 0 ? ( // Check if there are no Blogs
               <div className="flex justify-center items-center h-5 ">
                 <p className="text-xl text-gray-300">No Blog available</p>
@@ -49,12 +52,12 @@ const Index = () => {
                 {Blogs.map((member) => (
                   <Link
                     to={`/blog/${member._id}`}
-                    className="px-4 w-1/3 md:w-1/2 cursor-pointer"
+                    className="sm:px-4 cursor-pointer "
                   >
-                    <div className="h-full  bg-[#1D1D1D] rounded-lg overflow-hidden picbox">
+                    <div className="h-full  bg-[#1D1D1D]  rounded-lg overflow-hidden picbox">
                       <img
                         loading="lazy"
-                        className="lg:h-48 md:h-36 w-full object-cover object-center"
+                        className="sm:h-72 w-full object-cover object-center"
                         src={member.pic}
                         alt="blog"
                       />
@@ -95,10 +98,10 @@ const Index = () => {
               </>
             )}
           </div>
-          <div className="text-center mt-16">
+          <div className="text-center mt-16  mx-auto rounded-md  font-semibold bg-[#a0ff00] text-black w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4">
             <Link
               to="/allblogs"
-              className="text-black bg-[#a0ff00] hover:bg-[#a0ff00] focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:focus:ring-green-900"
+              className=""
             >
               View all
             </Link>

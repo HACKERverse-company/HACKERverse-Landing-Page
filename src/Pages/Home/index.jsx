@@ -47,14 +47,14 @@ const Index = () => {
         <>
           <Hero />
           <section className="white-th eme bg-transparent" id="view-down">
-            <div className="bg-[#1D1D1D] py-32">
+            <div className="bg-[#1D1D1D] md:py-32 sm:py-24 py-20">
               <div className="custom-container">
-                <div className="row mb-16">
+                <div className="row md:mb-16 mb-12">
                   <div className="col-md-12">
                     <div className="content-are  ">
                       <article>
                         <div className="primary-heading ">
-                          <div className="lg:text-4xl md:text-4xl text-3xl hover-underline uppercase font-rubik">
+                          <div className="text-2xl  lg:text-3xl hover-underline uppercase font-rubik">
                             Meet our Rockstar Customers!
                           </div>
                         </div>
@@ -66,20 +66,20 @@ const Index = () => {
                 <div className="caption-area text-center bg-transparent mt-16 ">
                   <button
                     onClick={handleClick}
-                    className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 "
+                    className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  text-black w-[300px] py-2 px-4 "
                   >
                     Bug Out in the HACKERverse®
                   </button>
                 </div>
               </div>
             </div>
-            <div className="custom-container py-32">
+            <div className="custom-container md:py-32 sm:py-24 py-20">
               <Quote />
               <div className="col-md-12 mt-28 bg-transparent">
                 <div className="content-are">
                   <article>
                     <div className="primary-heading">
-                      <div className="title-lg text-3xl mt-3 hover-underline font-rubik">
+                      <div className="title-lg text-2xl  lg:text-3xl mt-3 hover-underline font-rubik">
                         Our Killer POC
                         <sup>
                           <span
@@ -95,8 +95,8 @@ const Index = () => {
                   </article>
                 </div>
                 <section className="text-gray-600 body-font">
-                  <div className="container  mx-auto">
-                    <div className="flex items-center justify-center">
+                  <div className="container  mx-auto ">
+                    <div className="flex items-center justify-center ">
                       <img
                         loading="lazy"
                         src={laptop}
@@ -109,24 +109,24 @@ const Index = () => {
                 <div className="caption-area text-center bg-transparent mt-14 flex justify-center items-center max-w-80 w-full mx-auto">
                   <button
                     onClick={handleClick}
-                    class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 "
+                    class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black text-black hover:bg-[#8cba3e] w-[300px]  py-2 px-4 "
                   >
                     Skull Jack the HACKERverse®
                   </button>
                 </div>
               </div>
             </div>
-            <div className="bg-[#1D1D1D] w-full py-32">
+            <div className="bg-[#1D1D1D] w-full md:py-32 sm:py-24 py-20">
               <div className="content-are">
                 <article>
-                  <div className="primary-heading mb-10 ">
-                    <div className="title-lg text-3xl font-rubik  hover-underline ">
+                  <div className="primary-heading mb-10 lg:mb-16">
+                    <div className="title-lg text-2xl  lg:text-3xl font-rubik  hover-underline ">
                       How it Works
                     </div>
                   </div>
                 </article>
                 <section className="text-gray-600 body-font">
-                  <div className="container px- py-[20px] mx-auto">
+                  <div className="container mx-auto">
                     <div className="flex justify-center">
                       <img
                         loading="lazy"
@@ -141,24 +141,27 @@ const Index = () => {
               <div className="caption-area text-center bg-transparent mt-14">
                 <button
                   onClick={handleClick}
-                  class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 "
+                  class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black min-w-[300px]  text-xs sm:text-base hover:bg-[#8cba3e]  py-2 px-4 "
                 >
                   Immerse yourself in the HACKERverse®
                 </button>
               </div>
             </div>
-            <div className="col-md-12 py-32">
-              <Paragraph />
+            <div className="col-md-12">
+              <div className="bg-pattern bg-cover bg-no-repeat bg-center">
+                <Paragraph />
+              </div>
               <Testimonials />
               <Index1 />
-
-              <div className="col-md-12">
-                <Blogs />
-                <Spotify />
-                <PodcastVideo />
-                <Newsletter />
-                <Footer />
-              </div>
+            </div>
+            <div className="col-md-12 custom-container">
+              <Blogs />
+              <Spotify />
+              <PodcastVideo />
+              <Newsletter />
+            </div>
+            <div className="bg-[#1D1D1D]">
+              <Footer />
             </div>
           </section>
 

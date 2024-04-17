@@ -9,7 +9,7 @@ const Quote = () => {
         style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container mx-auto">
-          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto flex flex-col items-center gap-10">
+          <div className=" lg:w-3/4 w-full mx-auto flex flex-col items-center gap-10">
             <img src={quotes} alt="quotes" className="object-contain" />
             <div className="text-center">
               <p className=" text-2xl hover-text-green ">

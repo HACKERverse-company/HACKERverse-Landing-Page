@@ -49,15 +49,15 @@ const Paragraph = () => {
     <>
       {" "}
       <section
-        className="text-gray-600 body-font  bg-transparent   "
-        style={{ background: `url(${gif1}) center center / cover no-repeat` }}
+        className="text-gray-600 body-font pt-10 opacity-[0.8]  bg-black "
+        // style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container px-5  mx-auto">
-          <div className="flex flex-wrap items-center justify-center -mx-4 -mb-10 gap-5">
+          <div className="flex lg:flex-wrap lg:flex-row flex-col items-center justify-center -mx-4 -mb-10 sm:gap-5 gap-2">
             {data.map((item) => (
               <div
                 key={item.id}
-                className="flex-col w-2/5 flex items-center justify-start mb-10 px-12 min-h-[200px]"
+                className="flex-col w-full lg:w-2/5 flex items-center justify-start sm:mb-10 md:px-12 sm:px-8 mt-16 min-h-[200px]"
               >
                 <img
                   src={item.icon}
@@ -65,11 +65,11 @@ const Paragraph = () => {
                   className="object-contain max-w-12 w-full"
                 />
 
-                <h2 className="title-font text-3xl font-medium text-gray-300 mt-6 mb-3 font-rubik">
+                <h2 className="title-font sm:text-3xl text-2xl font-medium text-white mt-6 mb-3 font-rubik">
                   {item.title}
                 </h2>
 
-                <p className="leading-relaxed text-lg font-poppins text-center">
+                <p className="leading-relaxed sm:text-lg text-md text-white  font-poppins text-center">
                   {item.txt}
                 </p>
               </div>
@@ -78,7 +78,7 @@ const Paragraph = () => {
           <div className="caption-area text-center bg-transparent mt-16 mb-24">
             <button
               onClick={handleClick}
-              className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 "
+              className=" rounded-md font-semibold bg-[#a0ff00] text-black w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 mb-14 "
             >
               Bug Out in the HACKERverse®
             </button>

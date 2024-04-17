@@ -8,7 +8,7 @@ import CategoryCreator from "../../img/new/MOCKEDupgoldwhite2.png";
 const Hero = () => {
   return (
     <>
-      <div className="banner-top  bg-transparent  mb-10   ">
+      <div className="banner-top  bg-transparent mb-4  md:mb-10   ">
         <div className="custom-container">
           <div className="logo lg:mb-0 mb-24">
             <a href="">
@@ -43,7 +43,7 @@ const Hero = () => {
                 cutting-edge AI platform makes it a breeze for everyone to give
                 cybersecurity software a try!
               </p>
-              <Link to="/contact/" className="lr-more mx-auto px-3 mb-24">
+              <Link to="/contact/" className="lr-more mx-auto px-3 xl:mb-24 mb-32 ">
                 Join the PoC Revolution Now!
               </Link>
             </div>

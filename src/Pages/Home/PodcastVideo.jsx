@@ -66,7 +66,7 @@ const Index = () => {
             <section className="  bg-transparent   ">
                 <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">
                     <div className="mx-auto   max-w-screen-sm ">
-                        <h2 className="mb-2 text-4xl tracking-tight font-extrabold hover-underline text-white dark:text-white">
+                        <h2 className="mb-2 text-2xl  lg:text-3xl font-rubik tracking-tight font-extrabold hover-underline text-white dark:text-white">
                             VODCASTS LOVE US!
                         </h2>
                     </div>
@@ -98,8 +98,8 @@ const Index = () => {
                     </>
                 ))}
             </Carousel>;
-            <div className="caption-area text-center bg-transparent  mt-3 mb-24 ">
-        <button  onClick={handleClick} className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
+            <div className="caption-area text-center bg-transparent  sm:mt-16 mt-4 mb-24 ">
+        <button  onClick={handleClick} className=" rounded-md font-semibold bg-[#a0ff00] min-w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
         Knoggin Jack the HACKERverse® 
 </button>
       </div>
