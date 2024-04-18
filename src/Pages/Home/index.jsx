@@ -46,7 +46,7 @@ const Index = () => {
       {!isLoading && (
         <>
           <Hero />
-          <section className="white-th eme bg-transparent" id="view-down">
+          <section className="white-th  bg-[#000]" id="view-down">
             <div className="bg-[#1D1D1D] md:py-32 sm:py-24 py-20">
               <div className="custom-container">
                 <div className="row md:mb-16 mb-12">
@@ -73,9 +73,9 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="custom-container md:py-32 sm:py-24 py-20">
+            <div className="custom-container md:py-32 sm:py-24 bg-[#000] py-20">
               <Quote />
-              <div className="col-md-12 mt-28 bg-transparent">
+              <div className="col-md-12 mt-28 bg-[#000]">
                 <div className="content-are">
                   <article>
                     <div className="primary-heading">
@@ -148,7 +148,7 @@ const Index = () => {
               </div>
             </div>
             <div className="col-md-12">
-              <div className="bg-pattern bg-cover bg-no-repeat bg-center">
+              <div className="bg-black">
                 <Paragraph />
               </div>
               <Testimonials />

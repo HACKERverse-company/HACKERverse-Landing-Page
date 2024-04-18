@@ -87,9 +87,8 @@ const Index = () => {
                             <section className="text-gray-600 body-font  bg-transparent ">
                                 <div className="container  py-[20px] mx-auto  rounded-3xl   ">
                                     {/* YouTube Video Embed */}
-                                    <div className="relative   sm:rounded-3xl rounded-2xl overflow-hidden lg:pt-46 md:pt-46 pt-80">
+                                    <div className="relative h-[230px]  sm:rounded-3xl rounded-2xl overflow-hidden lg:pt-46 md:pt-46 pt-80">
  
-
                                         {/* Replace 'VIDEO_ID' with your YouTube video ID */}
                                         <iframe
                                             className=" overflow-hidden absolute inset-0 w-full h-full rounded-lg "

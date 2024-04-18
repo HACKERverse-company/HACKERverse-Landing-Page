@@ -49,15 +49,17 @@ const Paragraph = () => {
     <>
       {" "}
       <section
-        className="text-gray-600 body-font pt-10 opacity-[0.8]  bg-black "
+        className="text-gray-600 body-font pt-10  "
         // style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container px-5  mx-auto">
-          <div className="flex lg:flex-wrap lg:flex-row flex-col items-center justify-center -mx-4 -mb-10 sm:gap-5 gap-2">
+          <div className="bg-pattern  mx-auto bg-cover bg-no-repeat bg-center ">
+            <div className="opacity-[0.8] bg-black flex lg:flex-wrap lg:flex-row flex-col items-center justify-center -mx-4 -mb-10 sm:gap-5 gap-2 ">
+
             {data.map((item) => (
               <div
                 key={item.id}
-                className="flex-col w-full lg:w-2/5 flex items-center justify-start sm:mb-10 md:px-12 sm:px-8 mt-16 min-h-[200px]"
+                className="flex-col opacity-[0.8] py-4 w-full lg:w-2/5 flex items-center justify-start sm:mb-10 md:px-12 sm:px-8 mt-16 min-h-[200px]"
               >
                 <img
                   src={item.icon}
@@ -74,6 +76,7 @@ const Paragraph = () => {
                 </p>
               </div>
             ))}
+            </div>
           </div>
           <div className="caption-area text-center bg-transparent mt-16 mb-24">
             <button
