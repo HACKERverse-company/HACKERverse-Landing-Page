@@ -1,10 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import axios from 'axios';
-import { Api } from '../../Api/Api';
-import { Link } from 'react-router-dom';
-import CustomDot from '../../components/CustomDot/CustomDot';
+import React, { useEffect, useState, useRef } from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import axios from "axios";
+import { Api } from "../../Api/Api";
+import { Link } from "react-router-dom";
+import CustomDot from "../../components/CustomDot/CustomDot";
 
 const Index = () => {
   const [Team, setTeam] = useState([]);
@@ -13,20 +13,20 @@ const Index = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1500 },
-      items: 4
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 1500, min: 1024 },
-      items: 3
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 760 },
-      items: 2
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 760, min: 0 },
-      items: 1
-    }
+      items: 1,
+    },
   };
 
   const fetchTeam = async () => {
@@ -34,7 +34,7 @@ const Index = () => {
       const response = await axios.get(`${Api}/hv-comapny/team/getall`);
       setTeam(response.data);
     } catch (error) {
-      console.error('Error fetching Team:', error);
+      console.error("Error fetching Team:", error);
     }
   };
 
@@ -68,38 +68,47 @@ const Index = () => {
           </div>
         </div>
       </section>
-
       <Carousel
         responsive={responsive}
         ref={carouselRef}
         infinite={true}
         className="w-[80%] mx-auto pb-10"
-        showDots customDot={<CustomDot />}
+        showDots
+        customDot={<CustomDot />}
         focusOnSelect={true}
         direction="rtl" // Change direction to "rtl" for right-to-left rotation
       >
         {Team.map((member) => (
-          <div key={member.id} className="text-center bg-black  text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl">
-
-            <img
-              className="mx-auto mb-4 w-[270px]  "
-              src={member.pic}
-              loading="lazy"
-              alt={`${member.name}'s Avatar`}
-            />
+          <div
+            key={member.id}
+            className="text-center   text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl "
+          >
+            <div className="h-[280px] w-[230px] relative  mb-4 mx-auto">
+              <div className="bg-[#a0ff00] h-[150px] w-[230px] absolute bottom-0 mx-auto">
+                <img
+                  className="mx-auto  w-[230px] absolute bottom-0  z-40  h-[200px] left-0 right-0 object-contain"
+                  src={member.pic}
+                  loading="lazy"
+                  alt={`${member.name}'s Avatar`}
+                />
+              </div>
+            </div>
             <h3 className="mb-1 text-2xl font-medium tracking-tight   ">
               <p href="#">{member.name}</p>
             </h3>
-            <p className='text-gray-500'>{member.designation}</p>
-            <ul className="flex justify-center mt-4 space-x-4">
-            </ul>
+            <p className="text-gray-500">{member.designation}</p>
+            <ul className="flex justify-center mt-4 space-x-4"></ul>
           </div>
         ))}
-      </Carousel>;
+      </Carousel>
+      ;
       <div className="caption-area text-center bg-transparent  sm:mt-5 mb-24 ">
-         <button onClick={handleClick} class=" rounded-md font-semibold text-black bg-[#a0ff00] w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
-        Prowl the HACKERverse®
-            </button>
+        <button
+          onClick={handleClick}
+          class=" rounded-md font-semibold text-black bg-[#a0ff00] w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 "
+        >
+          Prowl the HACKERverse®
+        </button>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ export default {
         green: '#A0FF00'
       },
       backgroundImage: {
-        "pattern": "url('img/pattern.png')",
+        "pattern": "url('img/Layer.png')",
         "arrow": "url('img/arrow.svg')"
       }
     },

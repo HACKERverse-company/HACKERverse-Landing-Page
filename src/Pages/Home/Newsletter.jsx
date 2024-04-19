@@ -7,7 +7,7 @@ const Newsletter = () => {
     script.charset = "utf-8";
     script.type = "text/javascript";
     document.body.appendChild(script);
-
+    
     script.onload = () => {
       if (window.hbspt) {
         window.hbspt.forms.create({
@@ -17,8 +17,11 @@ const Newsletter = () => {
           target: "#hubspotForm", // Specify the target element where the form will be rendered
         });
       }
+      
     };
+    
 
+    console.log( document.getElementById('hsForm_168d704a-5179-4312-a317-b61c6e0f8718'));
     return () => {
       document.body.removeChild(script);
     };

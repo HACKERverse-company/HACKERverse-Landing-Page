@@ -73,7 +73,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="custom-container md:py-32 sm:py-24 bg-[#000] py-20">
+            <div className="custom-container md:py-32 sm:py-24 bg-[#000] py-20 relativ">
               <Quote />
               <div className="col-md-12 mt-28 bg-[#000]">
                 <div className="content-are">
@@ -147,8 +147,16 @@ const Index = () => {
                 </button>
               </div>
             </div>
-            <div className="col-md-12">
-              <div className="bg-black">
+
+            <div className="col-md-12 relative">
+              {/* <video autoPlay className="w-full h-full absolute top-0 left-0 -z-50">
+                <source
+                  src="/img/GREEN_lightning_short_1.mp4"
+                  type="video/mp4"
+                />
+              </video> */}
+
+              <div className="bg-cover bg-no-repeat bg-center bg-pattern ">
                 <Paragraph />
               </div>
               <Testimonials />
