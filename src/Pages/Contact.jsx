@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Footer from './Home/Footer'
 import { Link } from 'react-router-dom'
+import mainImg from '../img/GREENhexContactPage.png'
 
 const Contact = () => {
     useEffect(() => {
@@ -66,7 +67,7 @@ const Contact = () => {
                             <p className="mt-3 text-gray-400"></p>
                         </div>
 
-                        <img className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96 picbox1" src="https://images.unsplash.com/photo-1568992688065-536aad8a12f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=100" alt="" />
+                        <img className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96 picbox1" src={mainImg} alt="" />
                     </div>
                 </section>
 

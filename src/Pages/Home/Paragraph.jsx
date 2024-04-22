@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import exploreImages from "../../img/explore/explore";
 import gif1 from "../../img/new/GREEN_lightning_short_1.gif";
+import greenLight from "../../img/HV_LIGHTNINGbolt_OVALblur_green_noFloor_short_300x1080_stringed.mp4";
+
 
 
 const Paragraph = () => {
@@ -51,12 +53,12 @@ const Paragraph = () => {
   return (
     <>
       <section className="text-gray-600 body-font pt-10 relative bg-black opacity-70"
-      style={{ background: `url(${gif1}) center center / cover no-repeat` }}
+      // style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container px-5 mx-auto relative">
-          {/* <video autoPlay muted loop className="absolute top-0 left-0 min-w-full min-h-full z-0">
-            <source src="/img/HV_LIGHTNINGbolt_OVALblur_green_noFloor_short.mov" type="video/mp4" />
-          </video> */}
+          <video autoPlay muted loop className="absolute top-0 left-0 right-0 m-auto w-[500px] min-h-full z-0">
+            <source src={greenLight} type="video/mp4" />
+          </video>
           <div className=" mx-auto  relative z-10">
             <div className=" flex lg:flex-wrap lg:flex-row flex-col items-center justify-center -mx-4 -mb-10 sm:gap-5 gap-2">
               {data.map((item) => (

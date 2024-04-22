@@ -4,7 +4,7 @@ import logo from "../../img/HV_horizatonal_website_logo.png";
 import { Link } from "react-router-dom";
 import gif1 from "../../img/new/gif.gif";
 import CategoryCreator from "../../img/new/MOCKEDupgoldwhite2.png";
-import greenLight from "../../img/GREEN_lightning_short_1.mp4";
+import greenLight from "../../img/HV_LIGHTNINGbolt_OVALblur_green_noFloor_short_300x1080_stringed.mp4";
 import greenLogo from "../../img/green-logo.png";
 import googleLogo from "../../img/google-logo.png";
 
@@ -54,9 +54,7 @@ const Hero = () => {
                 </span>
               </div>
               <p className="font-poppins">
-                AI-Powered Self-Service PoC Platform for Cybersecurity. Our
-                cutting-edge AI platform makes it a breeze for everyone to give
-                cybersecurity software a try!
+                The Leader in AI-Powered Proof of Concepts for Software Vendors!
               </p>
               <Link
                 to="/contact/"

@@ -6,9 +6,6 @@ const Newsletter = () => {
     script.src = "//js.hsforms.net/forms/embed/v2.js";
     script.charset = "utf-8";
     script.type = "text/javascript";
-    // script.setAttribute('defer', '')
-    script.setAttribute('async', '')
-    console.log('+++++++++', script);
     document.body.appendChild(script);
 
     script.onload = () => {
@@ -17,6 +14,7 @@ const Newsletter = () => {
           region: "na1",
           portalId: "22582640",
           formId: "168d704a-5179-4312-a317-b61c6e0f8718",
+          css: '',
           target: "#hubspotForm", // Specify the target element where the form will be rendered
         });
         const interval = setInterval(() => {
