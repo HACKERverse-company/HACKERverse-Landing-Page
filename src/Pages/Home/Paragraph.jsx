@@ -62,7 +62,7 @@ const Paragraph = () => {
               {data.map((item) => (
                 <div
                   key={item.id}
-                  className="flex-col  py-4 w-full lg:w-2/5 flex items-center justify-start sm:mb-10 md:px-12 sm:px-8 mt-16 min-h-[200px]"
+                  className="flex-col  w-full lg:w-2/5 flex items-center justify-start sm:mb-10 md:px-12 sm:px-8 mt-16 min-h-[200px]"
                 >
                   <img src={item.icon} alt="icon" className="object-contain max-w-12 w-full" />
                   <h2 className="title-font sm:text-3xl text-2xl font-medium text-white mt-2 mb-3 font-rubik">

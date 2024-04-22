@@ -5,6 +5,7 @@ import axios from "axios";
 import { Api } from "../../Api/Api";
 import { Link } from "react-router-dom";
 import CustomDot from "../../components/CustomDot/CustomDot";
+import background from "../../img/pagebackground.png";
 
 const Index = () => {
   const [Team, setTeam] = useState([]);
@@ -84,7 +85,14 @@ const Index = () => {
             className="text-center   text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl "
           >
             <div className="h-[280px] w-[230px] relative  mb-4 mx-auto">
-              <div className="bg-[#a0ff00] h-[150px] w-[230px] absolute bottom-0 mx-auto">
+              <div className="top-10 left-0 right-0 m-auto absolute bg-black opacity-35">
+                <img
+                  src={background}
+                  alt="pattern"
+                  className="w-[220px] h-[220px] rounded-full "
+                />
+              </div>
+              <div className=" h-[150px] w-[230px] absolute bottom-0 mx-auto">
                 <img
                   className="mx-auto  w-[230px] absolute bottom-0  z-40  h-[200px] left-0 right-0 object-contain"
                   src={member.pic}

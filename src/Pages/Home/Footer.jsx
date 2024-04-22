@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../img/logo.svg";
+import logo from "../../img/HV_horizatonal_website_logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -115,7 +115,7 @@ const Footer = () => {
                 target="_blank"
               >
                 <svg
-                  xmlns="https://www.reddit.com/u/theHACKERverse/"
+                  xmlns="https://www.reddit.com/r/theHACKERverse/"
                   width={35}
                   height={35}
                   fill="currentColor"

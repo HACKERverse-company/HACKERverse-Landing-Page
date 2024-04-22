@@ -26,6 +26,8 @@ const Contact = () => {
         };
     }, []);
 
+   
+
     const handleSubmit = (e) => {
         e.preventDefault();
         // Your logic to submit the form data to HubSpot

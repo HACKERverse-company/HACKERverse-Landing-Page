@@ -9,6 +9,7 @@ import redorbdiscord from "../../img/redorb-discord.png";
 import redorbreddit from "../../img/redorb-reddit.png";
 import redorbtwitch from "../../img/redorb-twitch.png";
 import HV_NEW_AI_Machine from "../../img/new/HV_NEW_AI_Machine_blues (1).png";
+import orbVideo from "../../img/orb/orb.mp4";
 import Loader from "../Loading2";
 import Customers from "./Customers";
 import laptop from "../../img/laptop.png";
@@ -203,7 +204,7 @@ const Index = () => {
                 </div>
               </a>
               <a
-                href="https://www.reddit.com/u/theHACKERverse/"
+                href="https://www.reddit.com/r/theHACKERverse/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -234,7 +235,9 @@ const Index = () => {
               <img loading="lazy" src={SideChat} alt="Support Chat" />
             </div>
             <div className="video-cutter">
-              <img loading="lazy" src={orbmp4} alt="Orb GIF" />
+              <video autoPlay muted loop>
+                <source src={orbVideo} type="video/mp4" />
+              </video>
             </div>
           </div>
         </>

@@ -12,7 +12,8 @@ export default {
       },
       backgroundImage: {
         "pattern": "url('img/Layer.png')",
-        "arrow": "url('img/arrow.svg')"
+        "arrow": "url('img/arrow.svg')",
+        "bgpattern": "url('img/pagebackground.png')"
       }
     },
   },
