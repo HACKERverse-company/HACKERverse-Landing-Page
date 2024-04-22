@@ -6,24 +6,31 @@ const Newsletter = () => {
     script.src = "//js.hsforms.net/forms/embed/v2.js";
     script.charset = "utf-8";
     script.type = "text/javascript";
+    // script.setAttribute('defer', '')
+    script.setAttribute('async', '')
+    console.log('+++++++++', script);
     document.body.appendChild(script);
 
-    script.onload = async () => {
+    script.onload = () => {
       if (window.hbspt) {
-        await window.hbspt.forms.create({
+        window.hbspt.forms.create({
           region: "na1",
           portalId: "22582640",
           formId: "168d704a-5179-4312-a317-b61c6e0f8718",
           target: "#hubspotForm", // Specify the target element where the form will be rendered
         });
+        const interval = setInterval(() => {
+          const iframe = document.getElementById("hs-form-iframe-1");
+          if (iframe) {
+            const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+            const button = innerDoc.querySelector('input[type="submit"]');
+            if (button) {
+              button.style.marginLeft = "72px";
+              clearInterval(interval); // Clear interval once the button is found and styled
+            }
+          }
+        }, 100);
       }
-      setTimeout(() => {
-        const iframe = document.getElementById("hs-form-iframe-1");
-        const innerDoc =
-          iframe.contentDocument || iframe.contentWindow.document;
-        const button = innerDoc.querySelector('input[type="submit"]');
-        button.style.marginLeft = "72px";
-      }, 1500);
     };
 
     return () => {
