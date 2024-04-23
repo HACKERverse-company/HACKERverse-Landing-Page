@@ -43,11 +43,11 @@ const Index = () => {
 
   const responsive = {
     superLargeDesktop: {
-      breakpoint: { max: 4000, min: 1500 },
+      breakpoint: { max: 4000, min: 1680 },
       items: 2,
     },
     desktop: {
-      breakpoint: { max: 1500, min: 1024 },
+      breakpoint: { max: 1680, min: 1024 },
       items: 1,
     },
     tablet: {
@@ -81,7 +81,7 @@ const Index = () => {
           focusOnSelect={true}
           infinite={true}
         
-          className=" xl:w-[1280px] w-[80%] mx-auto"
+          className="2xl:w-full w-[80%] mx-auto"
           showDots customDot={<CustomDot />}
         >
           {reviews.map((testimonial, index) => (

@@ -72,9 +72,10 @@ const Index = () => {
       <Carousel
         responsive={responsive}
         ref={carouselRef}
-        infinite={true}
+        infinite={false}
         className="w-full mx-auto pb-10"
         showDots
+        autoPlay={false}
         customDot={<CustomDot />}
         focusOnSelect={true}
         direction="rtl" // Change direction to "rtl" for right-to-left rotation
@@ -82,7 +83,7 @@ const Index = () => {
         {Team.map((member) => (
           <div
             key={member.id}
-            className="text-center text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl  "
+            className="text-center text-[#a0ff00] flex flex-col justify-center dark:text-gray-400 cursor-pointer rounded-2xl  "
           >
             <div className="h-[280px] w-[230px] relative  mb-4 mx-auto">
               <div className="top-10 left-0 right-0 m-auto absolute bg-black opacity-35">
@@ -92,9 +93,9 @@ const Index = () => {
                   className="w-[220px] h-[220px] rounded-full "
                 /> */}
               </div>
-              <div className=" h-[190px] w-[280px] hover:bg-lighteningEffect bg-no-repeat bg-cover bg-left absolute bottom-0 mx-auto">
+              <div className=" h-[190px] w-full hover:bg-lighteningEffect bg-no-repeat bg-cover bg-left absolute bottom-0 mx-auto">
                 <img
-                  className="mx-auto  w-[230px] absolute bottom-0  z-40  h-[200px] left-0 right-0 object-contain"
+                  className="mx-auto  w-full absolute bottom-0  z-40  h-[200px] left-0 right-0 object-contain"
                   src={member.pic}
                   loading="lazy"
                   alt={`${member.name}'s Avatar`}
