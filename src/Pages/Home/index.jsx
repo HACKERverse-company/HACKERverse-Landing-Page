@@ -47,7 +47,7 @@ const Index = () => {
         <>
           <Hero />
           <section className="white-th  bg-[#000]" id="view-down">
-            <div className="bg-[#1D1D1D] md:py-32 sm:py-24 py-20">
+            <div className="md:py-32 sm:py-24 py-20">
               <div className="custom-container">
                 <div className="row md:mb-16 mb-12">
                   <div className="col-md-12">
@@ -116,7 +116,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-[#1D1D1D] w-full md:py-32 sm:py-24 py-20">
+            <div className="w-full md:py-32 sm:py-24 py-20">
               <div className="content-are">
                 <article>
                   <div className="primary-heading mb-10 lg:mb-16">
@@ -161,9 +161,7 @@ const Index = () => {
               <PodcastVideo />
               <Newsletter />
             </div>
-            <div className="bg-[#1D1D1D]">
-              <Footer />
-            </div>
+            <Footer />
           </section>
 
           <div className="speak">

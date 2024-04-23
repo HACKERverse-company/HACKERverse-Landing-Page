@@ -84,11 +84,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="sm:flex sm:items-center sm:justify-between items-center py-8">
-            <span className="text-sm text-gray-500 font-poppins sm:text-center dark:text-gray-400">
+          <div className="sm:flex-row flex flex-wrap gap-4 sm:items-center sm:justify-between h-14 mt-4  py-8">
+            <span className="text-sm text-gray-500  block  font-poppins sm:text-center dark:text-gray-400">
               © 2024 HACKERverse®. All Rights Reserved.
             </span>
-            <div className="flex mt-4 sm:justify-center sm:mt-0 lg:w-[43%]">
+            <div className="flex  sm:justify-center sm:mt-0 lg:w-[43%]">
               <a
                 href="https://www.linkedin.com/company/hackerverse/"
                 className="text-gray-500 hover:text-red-100 dar k:hover:text-white "
