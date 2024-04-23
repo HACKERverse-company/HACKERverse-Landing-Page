@@ -73,7 +73,7 @@ const Index = () => {
         responsive={responsive}
         ref={carouselRef}
         infinite={true}
-        className="w-[80%] mx-auto pb-10"
+        className="w-full mx-auto pb-10"
         showDots
         customDot={<CustomDot />}
         focusOnSelect={true}
@@ -82,7 +82,7 @@ const Index = () => {
         {Team.map((member) => (
           <div
             key={member.id}
-            className="text-center   text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl "
+            className="text-center text-[#a0ff00] dark:text-gray-400 cursor-pointer rounded-2xl  "
           >
             <div className="h-[280px] w-[230px] relative  mb-4 mx-auto">
               <div className="top-10 left-0 right-0 m-auto absolute bg-black opacity-35">
@@ -101,9 +101,9 @@ const Index = () => {
                 />
               </div>
             </div>
-            <h3 className="mb-1 text-2xl font-medium tracking-tight   ">
+            <h2 className="mb-1 text-2xl text-center font-medium tracking-tight  mx-auto ">
               <p href="#">{member.name}</p>
-            </h3>
+            </h2>
             <p className="text-gray-500">{member.designation}</p>
             <ul className="flex justify-center mt-4 space-x-4"></ul>
           </div>

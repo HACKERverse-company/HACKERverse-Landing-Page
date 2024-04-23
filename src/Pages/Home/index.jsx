@@ -148,7 +148,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="col-md-12 relative">
+            <div className="col-md-12 relative custom-container">
               <div className="bg-cover bg-no-repeat bg-center bg-pattern ">
                 <Paragraph />
               </div>
