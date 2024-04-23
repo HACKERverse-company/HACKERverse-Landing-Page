@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 import SideChat from "../../img/support.svg";
-import orbmp4 from "../../img/orb/orb.gif";
+import orbmp4 from "../../img/orb/orb-2.gif";
 import orbtwitter from "../../img/twitter.png";
 import redorbyoutube from "../../img/redorb-youtube.png";
 import redorbinsta from "../../img/redorb-insta.png";
@@ -9,7 +9,7 @@ import redorbdiscord from "../../img/redorb-discord.png";
 import redorbreddit from "../../img/redorb-reddit.png";
 import redorbtwitch from "../../img/redorb-twitch.png";
 import HV_NEW_AI_Machine from "../../img/new/HV_NEW_AI_Machine_blues (1).png";
-import orbVideo from "../../img/orb/orb.mp4";
+// import orbVideo from "../../img/circle_Loading_ORB-video.mov";
 import Loader from "../Loading2";
 import Customers from "./Customers";
 import laptop from "../../img/laptop.png";
@@ -43,7 +43,7 @@ const Index = () => {
 
   return (
     <>
-      {isLoading && <Loader text={"Lets Hack the World!!!"} />}
+      {isLoading && <Loader text={"Lets Hack the Verse!!!"} />}
       {!isLoading && (
         <>
           <Hero />
@@ -150,13 +150,6 @@ const Index = () => {
             </div>
 
             <div className="col-md-12 relative">
-              {/* <video autoPlay className="w-full h-full absolute top-0 left-0 -z-50">
-                <source
-                  src="/img/GREEN_lightning_short_1.mp4"
-                  type="video/mp4"
-                />
-              </video> */}
-
               <div className="bg-cover bg-no-repeat bg-center bg-pattern ">
                 <Paragraph />
               </div>
@@ -235,9 +228,10 @@ const Index = () => {
               <img loading="lazy" src={SideChat} alt="Support Chat" />
             </div>
             <div className="video-cutter">
-              <video autoPlay muted loop>
+              {/* <video autoPlay muted loop>
                 <source src={orbVideo} type="video/mp4" />
-              </video>
+              </video> */}
+              <img src={orbmp4} alt="orb"  />
             </div>
           </div>
         </>
