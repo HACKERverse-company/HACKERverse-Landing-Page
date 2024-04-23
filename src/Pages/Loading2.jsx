@@ -13,7 +13,7 @@ const Loader = ({ text }) => {
           <img
             src={CustomLoaderSVG}
             alt="Custom Loader"
-            className="  animate-spin h-24 w-24"
+            className="h-24 w-24"
           />
         </div>
       </div>
