@@ -7,15 +7,6 @@ const Quote = () => {
   return (
     <>
       <section className="text-gray-600 body-font bg-transparent relative">
-        {/* Background gif */}
-        {/* <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${gif1})` }}
-        ></div> */}
-        {/* Video */}
-        <video autoPlay loop muted className="absolute inset-32 w-[250px] h-full top-0 z-0 object-cover">
-          <source src={greenLight} type="video/mp4" />
-        </video>
         <div className="container mx-auto relative z-10">
           <div className="lg:w-3/4 w-full mx-auto flex flex-col items-center gap-10">
             {/* Quotes image */}

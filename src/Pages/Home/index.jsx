@@ -74,8 +74,8 @@ const Index = () => {
               </div>
             </div>
             <div className="custom-container md:py-32 sm:py-24 bg-[#000] py-20 relativ">
-              {/* <Quote /> */}
-              <div className="col-md-12  bg-[#000]">
+              <Quote />
+              <div className="col-md-12 mt-28 bg-[#000]">
                 <div className="content-are">
                   <article>
                     <div className="primary-heading">
