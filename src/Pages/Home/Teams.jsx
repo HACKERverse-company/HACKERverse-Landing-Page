@@ -86,13 +86,13 @@ const Index = () => {
           >
             <div className="h-[280px] w-[230px] relative  mb-4 mx-auto">
               <div className="top-10 left-0 right-0 m-auto absolute bg-black opacity-35">
-                <img
+                {/* <img
                   src={background}
                   alt="pattern"
                   className="w-[220px] h-[220px] rounded-full "
-                />
+                /> */}
               </div>
-              <div className=" h-[150px] w-[230px] absolute bottom-0 mx-auto">
+              <div className=" h-[190px] w-[280px] hover:bg-lighteningEffect bg-no-repeat bg-cover bg-left absolute bottom-0 mx-auto">
                 <img
                   className="mx-auto  w-[230px] absolute bottom-0  z-40  h-[200px] left-0 right-0 object-contain"
                   src={member.pic}
