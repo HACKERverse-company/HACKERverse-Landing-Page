@@ -43,7 +43,7 @@ const Index = () => {
 
   return (
     <>
-      {isLoading && <Loader text={"Lets Hack the Verse!!!"} />}
+      {isLoading && <Loader text={"Hack The *verse!"} />}
       {!isLoading && (
         <>
           <Hero />
