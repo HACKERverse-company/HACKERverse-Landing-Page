@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
 import { Link } from "react-router-dom";
 import SideChat from "../../img/support.svg";
-import orbmp4 from "../../img/orb/orb-2.gif";
+import orbmp4 from "../../img/orb/orb.mp4";
 import orbtwitter from "../../img/twitter.png";
 import redorbyoutube from "../../img/redorb-youtube.png";
 import redorbinsta from "../../img/redorb-insta.png";
@@ -9,7 +9,6 @@ import redorbdiscord from "../../img/redorb-discord.png";
 import redorbreddit from "../../img/redorb-reddit.png";
 import redorbtwitch from "../../img/redorb-twitch.png";
 import HV_NEW_AI_Machine from "../../img/new/HV_NEW_AI_Machine_blues (1).png";
-// import orbVideo from "../../img/circle_Loading_ORB-video.mov";
 import Loader from "../Loading2";
 import Customers from "./Customers";
 import laptop from "../../img/laptop.png";
@@ -228,10 +227,9 @@ const Index = () => {
               <img loading="lazy" src={SideChat} alt="Support Chat" />
             </div>
             <div className="video-cutter">
-              {/* <video autoPlay muted loop>
-                <source src={orbVideo} type="video/mp4" />
-              </video> */}
-              <img src={orbmp4} alt="orb"  />
+              <video autoPlay muted loop>
+                <source src={orbmp4} type="video/mp4" />
+              </video>
             </div>
           </div>
         </>
