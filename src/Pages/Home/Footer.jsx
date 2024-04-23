@@ -15,7 +15,7 @@ const Footer = () => {
                 {/* <span class="self-center text-2xl font-semibold whitespace-nowrap ">Hackerverse™</span> */}
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 lg:w-[43%]">
               <div>
                 <h2 className="mb-6 text-sm font-semibold text-[#a0ff00] uppercase ">
                   Resources
@@ -88,7 +88,7 @@ const Footer = () => {
             <span className="text-sm text-gray-500 font-poppins sm:text-center dark:text-gray-400">
               © 2024 HACKERverse®. All Rights Reserved.
             </span>
-            <div className="flex mt-4 sm:justify-center sm:mt-0">
+            <div className="flex mt-4 sm:justify-center sm:mt-0 lg:w-[43%]">
               <a
                 href="https://www.linkedin.com/company/hackerverse/"
                 className="text-gray-500 hover:text-red-100 dar k:hover:text-white "
