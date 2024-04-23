@@ -110,7 +110,7 @@ const Footer = () => {
                 <span className="sr-only">Linkedin page</span>
               </a>
               <a
-                href="https://www.reddit.com/user/theHACKERverse/"
+                href="https://www.reddit.com/r/theHACKERverse/"
                 className="text-gray-500 hover:text-red-100 dar k:hover:text-white ms-3"
                 target="_blank"
               >
