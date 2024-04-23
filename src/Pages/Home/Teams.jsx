@@ -72,10 +72,9 @@ const Index = () => {
       <Carousel
         responsive={responsive}
         ref={carouselRef}
-        infinite={false}
+        infinite={true}
         className="w-full mx-auto pb-10"
         showDots
-        autoPlay={false}
         customDot={<CustomDot />}
         focusOnSelect={true}
         direction="rtl" // Change direction to "rtl" for right-to-left rotation
