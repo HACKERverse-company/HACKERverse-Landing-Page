@@ -68,7 +68,7 @@ const Index = () => {
                     onClick={handleClick}
                     className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  text-black w-[300px] py-2 px-4 "
                   >
-                    Bug Out in the HACKERverse®
+                    Take me to the Platform!
                   </button>
                 </div>
               </div>
@@ -111,7 +111,7 @@ const Index = () => {
                     onClick={handleClick}
                     class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black text-black hover:bg-[#8cba3e] w-[300px]  py-2 px-4 "
                   >
-                    Skull Jack the HACKERverse®
+                    Take me to the Platform!
                   </button>
                 </div>
               </div>
@@ -143,15 +143,16 @@ const Index = () => {
                   onClick={handleClick}
                   class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black min-w-[300px]  text-xs sm:text-base hover:bg-[#8cba3e]  py-2 px-4 "
                 >
-                  Immerse yourself in the HACKERverse®
+                  Take me to the Platform!
                 </button>
               </div>
             </div>
 
+            <div className="bg-[#1D1D1D]  bg-cover  bg-no-repeat bg-center bg-pattern">
+              <Paragraph />
+            </div>
+
             <div className="col-md-12 relative custom-container">
-              <div className="bg-cover bg-no-repeat bg-center bg-pattern ">
-                <Paragraph />
-              </div>
               <Testimonials />
               <Index1 />
             </div>

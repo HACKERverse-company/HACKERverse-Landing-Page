@@ -100,7 +100,7 @@ const Index = () => {
             </Carousel>;
             <div className="caption-area text-center bg-transparent  sm:mt-16 mt-4 mb-24 ">
         <button  onClick={handleClick} className=" rounded-md font-semibold bg-[#a0ff00] min-w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 ">
-        Knoggin Jack the HACKERverse® 
+        Take me to the Platform!
 </button>
       </div>
         </>

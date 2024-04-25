@@ -88,7 +88,7 @@ const Index = () => {
                 <div className="relative h-[230px]  sm:rounded-3xl rounded-2xl overflow-hidden lg:pt-46 md:pt-46 pt-80">
                   {/* Replace 'VIDEO_ID' with your YouTube video ID */}
                   <iframe
-                    className=" overflow-hidden absolute inset-0 w-full h-full rounded-lg "
+                    className=" overflow-hidden absolute inset-0 w-full h-[250px]  rounded-lg "
                     src={member.link}
                     title="YouTube Video"
                     allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
@@ -99,12 +99,12 @@ const Index = () => {
           </>
         ))}
       </Carousel>
-      <div className="caption-area text-center bg-transparent  sm:mt-3  sm:mb-24 mb-5">
+      <div className="caption-area text-center bg-transparent  sm:mt-10  sm:mb-24 mb-5">
         <button
           onClick={handleClick}
           class=" rounded-md font-semibold bg-[#a0ff00] w-[300px]text-sm sm:text-base hover:text-black hover:bg-[#8cba3e]  py-2 px-4 "
         >
-          Brain Melt in the HACKERverse®
+          Take me to the Platform!
         </button>
       </div>
     </>

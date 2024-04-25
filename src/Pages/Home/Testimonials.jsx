@@ -119,7 +119,7 @@ const Index = () => {
           onClick={handleClick}
           class=" rounded-md font-semibold bg-[#a0ff00] text-black hover:text-black w-[300px] text-sm sm:text-base hover:bg-[#8cba3e]  py-2 px-4 "
         >
-          Surf the HACKERverse®
+          Take me to the Platform!
         </button>
       </div>
     </>
