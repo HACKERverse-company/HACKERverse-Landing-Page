@@ -1,6 +1,13 @@
-import React, { Suspense } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React, { Suspense, useEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  useLocation,
+} from "react-router-dom";
 import HotjarTracking from "./HotJarTracking";
+import ReactGA from "react-ga";
 
 // Lazy loading components
 const Home = React.lazy(() => import("./Pages/Home/index"));
@@ -21,7 +28,13 @@ const Contact = React.lazy(() => import("./Pages/Contact"));
 const PrivacyAndPolicy = React.lazy(() => import("./Pages/PrivacyAndPolicy"));
 const TC = React.lazy(() => import("./Pages/T&C"));
 
+ReactGA.initialize("G-87FQXL0732");
+
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [window.location.pathname]);
+
   return (
     <>
       <HotjarTracking />
