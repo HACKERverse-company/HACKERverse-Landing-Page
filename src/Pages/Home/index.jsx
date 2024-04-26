@@ -79,11 +79,11 @@ const Index = () => {
                 <div className="content-are">
                   <article>
                     <div className="primary-heading">
-                      <div className="title-lg text-2xl  lg:text-3xl mt-3 hover-underline font-rubik">
+                      <div className=" text-2xl  lg:text-3xl hover-underline uppercase font-rubik">
                         Our Killer POC
                         <sup>
                           <span
-                            className="text-3xl font-rubik"
+                            className="text-2xl  lg:text-3xl hover-underline uppercase font-rubik"
                             style={{ fontSize: 15 }}
                           >
                             TM

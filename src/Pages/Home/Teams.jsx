@@ -92,7 +92,7 @@ const Index = () => {
                   className="w-[220px] h-[220px] rounded-full "
                 /> */}
               </div>
-              <div className=" h-[190px] w-full hover:bg-lighteningEffect bg-no-repeat bg-cover bg-left absolute bottom-0 mx-auto">
+              <div className=" h-[200px] w-full hover:bg-lighteningEffect bg-no-repeat bg-cover bg-center absolute bottom-0 mx-auto">
                 <img
                   className="mx-auto  w-full absolute bottom-0  z-40  h-[200px] left-0 right-0 object-contain"
                   src={member.pic}

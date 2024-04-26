@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Footer from "./Home/Footer";
 import { Link } from "react-router-dom";
 import mainImg from "../img/GREENhexContactPage.png";
+import skullImg from "../img/skull.png";
+
 
 const Contact = () => {
   useEffect(() => {
@@ -49,6 +51,13 @@ const Contact = () => {
   return (
     <>
       <div className="container mx-auto relative  bg-transparent ">
+      <Link to='/' className="fixed top-10 left-6">
+          <img
+            src={skullImg}
+            alt="skull"
+            className="w-16 h-16 object-contain "
+          />
+        </Link>
         <a
           href="/"
           class="flex items-center absolute top-16 left-4 z-50 bg-slate-700 p-1 rounded-full pr-1"

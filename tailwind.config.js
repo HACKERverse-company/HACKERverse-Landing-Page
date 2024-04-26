@@ -14,7 +14,7 @@ export default {
         "pattern": "url('img/Layer.png')",
         "arrow": "url('img/arrow.svg')",
         "bgpattern": "url('img/pagebackground.png')",
-        "lighteningEffect": "url('img/teams-lightening.gif')"
+        "lighteningEffect": "url('img/teams.gif')"
       }
     },
   },

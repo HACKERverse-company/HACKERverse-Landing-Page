@@ -10,17 +10,18 @@ import googleLogo from "../../img/google-logo.png";
 import { descriptionData } from "../../assets/constants";
 import skullImg from "../../img/skull.png";
 
+
 const Hero = () => {
   return (
     <>
       <div className="banner-top relative bg-transparent mb-4  md:mb-10">
-        <div className="absolute top-10 left-10">
+        <Link to='/' className="fixed top-10 left-6 z-50">
           <img
             src={skullImg}
             alt="skull"
-            className="w-12 h-12 object-contain "
+            className="w-16 h-16 object-contain "
           />
-        </div>
+        </Link>
         <div className="custom-container relative">
           <div className="logo  mb-40">
             <a href="" className="flex flex-col justify-center items-center ">

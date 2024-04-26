@@ -56,7 +56,7 @@ const Paragraph = () => {
       // style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container px-5 mx-auto relative">
-          <video autoPlay muted loop className="absolute top-0 left-0 right-0 m-auto w-[500px] min-h-full z-0">
+          <video autoPlay muted loop className="absolute top-0 left-32 m-auto max-w-[500px] max-h-[500px] w-full z-0">
             <source src={greenLight} type="video/mp4" />
           </video>
           <div className=" mx-auto  relative z-10">
