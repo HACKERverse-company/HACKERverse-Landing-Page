@@ -122,8 +122,8 @@ const Index = () => {
               </div>
             </div>
               <section className="text-gray-600 body-font">
-                <div className="w-full py-10  mx-auto  bg-woodenBg bg-no-repeat bg-center bg-cover">
-                  <div className=" custom-container p-10  bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
+                <div className="w-full py-10 md:px-0 px-10  mx-auto  bg-woodenBg bg-no-repeat bg-center bg-cover">
+                  <div className=" custom-container lg:p-10 md:p-8 p-5  bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
                     <Carousel
                       responsive={responsive}
                       focusOnSelect={true}
@@ -132,7 +132,7 @@ const Index = () => {
                       showArrows={false}
                       infiniteLoop={true}
                       autoPlay={true}
-                      className="custom-carousel w-[70%] mx-auto"
+                      className="custom-carousel md:w-[70%] w-full mx-auto"
                       ref={carouselRef}
                     >
                       {images.map((img, index) => (

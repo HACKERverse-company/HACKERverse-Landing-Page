@@ -64,7 +64,7 @@ const Index = () => {
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">
           <div className="mx-auto   max-w-screen-sm ">
             <h2 className="mb-2 text-2xl  lg:text-3xl font-rubik tracking-tight font-extrabold hover-underline text-white dark:text-white">
-              VODCASTS LOVE US!
+            OUR STORY
             </h2>
           </div>
         </div>
