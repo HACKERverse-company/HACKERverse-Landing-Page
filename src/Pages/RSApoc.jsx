@@ -65,7 +65,7 @@ const Contact = () => {
                             <h1 className="mt-2 text-2xl font-semibold  md:text-3xl text-white">We’d love to hear from you</h1>
                             <p className="mt-3 text-gray-400"></p>
                         </div>
-                        <img className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96 picbox1" src= {img} alt="" />
+                        <img className="object-cover w-full md:h-64  h-auto mt-10 rounded-lg  picbox1" src= {img} alt="" />
                     </div>
                 </section>
 
