@@ -1,7 +1,5 @@
 import React, { useState, useEffect, Suspense, lazy, useRef } from "react";
 import Carousel from "react-multi-carousel";
-
-import { Link } from "react-router-dom";
 import SideChat from "../../img/support.svg";
 import orbmp4 from "../../img/orb/orb.mp4";
 import orbtwitter from "../../img/twitter.png";
@@ -13,7 +11,6 @@ import redorbtwitch from "../../img/redorb-twitch.png";
 import HV_NEW_AI_Machine from "../../img/new/HV_NEW_AI_Machine_blues (1).png";
 import Loader from "../Loading2";
 import Customers from "./Customers";
-import laptop from "../../img/laptop.png";
 const Hero = lazy(() => import("./Hero"));
 const Paragraph = lazy(() => import("./Paragraph"));
 const Testimonials = lazy(() => import("./Testimonials"));
@@ -25,11 +22,19 @@ const Footer = lazy(() => import("./Footer"));
 const Index1 = lazy(() => import("./Teams"));
 const Quote = lazy(() => import("./Quote"));
 import PocSlider from '../../components/PocSlider/PocSlider'
-import images from '../../img/poc/images'
+import CATEN8 from '../../img/poc/CATEN8.png'
+import HEIMDALL from '../../img/poc/HEIMDALL.png'
+import PLEXTRAC from '../../img/poc/PLEXTRAC.png'
+import PROCYON from '../../img/poc/PROCYON.png'
+import SENTEON from '../../img/poc/SENTEON.png'
+import SPYDERBAT from '../../img/poc/SPYDERBAT.png'
+import VIVADERE from '../../img/poc/VIVADERE.png'
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
   const carouselRef = useRef(null);
+
+  const images = [CATEN8, HEIMDALL, PLEXTRAC, PROCYON, SENTEON, SPYDERBAT, VIVADERE]
 
   const responsive = {
     superLargeDesktop: {
@@ -123,7 +128,7 @@ const Index = () => {
             </div>
               <section className="text-gray-600 body-font">
                 <div className="w-full py-10 md:px-0 px-10  mx-auto  bg-woodenBg bg-no-repeat bg-center bg-cover">
-                  <div className=" custom-container lg:p-10 md:p-8 p-5  bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
+                  <div className=" custom-container lg:p-10 md:p-8 p-[30px] bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
                     <Carousel
                       responsive={responsive}
                       focusOnSelect={true}
@@ -132,7 +137,7 @@ const Index = () => {
                       showArrows={false}
                       infiniteLoop={true}
                       autoPlay={true}
-                      className="custom-carousel md:w-[70%] w-full mx-auto"
+                      className="custom-carousel md:w-[70%] w-full md:mx-auto"
                       ref={carouselRef}
                     >
                       {images.map((img, index) => (
