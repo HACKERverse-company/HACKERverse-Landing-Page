@@ -92,6 +92,11 @@
 .demos-btn .txt {
   margin-left: 8px;
 }
+.custom-carousel button {
+  display: none !important
+}
+
+
 
 .banner-top {
   min-height: 100vh;

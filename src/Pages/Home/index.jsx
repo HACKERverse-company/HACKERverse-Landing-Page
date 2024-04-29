@@ -1,4 +1,6 @@
-import React, { useState, useEffect, Suspense, lazy } from "react";
+import React, { useState, useEffect, Suspense, lazy, useRef } from "react";
+import Carousel from "react-multi-carousel";
+
 import { Link } from "react-router-dom";
 import SideChat from "../../img/support.svg";
 import orbmp4 from "../../img/orb/orb.mp4";
@@ -22,9 +24,32 @@ const Newsletter = lazy(() => import("./Newsletter"));
 const Footer = lazy(() => import("./Footer"));
 const Index1 = lazy(() => import("./Teams"));
 const Quote = lazy(() => import("./Quote"));
+import PocSlider from '../../components/PocSlider/PocSlider'
+import images from '../../img/poc/images'
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const carouselRef = useRef(null);
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 1,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
 
   const handleClick = () => {
     window.open("https://hackerverse.quest/", "_blank");
@@ -73,7 +98,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="custom-container md:py-32 sm:py-24 bg-[#000] py-20 relativ">
+            <div className="custom-container py-10 bg-[#000]  relative">
               <Quote />
               <div className="col-md-12 mt-28 bg-[#000]">
                 <div className="content-are">
@@ -94,26 +119,37 @@ const Index = () => {
                     </div>
                   </article>
                 </div>
-                <section className="text-gray-600 body-font">
-                  <div className="container  mx-auto ">
-                    <div className="flex items-center justify-center ">
-                      <img
-                        loading="lazy"
-                        src={laptop}
-                        className="rounded-3xl w-full"
-                        alt="Our Killer POC Interface"
-                      />
-                    </div>
+              </div>
+            </div>
+              <section className="text-gray-600 body-font">
+                <div className="w-full py-10  mx-auto  bg-woodenBg bg-no-repeat bg-center bg-cover">
+                  <div className=" custom-container p-10  bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
+                    <Carousel
+                      responsive={responsive}
+                      focusOnSelect={true}
+                      infinite={true}
+                      showThumbs={false}
+                      showArrows={false}
+                      infiniteLoop={true}
+                      autoPlay={true}
+                      className="custom-carousel w-[70%] mx-auto"
+                      ref={carouselRef}
+                    >
+                      {images.map((img, index) => (
+                        <PocSlider key={index} img={img} />
+                      ))}
+                    </Carousel>
                   </div>
-                </section>
-                <div className="caption-area text-center bg-transparent mt-14 flex justify-center items-center max-w-80 w-full mx-auto">
-                  <button
-                    onClick={handleClick}
-                    class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black text-black hover:bg-[#8cba3e] w-[300px]  py-2 px-4 "
-                  >
-                    Take me to the Platform!
-                  </button>
                 </div>
+              </section>
+            <div className="custom-container">
+              <div className="caption-area text-center bg-transparent mt-14 flex justify-center items-center max-w-80 w-full mx-auto">
+                <button
+                  onClick={handleClick}
+                  class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black text-black hover:bg-[#8cba3e] w-[300px]  py-2 px-4 "
+                >
+                  Take me to the Platform!
+                </button>
               </div>
             </div>
             <div className="w-full md:py-32 sm:py-24 py-20">

@@ -56,7 +56,7 @@ const Paragraph = () => {
       // style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container px-5 mx-auto relative">
-          <video autoPlay muted loop className="absolute top-0 left-32 m-auto max-w-[500px] max-h-[500px] w-full z-0">
+          <video autoPlay muted loop className="absolute top-0 lg:left-32 left-0 m-auto max-w-[500px] max-h-[500px] w-full z-0">
             <source src={greenLight} type="video/mp4" />
           </video>
           <div className=" mx-auto  relative z-10">
@@ -82,7 +82,7 @@ const Paragraph = () => {
               onClick={handleClick}
               className="rounded-md font-semibold bg-[#a0ff00] text-black w-[300px] text-sm sm:text-base hover:text-black hover:bg-[#8cba3e] py-2 px-4 mb-14"
             >
-              Bug Out in the HACKERverse®
+             Take me to the Platform
             </button>
           </div>
         </div>
