@@ -75,7 +75,7 @@ const Index = () => {
         responsive={responsive}
         focusOnSelect={true}
         infinite={true}
-        className="sm:w-[90%] w-full mx-auto"
+        className="sm:w-[90%] w-full mx-auto carousel-nav"
         showDots
         customDot={<CustomDot />}
         ref={carouselRef}

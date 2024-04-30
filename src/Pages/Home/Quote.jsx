@@ -7,7 +7,7 @@ const Quote = () => {
   return (
     <>
       <section className="text-gray-600 body-font bg-transparent relative">
-        <div className="container mx-auto relative z-10">
+        <div className="container mx-auto relative">
           <div className="lg:w-3/4 w-full mx-auto flex flex-col items-center gap-10">
             {/* Quotes image */}
             <img src={quotes} alt="quotes" className="object-contain" />

@@ -20,6 +20,27 @@
   }
 }
 
+.chatbot-window {
+  position: fixed;
+  bottom: 90px;
+  right: 4px;
+  width: 384px; /* Adjust as needed */
+  height: 480px; /* Adjust as needed */
+  background-color: black;
+  z-index:-9999; /* Set a high z-index value */
+  border-radius: 20px;
+}
+
+.orb-hover-window {
+  position: fixed;
+  bottom: 90px;
+  right: 2px;
+  width: 80px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
+  background-color: black;
+  z-index: 9999; /* Set a high z-index value */
+  border-radius: 20px;
+}
 
 
 .dot {
@@ -14877,12 +14898,15 @@ footer .copy-rgt span br {
   /* Add your existing styles here */
   transition: box-shadow 0.3s;
   box-shadow: 0 0 30px 0 #a0ff00;
+  z-index: 50; /* Decrease the z-index value */
 
   /* Add transition for smooth effect */
 }
 
 .picboxc:hover {
   box-shadow: 0 0 35px 0 #a0ff00;
+  z-index: 50; /* Decrease the z-index value */
+
   /* box-shadow: inset 0 0 10px 0 #a0ff00;  */
   /* margin-top: -30px; */
 
@@ -14900,6 +14924,7 @@ box-shadow: 0 0 30px 0 #a0ff00;
   overflow-y: auto;
 }
 
+
 /* Define scrollbar track color */
 .custom-scrollbar::-webkit-scrollbar-track {
   background-color: #000000;
@@ -14915,6 +14940,9 @@ box-shadow: 0 0 30px 0 #a0ff00;
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background-color: #000000;
 }
+.carousel-nav {
+  z-index: 0; 
+  }
 
 @tailwind base;
 @tailwind components;

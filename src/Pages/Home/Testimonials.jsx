@@ -81,7 +81,8 @@ const Index = () => {
           focusOnSelect={true}
           infinite={true}
         
-          className="2xl:w-full w-[80%] mx-auto"
+          className="2xl:w-full w-[80%] mx-auto carousel-nav" // Add the carousel-nav class
+
           showDots customDot={<CustomDot />}
         >
           {reviews.map((testimonial, index) => (

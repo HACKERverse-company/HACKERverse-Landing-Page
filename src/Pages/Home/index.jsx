@@ -21,6 +21,7 @@ const Newsletter = lazy(() => import("./Newsletter"));
 const Footer = lazy(() => import("./Footer"));
 const Index1 = lazy(() => import("./Teams"));
 const Quote = lazy(() => import("./Quote"));
+const ChatBot = lazy(() => import("./ChatBot"));
 import PocSlider from '../../components/PocSlider/PocSlider'
 import CATEN8 from '../../img/poc/CATEN8.png'
 import HEIMDALL from '../../img/poc/HEIMDALL.png'
@@ -29,6 +30,7 @@ import PROCYON from '../../img/poc/PROCYON.png'
 import SENTEON from '../../img/poc/SENTEON.png'
 import SPYDERBAT from '../../img/poc/SPYDERBAT.png'
 import VIVADERE from '../../img/poc/VIVADERE.png'
+
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -70,13 +72,15 @@ const Index = () => {
     return () => clearTimeout(timer);
   }, []);
 
+
+
   return (
     <>
       {isLoading && <Loader text={"Hack The *verse!"} />}
       {!isLoading && (
         <>
-          <Hero />
-          <section className="white-th  bg-[#000]" id="view-down">
+          <section className="white-th  bg-[#000]    " id="view-down">
+          <Hero/>
             <div className="md:py-32 sm:py-24 py-20">
               <div className="custom-container">
                 <div className="row md:mb-16 mb-12">
@@ -126,27 +130,27 @@ const Index = () => {
                 </div>
               </div>
             </div>
-              <section className="text-gray-600 body-font">
-                <div className="w-full py-10 md:px-0 px-10  mx-auto  bg-woodenBg bg-no-repeat bg-center bg-cover">
-                  <div className=" custom-container lg:p-10 md:p-8 p-[30px] bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
-                    <Carousel
-                      responsive={responsive}
-                      focusOnSelect={true}
-                      infinite={true}
-                      showThumbs={false}
-                      showArrows={false}
-                      infiniteLoop={true}
-                      autoPlay={true}
-                      className="custom-carousel md:w-[70%] w-full md:mx-auto"
-                      ref={carouselRef}
-                    >
-                      {images.map((img, index) => (
-                        <PocSlider key={index} img={img} />
-                      ))}
-                    </Carousel>
-                  </div>
+            <section className="text-gray-600 body-font">
+              <div className="w-full py-10 md:px-0 px-10  mx-auto  bg-woodenBg bg-no-repeat bg-center bg-cover">
+                <div className=" custom-container lg:p-10 md:p-8 p-[30px] bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
+                  <Carousel
+                    responsive={responsive}
+                    focusOnSelect={true}
+                    infinite={true}
+                    showThumbs={false}
+                    showArrows={false}
+                    infiniteLoop={true}
+                    autoPlay={true}
+                    className="custom-carousel md:w-[70%] w-full md:mx-auto"
+                    ref={carouselRef}
+                  >
+                    {images.map((img, index) => (
+                      <PocSlider key={index} img={img} />
+                    ))}
+                  </Carousel>
                 </div>
-              </section>
+              </div>
+            </section>
             <div className="custom-container">
               <div className="caption-area text-center bg-transparent mt-14 flex justify-center items-center max-w-80 w-full mx-auto">
                 <button
@@ -206,72 +210,7 @@ const Index = () => {
             <Footer />
           </section>
 
-          <div className="speak">
-            <div className="sup-icons-cont">
-              <a
-                href="https://discord.gg/hacer-rs-952244889192648775"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="sup-icon">
-                  <img loading="lazy" src={redorbdiscord} alt="Discord" />
-                </div>
-              </a>
-              <a
-                href="https://www.instagram.com/_hackerverse_/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="sup-icon">
-                  <img loading="lazy" src={redorbinsta} alt="Instagram" />
-                </div>
-              </a>
-              <a
-                href="https://www.youtube.com/@theHACKERverse"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="sup-icon">
-                  <img loading="lazy" src={redorbyoutube} alt="Youtube" />
-                </div>
-              </a>
-              <a
-                href="https://www.reddit.com/r/theHACKERverse/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="sup-icon">
-                  <img loading="lazy" src={redorbreddit} alt="Reddit" />
-                </div>
-              </a>
-              <a
-                href="https://www.twitch.tv/thehackerverse"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="sup-icon">
-                  <img loading="lazy" src={redorbtwitch} alt="Twitch" />
-                </div>
-              </a>
-              <a
-                href="https://twitter.com/_HACKERverse_"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="sup-icon">
-                  <img loading="lazy" src={orbtwitter} alt="Twitter" />
-                </div>
-              </a>
-            </div>
-            <div className="sup-rota">
-              <img loading="lazy" src={SideChat} alt="Support Chat" />
-            </div>
-            <div className="video-cutter">
-              <video autoPlay muted loop>
-                <source src={orbmp4} type="video/mp4" />
-              </video>
-            </div>
-          </div>
+          <ChatBot />
         </>
       )}
       ;

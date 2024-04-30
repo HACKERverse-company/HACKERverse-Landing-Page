@@ -73,7 +73,7 @@ const Index = () => {
         responsive={responsive}
         ref={carouselRef}
         infinite={true}
-        className="w-full mx-auto pb-10"
+        className="w-full mx-auto pb-10 carousel-nav"
         showDots
         customDot={<CustomDot />}
         focusOnSelect={true}

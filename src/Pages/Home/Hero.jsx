@@ -14,7 +14,7 @@ import skullImg from "../../img/skull.png";
 const Hero = () => {
   return (
     <>
-      <div className="banner-top relative bg-transparent mb-4  md:mb-10">
+      <div className="banner-top relative bg-transparent mb-4  md:mb-10 ">
         <Link to='/' className="fixed top-10 left-6 z-50">
           <img
             src={skullImg}

@@ -64,12 +64,13 @@ const Index = () => {
         <div className="py-8 px-4 mx-auto max-w-screen-xl text-center  lg:px-6 ">
           <div className="mx-auto   max-w-screen-sm ">
             <h2 className="mb-2 text-2xl  lg:text-3xl font-rubik tracking-tight font-extrabold hover-underline text-white dark:text-white">
-            OUR STORY
+              OUR STORY
             </h2>
           </div>
         </div>
       </section>
-      <Carousel responsive={responsive} focusOnSelect={true} ref={carouselRef}>
+      <Carousel responsive={responsive} focusOnSelect={true} ref={carouselRef}
+        className="carousel-nav">
         {Vodcasts.map((member) => (
           <>
             <section
