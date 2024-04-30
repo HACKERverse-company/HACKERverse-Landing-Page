@@ -76,7 +76,7 @@ const Index = () => {
               className="text-gray-600 body-font  bg-transparent"
               key={member._id}
             >
-              <div className="container px- py-[20px] mx-auto lg:p-32 md:p-32 p-2 picbox1  bg-transparent  rounded-3xl">
+              <div className="container px- py-[20px] mx-auto lg:p-32 md:p-32 p-2 picbox1  bg-transparent ">
                 <div
                   className="relative picbox1  bg-transparent  rounded-3xl"
                   style={{ paddingTop: "56.25%" }}
