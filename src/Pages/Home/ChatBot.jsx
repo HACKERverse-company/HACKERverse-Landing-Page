@@ -76,6 +76,10 @@ const ChatBot = () => {
     useEffect(() => {
         scrollToBottom();
     }, [messages]);
+        
+    const stopPropagation = (event) => {
+        event.stopPropagation();
+    };
 
 
     return (
@@ -87,7 +91,7 @@ const ChatBot = () => {
                 </button>
 
                 {isOpen && (
-                    <div className=" chatbot-window fixed bottom-[90px] right-4 lg:w-96 lg:h-[480px] md:w-96 w-[90%]  md:h-[480px] bg-black picboxc   rounded-2xl    "  >
+                    <div className=" chatbot-window fixed bottom-[90px] right-4 lg:w-96 lg:h-[480px] md:w-96 w-[90%]  md:h-[480px] bg-black picboxc   rounded-2xl    " onClick={stopPropagation} >
 
                         <div className="flex justify-between items-center px-4 py-2   ">
                             <div className="relative flex items-center space-x-2">

@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import exploreImages from "../../img/explore/explore";
 import gif1 from "../../img/new/GREEN_lightning_short_1.gif";
 import greenLight from "../../img/HV_LIGHTNINGbolt_OVALblur_green_noFloor_short_300x1080_stringed.mp4";
-
+import  integrate from '../../img/explore/integrate.png';
+import  scale from '../../img/explore/scale.png';
+import  velocity from '../../img/explore/velocity.png';
+import  continuous from '../../img/explore/continuous.png';
+import  community from '../../img/explore/community.png';
+ 
 
 
 const Paragraph = () => {
@@ -16,35 +21,35 @@ const Paragraph = () => {
           id: "1",
           title: "Integrate",
           txt: "Integrate like a boss! The HACKERverse® syncs with your tools, tech-stack, and CRM.",
-          icon: exploreImages[0],
+          icon: integrate,
         },
         {
           id: "2",
           title: "Scale",
           txt: "Easily scale your PoC process and free up your team’s time.",
-          icon: exploreImages[1],
+          icon: scale,
         },
         {
           id: "3",
           title: "Velocity",
           txt: "Faster Time to close won. Buyers crave hands-on experiences and self-driven sales motions.",
-          icon: exploreImages[2],
+          icon: velocity,
         },
         {
           id: "4",
           title: "Continuous",
           txt: "Get continuous product feedback from customers experiencing your Hands-On PoC.",
-          icon: exploreImages[3],
+          icon: continuous,
         },
         {
           id: "5",
           title: "Community",
           txt: "Our thriving HACKERverse® community gives you access to 5,000 practitioners and security team leaders.",
-          icon: exploreImages[4],
+          icon: community,
         },
       ]);
     }, 200);
-  }, [exploreImages]);
+  }, [ ]);
 
   const handleClick = () => {
     window.open("https://hackerverse.quest/", "_blank");
