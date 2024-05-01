@@ -116,10 +116,12 @@ const Home = () => {
                     <div className="p-4 md:w-[50%] lg:w-[50%] w-[100%] bg-black -300  rounded-3xl picboxc">
                         <div className="flex-1 p:2 sm:p-6 justify-between flex flex-col h-[544px]">
                             <div className="fle x sm:items-center justify-between py-3   ">
-                                <div className="relative flex items-center space-x-4">
-                                    <div className="relative"> <span className="absolute  "> <svg width={20} height={20}>   </svg> </span> <img src={BotLogo} alt="" className="w-10 sm:w-16 h-10 sm:h-16 rounded-full border border-[#a0ff00]" /> </div>
+                                <div className="relative flex items-center space-x-2">
+                                    <div className="relative"> <span className="absolute  "> <svg width={20} height={20}>   </svg> </span> <img src={BotLogo} alt="" className="w-auto sm:w-auto h-10 sm:h-16 w rounded-full border border-[#a0ff00]" /> </div>
                                     <div 
-                                    className="flex flex-col leading-tight"> <div className="text-3xl mt-1 flex items-center"><span className="text-white  mr-3 text-lg" style={{ fontSize: '30px' }}><b>POCBOT</b></span> </div> <span className="text-lg text-gray-600" style={{ fontSize: '15px' }}><i>HACKERverse® copyright© trademark™ </i></span> </div>
+                                    className="flex flex-col leading-tight"> <div className="text-3xl mt-1 flex items-center"><span className="text-white  mr-3 text-lg" style={{ fontSize: '30px' }}><b>POCBOT</b></span> </div>
+                                     {/* <span className="text-lg text-gray-600" style={{ fontSize: '15px' }}><i>HACKERverse® copyright© trademark™ </i></span>  */}
+                                     </div>
                                 </div>
                                 <div className="flex items-ce nter space-x-2">{/* topheader */}</div>
                             </div>
