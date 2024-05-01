@@ -12,10 +12,13 @@ import skullImg from "../../img/skull.png";
 
 
 const Hero = () => {
+  const handleClick = () => {
+    window.open("https://hackerverse.quest/", "_blank");
+  };
   return (
     <>
       <div className="banner-top relative bg-transparent mb-4  md:mb-10 ">
-        <Link to='/' className="fixed top-10 left-6 z-50">
+        <Link to='/' className="fixed top-6 left-6 z-50">
           <img
             src={skullImg}
             alt="skull"
@@ -29,23 +32,24 @@ const Hero = () => {
             </a>
           </div>
           <div className="bnr-sec -mt-[120px] relative w-full">
-          <div className="flex gap-5  flex-wrap justify-center items-center m-auto">
-                <img
-                  src={googleLogo}
-                  alt=""
-                  className="object-contain lg:max-w-[200px] max-w-[150px]  w-full"
-                />
-                <img
-                  src={CategoryCreator}
-                  alt=""
-                  className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
-                />
-                <img
-                  src={greenLogo}
-                  alt=""
-                  className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
-                />
-              </div>
+            <div className="flex gap-5  flex-wrap justify-center items-center m-auto">
+              <img
+                src={googleLogo}
+                alt=""
+                className="object-contain lg:max-w-[200px] max-w-[150px]  w-full"
+              />
+              <img
+                src={CategoryCreator}
+                alt=""
+                className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
+              />
+              <img
+                src={greenLogo}
+                alt=""
+                className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
+              />
+            </div>
+            
             <video
               autoPlay
               muted
@@ -82,8 +86,9 @@ const Hero = () => {
                 alchemists of the close.
               </p>
 
-              <Link to="/contact/" className="lr-more mx-auto px-3 mb-16">
-                Join the PoC Revolution Now!
+              <Link to="/contact/" className="lr-more mx-auto px-3 mb-16  ">
+              Join the PoC Revolution Now!
+                
               </Link>
               
             </div>

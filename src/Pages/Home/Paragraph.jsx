@@ -53,7 +53,7 @@ const Paragraph = () => {
   return (
     <>
       <section className="text-gray-600 body-font pt-10 relative opacity-80 bg-black"
-      // style={{ background: `url(${gif1}) center center / cover no-repeat` }}
+      //style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container px-5 mx-auto relative">
           <video autoPlay muted loop className="absolute top-0 lg:left-32 left-0 m-auto max-w-[500px] max-h-[500px] w-full z-0">
