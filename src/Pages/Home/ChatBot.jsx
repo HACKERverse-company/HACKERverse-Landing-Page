@@ -80,7 +80,7 @@ const ChatBot = () => {
 
     return (
         <>
-            <div className="fixed -bottom-3 -right-3">
+            <div className="fixed -bottom-3 -right-3" onClick={stopPropagation}>
 
                 <button className=" text-white rounded-full p-2  shadow-md focus:outline-none" onClick={toggleChatWindow} onMouseEnter={handleOrbHover} onMouseLeave={handleOrbHoverOut} >
                     <img src={orbmp4} className={`h-24 w-24 ${isOrbHover ? 'hovered' : ''}`} alt="orb gif" />
