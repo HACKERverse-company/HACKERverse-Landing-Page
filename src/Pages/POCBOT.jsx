@@ -115,7 +115,7 @@ const Home = () => {
                         <img src={Loader} className='h-[260px] w-auto' />
                     </div>
                     <div className=" md:w-[50%] lg:w-[50%] w-[100%] bg-black -300  rounded-3xl p icboxc">
-                            <img src={POCBOT} alt="Your Image" className='mx-auto h-auto w-auto' />
+                            <img src={POCBOT} alt="Your Image" className='mx-auto h-auto w-[60%]' />
 
                     
                     </div>
