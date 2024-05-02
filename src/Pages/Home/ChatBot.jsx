@@ -63,12 +63,7 @@ const ChatBot = () => {
             { type: 'user', text: inputValue },
             { type: 'bot', text: botResponse },
         ]);
-        if (botResponse.includes('CONGRULATIONS!')) {
-            setMessages([
-                ...messages,
-                { type: 'bot', text: 'CONGRULATIONS' },
-            ]);
-        }
+       
         setloading(false)
     };
 
@@ -129,6 +124,10 @@ const ChatBot = () => {
                                                 <div className={`flex flex-col space-y-2 text-md max-w-xs mx-2 order-${message.type === 'user' ? '1' : '2'} items-${message.type === 'user' ? 'end' : 'start'}`}>
                                                     <div>
                                                         {message.text.includes('CONGRULATIONS') ? <>
+                                                        <span className={`px-4 py-2 rounded-lg inline-block mb-3 ${message.type === 'user' ? 'rounded-br-none bg-[#54721e] text-white ' : 'rounded-bl-none bg-gray-300 text-gray-900  '}`}>
+                                                                {message.text}
+                                                            </span>
+                                                            <br/>
                                                             <p className={`px-4 py-2 rounded-lg inline-block w-[280px] rounded-bl-none bg-gray-300 text-gray-900 break-words`}>
                                                                 In the meantime, Let's connect and finalize this baby! <a href="https://calendly.com/thehackerverse/fire-up-my-poc">https://calendly.com/thehackerverse/fire-up-my-poc</a>
                                                             </p>

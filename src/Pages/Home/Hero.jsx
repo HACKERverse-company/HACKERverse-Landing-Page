@@ -75,14 +75,14 @@ const Hero = () => {
                 </span>
               </div>
               <p className="font-poppins">
-                The Leader in AI-Powered Proof of Concepts for Software Vendors!
+                The Leader in AI-Powered Proof of Concepts and Proof of Value for Software Vendors!
                 In the sprawl of the digital underworld, where deals are forged
                 in neon and code reigns as the supreme being, we are the
                 alchemists of the close.
               </p>
 
               <Link to="/contact/" className="lr-more mx-auto px-3 mb-16">
-                Join the PoC Revolution Now!
+                Join the PoC & PoV Revolution Now!
               </Link>
               
             </div>
