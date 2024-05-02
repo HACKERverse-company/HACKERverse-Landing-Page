@@ -16,7 +16,7 @@ export default {
         "bgpattern": "url('img/pagebackground.png')",
         "lighteningEffect": "url('img/teams.gif')",
         "laptop": "url('img/poc/iPADbackground.png')",
-        "woodenBg": "url('img/poc/IPADangledWOODbackground2.jpg')"
+        "woodenBg": "url('img/poc/IPADangledWOODbackground2.png')"
       } 
     },
   },

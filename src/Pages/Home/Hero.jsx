@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <>
       <div className="banner-top relative bg-transparent mb-4  md:mb-10c">
-        <Link to='/' className="fixed top-10 left-6 z-50 bg-black">
+        <Link to='/' className="fixed top-10 left-6 z-50  ">
           <img
             src={skullImg}
             alt="skull"

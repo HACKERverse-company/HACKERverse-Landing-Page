@@ -13,7 +13,7 @@ const ChatBot = () => {
     const inputRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
     const [isOrbHover, setIsOrbHover] = useState(false)
-
+    const [calendy, setCalendy] = useState(false)
     const toggleChatWindow = () => {
         setIsOrbHover(false)
         setIsOpen(!isOpen);
@@ -44,8 +44,9 @@ const ChatBot = () => {
     };
 
     const handleSubmit = async (event) => {
-        if (inputValue == '' || inputValue == null) { toast.error('Please Enter your Message.'); return }
+        setCalendy(false)
 
+        if (inputValue == '' || inputValue == null) { toast.error('Please Enter your Message.'); return }
         setloading(true)
         event.preventDefault();
         setMessages([
@@ -62,6 +63,12 @@ const ChatBot = () => {
             { type: 'user', text: inputValue },
             { type: 'bot', text: botResponse },
         ]);
+        if (botResponse.includes('CONGRULATIONS!')) {
+            setMessages([
+                ...messages,
+                { type: 'bot', text: 'CONGRULATIONS' },
+            ]);
+        }
         setloading(false)
     };
 
@@ -76,7 +83,7 @@ const ChatBot = () => {
     useEffect(() => {
         scrollToBottom();
     }, [messages]);
-        
+
     const stopPropagation = (event) => {
         event.stopPropagation();
     };
@@ -108,7 +115,7 @@ const ChatBot = () => {
                                             <div className={`flex flex-col space-y-2 text-md max-w-xs mx-2 order-2 items-start`}>
                                                 <div>
                                                     <span className={`px-4 py-2 rounded-lg inline-block  rounded-bl-none bg-gray-300 text-gray-900  `}>
-                                                        Hey WhatsApp! How may I help you.
+                                                        Hey Whats up?!? How may I help you
                                                     </span>
                                                 </div>
                                             </div>
@@ -121,15 +128,25 @@ const ChatBot = () => {
                                             <div key={index} className={`  ${message.type === 'user' ? 'flex items-end justify-end' : 'flex items-end'}`}>
                                                 <div className={`flex flex-col space-y-2 text-md max-w-xs mx-2 order-${message.type === 'user' ? '1' : '2'} items-${message.type === 'user' ? 'end' : 'start'}`}>
                                                     <div>
-                                                        <span className={`px-4 py-2 rounded-lg inline-block ${message.type === 'user' ? 'rounded-br-none bg-[#54721e] text-white ' : 'rounded-bl-none bg-gray-300 text-gray-900  '}`}>
-                                                            {message.text}
-                                                        </span>
+                                                        {message.text.includes('CONGRULATIONS') ? <>
+                                                            <p className={`px-4 py-2 rounded-lg inline-block w-[280px] rounded-bl-none bg-gray-300 text-gray-900 break-words`}>
+                                                                In the meantime, Let's connect and finalize this baby! <a href="https://calendly.com/thehackerverse/fire-up-my-poc">https://calendly.com/thehackerverse/fire-up-my-poc</a>
+                                                            </p>
+                                                        </> : <>
+                                                            <span className={`px-4 py-2 rounded-lg inline-block ${message.type === 'user' ? 'rounded-br-none bg-[#54721e] text-white ' : 'rounded-bl-none bg-gray-300 text-gray-900  '}`}>
+                                                                {message.text}
+                                                            </span>
+                                                        </>}
                                                     </div>
                                                 </div>
                                                 <img src={message.type === 'user' ? UserLogo : BotLogo} alt="Profile" className={`w-12 h-12 rounded-full order-1 `} />
                                             </div>
                                         </div>
                                     ))}
+
+
+
+
                                     <div ref={messagesEndRef} />
                                 </div>
                                 <div className="  border-gray-200 px-1 pr-3 pt-2 mb-2 sm:mb-0 pb-2">
