@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 // import gif1 from "../../img/new/gif.gif";
 import { Link } from "react-router-dom";
 import exploreImages from "../../img/explore/explore";
-import gif1 from "../../img/new/GREEN_lightning_short_1.gif";
 import greenLight from "../../img/HV_LIGHTNINGbolt_OVALblur_green_noFloor_short_300x1080_stringed.mp4";
 import  integrate from '../../img/explore/integrate.png';
 import  scale from '../../img/explore/scale.png';

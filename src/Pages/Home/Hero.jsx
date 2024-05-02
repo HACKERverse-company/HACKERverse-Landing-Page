@@ -2,7 +2,6 @@ import React from "react";
 import demos from "../../img/demos-icon.svg";
 import logo from "../../img/HV_horizatonal_website_logo.png";
 import { Link } from "react-router-dom";
-import gif1 from "../../img/new/gif.gif";
 import CategoryCreator from "../../img/new/MOCKEDupgoldwhite2.png";
 import greenLight from "../../img/HV_LIGHTNINGbolt_OVALblur_green_noFloor_short_300x1080_stringed.mp4";
 import greenLogo from "../../img/green-logo.png";

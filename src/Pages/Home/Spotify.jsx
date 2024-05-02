@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import BLUMIRApocscreen from "../../img/new/BLUMIRApocscreen (1).jpg";
 import axios from "axios";
 import { Api } from "../../Api/Api";
 import { Link } from "react-router-dom";
