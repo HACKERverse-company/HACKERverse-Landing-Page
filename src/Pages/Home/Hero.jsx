@@ -11,58 +11,54 @@ import skullImg from "../../img/skull.png";
 
 
 const Hero = () => {
-  const handleClick = () => {
-    window.open("https://hackerverse.quest/", "_blank");
-  };
   return (
     <>
-      <div className="banner-top relative bg-transparent mb-4  md:mb-10 ">
-        <Link to='/' className="fixed top-6 left-6 z-50">
+      <div className="banner-top relative bg-transparent mb-4  md:mb-10c">
+        <Link to='/' className="fixed top-10 left-6 z-50 bg-black">
           <img
             src={skullImg}
             alt="skull"
             className="w-16 h-16 object-contain "
           />
         </Link>
-        <div className="custom-container relative">
+        <div className="custom-container relative ">
           <div className="logo  mb-40">
             <a href="" className="flex flex-col justify-center items-center ">
               <img src={logo} alt="" className="" />
             </a>
           </div>
           <div className="bnr-sec -mt-[120px] relative w-full">
-            <div className="flex gap-5  flex-wrap justify-center items-center m-auto">
-              <img
-                src={googleLogo}
-                alt=""
-                className="object-contain lg:max-w-[200px] max-w-[150px]  w-full"
-              />
-              <img
-                src={CategoryCreator}
-                alt=""
-                className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
-              />
-              <img
-                src={greenLogo}
-                alt=""
-                className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
-              />
-            </div>
-            
+          <div className="flex gap-5  flex-wrap justify-center items-center m-auto">
+                <img
+                  src={googleLogo}
+                  alt=""
+                  className="object-contain lg:max-w-[200px] max-w-[150px]  w-full"
+                />
+                <img
+                  src={CategoryCreator}
+                  alt=""
+                  className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
+                />
+                <img
+                  src={greenLogo}
+                  alt=""
+                  className="object-contain lg:max-w-[200px] max-w-[150px] w-full"
+                />
+              </div>
             <video
               autoPlay
               muted
               loop
-              className="absolute    w-[500px] h-[500px] top-40 -z-10 "
+              className="absolute    w-[500px] h-[500px] top-96 -z-10 "
             >
               <source src={greenLight} type="video/mp4" />
             </video>
-            <div className="caption-area text-center ">
-              <div className="demos-btn">
+            <div className="caption-area text-center">
+              <div className="demos-btn ">
                 <span className="ico">
                   <img src={demos} alt="demos" />
                 </span>
-                <span className="txt font-poppins">
+                <span className="txt font-poppins ">
                   Data. Dissent. Disrupiton. Destroying the POC Maelstrom.
                 </span>
               </div>
@@ -85,9 +81,8 @@ const Hero = () => {
                 alchemists of the close.
               </p>
 
-              <Link to="/contact/" className="lr-more mx-auto px-3 mb-16  ">
-              Join the PoC Revolution Now!
-                
+              <Link to="/contact/" className="lr-more mx-auto px-3 mb-16">
+                Join the PoC Revolution Now!
               </Link>
               
             </div>
