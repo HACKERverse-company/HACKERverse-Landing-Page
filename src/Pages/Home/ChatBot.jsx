@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import orbmp4 from "../../img/orb/orb.webp";
+import orbmp4 from "../../img/orb/ORB_green_lightning.gif";
 import BotLogo from '../../img/logogreen.png';
 import UserLogo from '../../img/user1.jpg';
 import toast, { Toaster } from 'react-hot-toast'
@@ -87,11 +87,11 @@ const ChatBot = () => {
             <div className="fixed -bottom-3 -right-3" onClick={stopPropagation}>
 
                 <button className=" text-white rounded-full p-2  shadow-md focus:outline-none" onClick={toggleChatWindow} onMouseEnter={handleOrbHover} onMouseLeave={handleOrbHoverOut} >
-                    <img src={orbmp4} className={`h-24 w-24 ${isOrbHover ? 'hovered' : ''}`} alt="orb gif" />
+                    <img src={orbmp4} className={`h-36 w-36 ${isOrbHover ? 'hovered' : ''}`} alt="orb gif" />
                 </button>
 
                 {isOpen && (
-                    <div className=" chatbot-window fixed bottom-[90px] right-4 lg:w-96 lg:h-[480px] md:w-96 w-[90%]  md:h-[480px] bg-black picboxc   rounded-2xl    " onClick={stopPropagation} >
+                    <div className=" chatbot-window fixed bottom-[115px] right-4 lg:w-96 lg:h-[480px] md:w-96 w-[90%]  md:h-[480px] bg-black picboxc   rounded-2xl    " onClick={stopPropagation} >
 
                         <div className="flex justify-between items-center px-4 py-2   ">
                             <div className="relative flex items-center space-x-2">
@@ -155,7 +155,7 @@ const ChatBot = () => {
                 )}
 
                 {isOrbHover && (
-                    <div className="fixed bottom-[90px] right-2 w-80 h-[80px] bg-black  picboxc   rounded-2xl ">
+                    <div className="fixed bottom-[115px] right-4 w-80 h-[80px] bg-black  picboxc   rounded-2xl ">
                         <div className="flex justify-between items-center px-4 py-2  ">
                             <div className="relative flex items-center space-x-3 ">
                                 <div className="relative"> <span className="absolute  "> <svg width={20} height={20}>   </svg> </span> <img src={BotLogo} alt="" className="w-auto sm:w-auo h-10 sm:h-16 rounded-full border border-[#a0ff00]" /> </div>
