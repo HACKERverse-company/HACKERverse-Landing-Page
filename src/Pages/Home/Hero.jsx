@@ -59,7 +59,7 @@ const Hero = () => {
                   <img src={demos} alt="demos" />
                 </span>
                 <span className="txt font-poppins ">
-                  Data. Dissent. Disrupiton. Destroying the POC Maelstrom.
+                  Data. Dissent. Disrupiton. Destroying the POC Maelstrom. 
                 </span>
               </div>
               <div className="title-tp text-center text-lg mx-auto relative font-rubik">
