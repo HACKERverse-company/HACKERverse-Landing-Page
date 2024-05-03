@@ -14,21 +14,21 @@ const Hero = () => {
   return (
     <>
       <div className="banner-top relative bg-transparent mb-4  md:mb-10c">
-        <Link to='/' className="fixed top-10 left-6 z-50  ">
+        <Link to='/' className="fixed top-10 left-6 z-50">
           <img
             src={skullImg}
             alt="skull"
             className="w-16 h-16 object-contain "
           />
         </Link>
-        <div className="custom-container relative ">
+        <div className="custom-container relative z-10 ">
           <div className="logo  mb-40">
             <a href="" className="flex flex-col justify-center items-center ">
               <img src={logo} alt="" className="" />
             </a>
           </div>
-          <div className="bnr-sec -mt-[120px] relative w-full">
-          <div className="flex gap-5  flex-wrap justify-center items-center m-auto">
+          <div className="bnr-sec -mt-[120px] w-full relative z-30 ">
+          <div className="flex gap-5  flex-wrap justify-center items-center m-auto relative z-30">
                 <img
                   src={googleLogo}
                   alt=""
@@ -49,11 +49,11 @@ const Hero = () => {
               autoPlay
               muted
               loop
-              className="absolute    w-[500px] h-[500px] top-96 -z-10 "
+              className="absolute xl:w-[500px] xl:h-[500px] w-[300px] h-[300px] top-96 sm:left-20 left-0 m-auto z-0"
             >
               <source src={greenLight} type="video/mp4" />
             </video>
-            <div className="caption-area text-center">
+            <div className="caption-area text-center relative z-10">
               <div className="demos-btn ">
                 <span className="ico">
                   <img src={demos} alt="demos" />
