@@ -51,16 +51,10 @@ const Contact = () => {
   return (
     <>
       <div className="container mx-auto relative  bg-transparent ">
-      <Link to='/' className="fixed top-10 left-6">
-          <img
-            src={skullImg}
-            alt="skull"
-            className="w-16 h-16 object-contain "
-          />
-        </Link>
+    
         <a
           href="/"
-          class="flex items-center absolute top-16 left-4 z-50 bg-slate-700 p-1 rounded-full pr-1"
+          class="flex items-center absolute top-5 left-4 z-50 bg-slate-700 p-1 rounded-full pr-3 pl-5 "
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -76,12 +70,12 @@ const Contact = () => {
               d="M15 19l-7-7 7-7"
             />
           </svg>
-          <span className="text-[#a0ff00] hover:underline pr-1">Go Back</span>
+          <span className="text-[#a0ff00] hover:underline pr-5">Go Back</span>
         </a>
         <section className=" ">
-          <div className="container px-6 py-12 mx-auto">
+          <div className="container py-12 mx-auto">
             <div className="text-center ">
-              <p className="font-medium  text-[#a0ff00]">Contact us</p>
+              <p className="font-medium text-2xl mt-4 text-[#a0ff00]">Contact us</p>
 
               <h1 className="mt-2 text-2xl font-semibold  md:text-3xl text-white">
                 We’d love to hear from you
@@ -91,7 +85,7 @@ const Contact = () => {
             </div>
 
             <img
-              className="object-cover w-full h-64 mt-10 rounded-lg lg:h-96 picbox1"
+              className="object-cover w-full h-full mt-10 rounded-lg lg:h-full picbox1"
               src={mainImg}
               alt=""
             />
@@ -99,7 +93,7 @@ const Contact = () => {
         </section>
 
         <section className="text-gray-900 body-font relative">
-          <div className="container px-5 py-4 mx-auto">
+          <div className="container   py-4 mx-auto">
             <div className="lg:w-1/2 md:w-2/3 mx-auto bg-gray-900 p-10 rounded-2xl picbox1">
               <form onSubmit={handleSubmit}>
                 <div id="hubspotForm">
@@ -110,9 +104,7 @@ const Contact = () => {
           </div>
         </section>
 
-        <div className=" px-28 rounded pb-10">
           <Footer />
-        </div>
       </div>
     </>
   );
