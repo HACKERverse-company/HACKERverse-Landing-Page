@@ -60,9 +60,7 @@ const Paragraph = () => {
       //style={{ background: `url(${gif1}) center center / cover no-repeat` }}
       >
         <div className="container px-5 mx-auto relative">
-          <video autoPlay muted loop className="absolute top-0 lg:left-32 left-0 m-auto max-w-[500px] max-h-[500px] w-full z-0">
-            <source src={greenLight} type="video/mp4" />
-          </video>
+         
           <div className=" mx-auto  relative z-10">
             <div className=" flex lg:flex-wrap lg:flex-row flex-col items-center justify-center -mx-4 -mb-10 sm:gap-5 gap-2  ">
               {data.map((item) => (
