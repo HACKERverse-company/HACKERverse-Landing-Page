@@ -11,6 +11,7 @@ const customersImages = Promise.all([
   import("./HV_NATsec_unicorn_stickercut_blackChrome.png"),
   import("./DC719jack.png"),
   import("./SAEPiologo_stickercut.png"),
+  import("./Graylog.webp"),
 ]);
 
 const paths = [];
