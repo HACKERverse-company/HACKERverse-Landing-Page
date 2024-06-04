@@ -25,7 +25,7 @@ const Quote = () => {
               />
               {/* Author */}
               <p className="text-gray-500 text-2xl font-extrabold">
-                Ross Haleliuk
+                -Cyber for Builders
               </p>
             </div>
           </div>
