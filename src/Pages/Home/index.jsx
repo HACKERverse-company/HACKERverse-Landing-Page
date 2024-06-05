@@ -9,7 +9,7 @@ import redorbdiscord from "../../img/redorb-discord.png";
 import redorbreddit from "../../img/redorb-reddit.png";
 import redorbtwitch from "../../img/redorb-twitch.png";
 import Graylog from "../../img/new/Graylog.webp";
-
+import GOMBOC from "../../img/new/GOMBOC.webp";
 import HV_NEW_AI_Machine from "../../img/new/HV_NEW_AI_Machine_blues (1).png";
 import Loader from "../Loading2";
 import Customers from "./Customers";
@@ -83,33 +83,44 @@ const Index = () => {
         <>
           <section className="white-th  bg-[#000]    " id="view-down">
           <Hero/>
-            <div className="md:py-32 sm:py-24 py-20">
-              <div className="custom-container">
-                <div className="row md:mb-16 mb-12">
-                  <div className="col-md-12">
-                    <div className="content-are  ">
-                      <article>
-                        <div className="primary-heading ">
-                          <div className="text-2xl  lg:text-3xl hover-underline uppercase font-rubik">
-                            Meet our Rockstar Customers!
-                          </div>
-                        </div>
-                      </article>
-                    </div>
+          <div className="md:py-32 sm:py-24 py-20">
+      <div className="custom-container">
+        <div className="row md:mb-16 mb-12">
+          <div className="col-md-12">
+            <div className="content-are">
+              <article>
+                <div className="primary-heading">
+                  <div className="text-2xl lg:text-3xl hover-underline uppercase font-rubik">
+                    Meet our Rockstar Customers!
                   </div>
                 </div>
-                <img src={Graylog} className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg  mx-auto " />
-                <Customers />
-                <div className="caption-area text-center bg-transparent mt-16 ">
-                  <button
-                    onClick={handleClick}
-                    className=" rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e]  text-black w-[300px] py-2 px-4 "
-                  >
-                    Take me to the Platform!
-                  </button>
-                </div>
-              </div>
+              </article>
             </div>
+          </div>
+        </div>
+        <div className="flex justify-center gap-4 mb-8">
+          <img
+            src={Graylog}
+            className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg"
+            alt="Graylog"
+          />
+          <img
+            src={GOMBOC}
+            className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg"
+            alt="GOMBOC"
+          />
+        </div>
+        <Customers />
+        <div className="caption-area text-center bg-transparent mt-16">
+          <button
+            onClick={handleClick}
+            className="rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] text-black w-[300px] py-2 px-4"
+          >
+            Take me to the Platform!
+          </button>
+        </div>
+      </div>
+    </div>
             <div className="custom-container py-10 bg-[#000]  relative">
               <Quote />
               <div className="col-md-12 mt-28 bg-[#000]">
