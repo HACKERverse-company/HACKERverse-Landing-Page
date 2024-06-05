@@ -8,6 +8,8 @@ import redorbinsta from "../../img/redorb-insta.png";
 import redorbdiscord from "../../img/redorb-discord.png";
 import redorbreddit from "../../img/redorb-reddit.png";
 import redorbtwitch from "../../img/redorb-twitch.png";
+import Graylog from "../../img/new/Graylog.webp";
+
 import HV_NEW_AI_Machine from "../../img/new/HV_NEW_AI_Machine_blues (1).png";
 import Loader from "../Loading2";
 import Customers from "./Customers";
@@ -96,6 +98,7 @@ const Index = () => {
                     </div>
                   </div>
                 </div>
+                <img src={Graylog} className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg  mx-auto " />
                 <Customers />
                 <div className="caption-area text-center bg-transparent mt-16 ">
                   <button

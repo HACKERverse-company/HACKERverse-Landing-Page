@@ -25,7 +25,7 @@ const Quote = () => {
               />
               {/* Author */}
               <p className="text-gray-500 text-2xl font-extrabold">
-                -Cyber for Builders
+              <a href="https://a.co/d/64VzDfd" className="cursor-pointer hover:text-[#a0ff00]" target="_blank">  -Cyber for Builders</a>
               </p>
             </div>
           </div>
