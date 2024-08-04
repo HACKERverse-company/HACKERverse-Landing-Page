@@ -24,21 +24,20 @@ const Footer = lazy(() => import("./Footer"));
 const Index1 = lazy(() => import("./Teams"));
 const Quote = lazy(() => import("./Quote"));
 const ChatBot = lazy(() => import("./ChatBot"));
-import PocSlider from '../../components/PocSlider/PocSlider'
-import CATEN8 from '../../img/poc/CATEN8.png'
-import HEIMDALL from '../../img/poc/HEIMDALL.png'
-import PLEXTRAC from '../../img/poc/PLEXTRAC.png'
-import PROCYON from '../../img/poc/PROCYON.png'
-import SENTEON from '../../img/poc/SENTEON.png'
-import SPYDERBAT from '../../img/poc/SPYDERBAT.png'
-import VIVADERE from '../../img/poc/VIVADERE.png'
-
+import PocSlider from '../../components/PocSlider/PocSlider';
+import CATEN8 from '../../img/poc/CATEN8.png';
+import HEIMDALL from '../../img/poc/HEIMDALL.png';
+import PLEXTRAC from '../../img/poc/PLEXTRAC.png';
+import PROCYON from '../../img/poc/PROCYON.png';
+import SENTEON from '../../img/poc/SENTEON.png';
+import SPYDERBAT from '../../img/poc/SPYDERBAT.png';
+import VIVADERE from '../../img/poc/VIVADERE.png';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
   const carouselRef = useRef(null);
 
-  const images = [CATEN8, HEIMDALL, PLEXTRAC, PROCYON, SENTEON, SPYDERBAT, VIVADERE]
+  const images = [CATEN8, HEIMDALL, PLEXTRAC, PROCYON, SENTEON, SPYDERBAT, VIVADERE];
 
   const responsive = {
     superLargeDesktop: {
@@ -74,64 +73,62 @@ const Index = () => {
     return () => clearTimeout(timer);
   }, []);
 
-
-
   return (
     <>
       {isLoading && <Loader text={"Hack The *verse!"} />}
       {!isLoading && (
         <>
-          <section className="white-th  bg-[#000]    " id="view-down">
-          <Hero/>
-          <div className="md:py-32 sm:py-24 py-20">
-      <div className="custom-container">
-        <div className="row md:mb-16 mb-12">
-          <div className="col-md-12">
-            <div className="content-are">
-              <article>
-                <div className="primary-heading">
-                  <div className="text-2xl lg:text-3xl hover-underline uppercase font-rubik">
-                    Meet our Rockstar Customers!
+          <section className="white-th bg-[#000]" id="view-down">
+            <Hero />
+            <div className="md:py-32 sm:py-24 py-20">
+              <div className="custom-container">
+                <div className="row md:mb-16 mb-12">
+                  <div className="col-md-12">
+                    <div className="content-are">
+                      <article>
+                        <div className="primary-heading">
+                          <div className="text-2xl lg:text-3xl hover-underline uppercase font-rubik">
+                            Meet our Rockstar Customers!
+                          </div>
+                        </div>
+                      </article>
+                    </div>
                   </div>
                 </div>
-              </article>
+                <div className="flex justify-center gap-4 mb-8">
+                  <img
+                    src={Graylog}
+                    className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg"
+                    alt="Graylog"
+                  />
+                  <img
+                    src={GOMBOC}
+                    className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg"
+                    alt="GOMBOC"
+                  />
+                </div>
+                <Customers />
+                <div className="caption-area text-center bg-transparent mt-16">
+                  <button
+                    onClick={handleClick}
+                    className="rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] text-black w-[300px] py-2 px-4"
+                  >
+                    Take me to the Platform!
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="flex justify-center gap-4 mb-8">
-          <img
-            src={Graylog}
-            className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg"
-            alt="Graylog"
-          />
-          <img
-            src={GOMBOC}
-            className="h-auto xl:max-w-[236px] sm:max-w-[160px] max-w-[100px] w-full rounded-lg"
-            alt="GOMBOC"
-          />
-        </div>
-        <Customers />
-        <div className="caption-area text-center bg-transparent mt-16">
-          <button
-            onClick={handleClick}
-            className="rounded-md font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] text-black w-[300px] py-2 px-4"
-          >
-            Take me to the Platform!
-          </button>
-        </div>
-      </div>
-    </div>
-            <div className="custom-container py-10 bg-[#000]  relative">
+            <div className="custom-container py-10 bg-[#000] relative">
               <Quote />
               <div className="col-md-12 mt-28 bg-[#000]">
                 <div className="content-are">
                   <article>
                     <div className="primary-heading">
-                      <div className=" text-2xl  lg:text-3xl hover-underline uppercase font-rubik">
+                      <div className="text-2xl lg:text-3xl hover-underline uppercase font-rubik">
                         Our Killer POC
                         <sup>
                           <span
-                            className="text-2xl  lg:text-3xl hover-underline uppercase font-rubik"
+                            className="text-2xl lg:text-3xl hover-underline uppercase font-rubik"
                             style={{ fontSize: 15 }}
                           >
                             TM
@@ -145,8 +142,8 @@ const Index = () => {
               </div>
             </div>
             <section className="text-gray-600 body-font">
-              <div className="w-full py-10 md:px-0 px-10  mx-auto  bg-woodenBg bg-no-repeat bg-center bg-cover">
-                <div className=" custom-container lg:p-10 md:p-8 p-[30px] bg-contain  overflow-hidden  bg-no-repeat bg-center  bg-laptop">
+              <div className="w-full py-10 md:px-0 px-10 mx-auto bg-woodenBg bg-no-repeat bg-center bg-cover">
+                <div className="custom-container lg:p-10 md:p-8 p-[30px] bg-contain overflow-hidden bg-no-repeat bg-center bg-laptop">
                   <Carousel
                     responsive={responsive}
                     focusOnSelect={true}
@@ -169,7 +166,7 @@ const Index = () => {
               <div className="caption-area text-center bg-transparent mt-14 flex justify-center items-center max-w-80 w-full mx-auto">
                 <button
                   onClick={handleClick}
-                  class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black text-black hover:bg-[#8cba3e] w-[300px]  py-2 px-4 "
+                  className="rounded-md font-semibold bg-[#a0ff00] hover:text-black text-black hover:bg-[#8cba3e] w-[300px] py-2 px-4"
                 >
                   Take me to the Platform!
                 </button>
@@ -179,7 +176,7 @@ const Index = () => {
               <div className="content-are">
                 <article>
                   <div className="primary-heading mb-10 lg:mb-16">
-                    <div className="title-lg text-2xl  lg:text-3xl font-rubik  hover-underline ">
+                    <div className="title-lg text-2xl lg:text-3xl font-rubik hover-underline">
                       How it Works
                     </div>
                   </div>
@@ -200,14 +197,17 @@ const Index = () => {
               <div className="caption-area text-center bg-transparent mt-14">
                 <button
                   onClick={handleClick}
-                  class=" rounded-md font-semibold bg-[#a0ff00] hover:text-black min-w-[300px]  text-xs sm:text-base hover:bg-[#8cba3e]  py-2 px-4 "
+                  className="rounded-md font-semibold bg-[#a0ff00] hover:text-black min-w-[300px] text-xs sm:text-base hover:bg-[#8cba3e] py-2 px-4"
                 >
                   Take me to the Platform!
                 </button>
               </div>
             </div>
 
-            <div className="bg-[#1D1D1D]  bg-cover  bg-no-repeat bg-center bg-pattern">
+            {/* Body Copy Section */}
+         
+
+            <div className="bg-[#1D1D1D] bg-cover bg-no-repeat bg-center bg-pattern">
               <Paragraph />
             </div>
 
@@ -227,7 +227,6 @@ const Index = () => {
           <ChatBot />
         </>
       )}
-      ;
     </>
   );
 };

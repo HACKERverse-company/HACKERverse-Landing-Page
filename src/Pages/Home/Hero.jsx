@@ -165,7 +165,7 @@ const Hero = () => {
                 </span>
               </div>
               <div className="title-tp text-center text-lg mx-auto relative font-rubik">
-                Welcome to the HACKERvers
+                Accelerate Your Proof of Concepts in the HACKERvers
                 <span className="relative">
                   e
                   <span
@@ -176,15 +176,13 @@ const Hero = () => {
                   </span>
                 </span>
               </div>
-              <p className="font-poppins">
-                The Leader in AI-Powered Proof of Concepts and Proof of Value for Software Vendors!
-                In the sprawl of the digital underworld, where deals are forged
-                in neon and code reigns as the supreme being, we are the
-                alchemists of the close.
+              <p className="font-poppins " style={{color:"white",fontSize:"19px"}}>
+              Craft immersive PoCs in days, not months. Skip manual coding and let HACKERverse.AI set up your
+              environment faster to close more deals.
               </p>
 
               <Link to="/contact/" className="lr-more mx-auto px-3 mb-16">
-                Join the PoC & PoV Revolution Now!
+                  Hack your Sales Cycle!
               </Link>
               
             </div>

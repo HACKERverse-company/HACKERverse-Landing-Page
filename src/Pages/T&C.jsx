@@ -4826,7 +4826,7 @@ const SingleBlog = () => {
     &nbsp;
   </p>
   <h2 className='lead text-slate-400'
-     className='lead text-slate-400'
+     
 
     style={{
       
