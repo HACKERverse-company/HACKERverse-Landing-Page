@@ -37,44 +37,54 @@ const Quote = () => {
     //   </section>
     // </>
     <>
-      <div className="  text-slate-200 py-6">
+      <section className="bg-gr ay-800 text-slate-200 py-12">
         <div className="container mx-auto px-4">
-          <div className="mb-8">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4  ">Is your sales team tired of endless, resource-intensive Proof of Concepts (PoCs)?</h2>
-            <p className="text-lg lg:text-xl">HACKERverse.ai is the AI-powered platform that transforms your sales cycle.</p>
+          {/* Intro Section */}
+          <div className="mb-12 text-center p-6 bg-gradient-to-r from-[#a0ff00] to-black rounded-lg shadow-lg">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4 ">Transform Your Sales Cycle with HACKERverse.ai</h2>
+            <p className="text-lg lg:text-xl">Revolutionize your sales approach with our AI-powered platform.</p>
           </div>
-          <div className="mb-8">
-            <h3 className="text-2xl lg:text-3xl font-semibold mb-2 hover-underline">What is HACKERverse.ai?</h3>
-            <p className="text-lg lg:text-xl">HACKERverse.ai is a groundbreaking platform for cybersecurity sales teams that utilizes Generative AI to rapidly spin up realistic, production-like environments for testing cybersecurity products. We eliminate the months-long PoC process, allowing you to showcase your solution's capabilities in a matter of days.</p>
+
+          {/* What is Section */}
+          <div className="mb-12 p-6 bg-gray-700 rounded-lg shadow-lg">
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-4 border-b-2 border-[#A0FF00] pb-2">What is HACKERverse.ai?</h3>
+            <p className="text-lg lg:text-xl">A groundbreaking platform utilizing Generative AI to rapidly create realistic, production-like environments for cybersecurity product testing. Cut the PoC process from months to days.</p>
           </div>
-          <div className="mb-8">
-            <h3 className="text-2xl lg:text-3xl font-semibold mb-2 hover-underline">How it Works:</h3>
-            <ol className="list-decimal pl-5 text-lg lg:text-xl space-y-2">
-              <li>Upload Your Product: Integrate your cybersecurity solution into the HACKERverse platform.</li>
-              <li>Generate a PoC Environment: Our AI engine creates a dynamic, production-like environment tailored to your product's capabilities.</li>
-              <li>Showcase Your Solution: Demonstrate your product's efficacy against simulated attacks to potential customers with confidence.</li>
+
+          {/* How it Works Section */}
+          <div className="mb-12 p-6 bg-gray-700 rounded-lg shadow-lg">
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-4 border-b-2 border-[#A0FF00] pb-2">How it Works:</h3>
+            <ol className="list-decimal pl-6 text-lg lg:text-xl space-y-4">
+              <li>Upload Your Product: Integrate into the HACKERverse platform.</li>
+              <li>Generate a PoC Environment: AI engine creates a tailored, production-like environment.</li>
+              <li>Showcase Your Solution: Demonstrate your product against simulated attacks.</li>
             </ol>
           </div>
-          <div className="mb-8">
-            <h3 className="text-2xl lg:text-3xl font-semibold mb-2 hover-underline font-rubik">Key Benefits:</h3>
-            <ul className="list-disc pl-5 text-lg lg:text-xl space-y-2">
+
+          {/* Key Benefits Section */}
+          <div className="mb-12 p-6 bg-gray-700 rounded-lg shadow-lg">
+            <h3 className="text-2xl lg:text-3xl font-semibold mb-4 border-b-2 border-[#A0FF00] pb-2">Key Benefits:</h3>
+            <ul className="list-disc pl-6 text-lg lg:text-xl space-y-4">
               <li>Accelerated Sales Cycles: Reduce PoC time from months to days.</li>
-              <li>Enhanced Product Validation: Gain valuable insights into your product's performance in real-world scenarios.</li>
-              <li>More prospects: Get your product into the hands of more prospects.</li>
-              <li>Competitive Advantage: Outshine competitors with faster time-to-market and superior product validation.</li>
+              <li>Enhanced Product Validation: Valuable insights into real-world performance.</li>
+              <li>More Prospects: Reach more potential customers.</li>
+              <li>Competitive Advantage: Faster time-to-market and superior validation.</li>
             </ul>
           </div>
+
+          {/* Call to Action Section */}
           <div className="text-center">
+
             <button
               onClick={handleClick}
-              className="rounded-md font-semibold mb-2 bg-[#a0ff00] hover:text-black min-w-[300px] text-xs sm:text-base hover:bg-[#8cba3e] py-2 px-4 text-black"
+              className="rounded-md mb-4 font-semibold bg-[#a0ff00] hover:text-black hover:bg-[#8cba3e] text-black w-[300px] py-2 px-4"
             >
-              Join the HACKERverse Revolution
+              Take me to the Platform!
             </button>
-            <p className="text-lg lg:text-xl mb-4">Don't let slow PoC processes hinder your sales success. Experience the future of cybersecurity sales with HACKERverse.ai.</p>
+            <p className="text-lg lg:text-xl">Experience the future of cybersecurity sales with HACKERverse.ai.</p>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
